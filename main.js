@@ -143,18 +143,17 @@ function mostrar() {
             option.style.display="none"   /*HACE QUE SE DESAPAREZCA LA ULTIMA OPCIÓN PARA DAR PASO A LOS RESULTADOS*/
         case 6: if (elecciones4.length>=0) {
                    alert("HAY"+elecciones4.length+" SELECCIONES DEL 100%")
-                   for (let i=0;i<=elecciones4.length;i++) {
-                        if (elecciones4[i]!==undefined) {
-                            results.style.display="flex"
-                            results.innerHTML += `    
+                   document.querySelector(".guitarFinderApp").style.display="none"
+                    for (eleccion of elecciones4) {
+                        results.style.display="flex"
+                        results.innerHTML += `    
                            <div class=resultsCard>
-                           <p>${elecciones4[i].name}</p>
-                           <img src="${elecciones4[i].img}"
+                           <span class=resultsCardPorcentaje><p>100%</p></span>
+                           <p class=resultsCardName>${eleccion.name}</p>
+                           <img src="${eleccion.img}"
                           </div>
                           `;
-                          console.log("se hizo la primer impresion")
-                       }
-                        }
+                    }
                 }
                 if (pricefailed.length>=0) {
                     alert("HAY " +pricefailed.length+". COINCIDENCIAS, CON PRECIO FALLADO")
@@ -281,6 +280,7 @@ function resetear() {
     pricefailed=[]
     brandfailed=[]
     results.innerHTML=""
+    document.querySelector(".guitarFinderApp").style.display="flex"
     h2option.innerHTML="<h2>Are you a beginner or experienced guitarist?</h2>"
     console.log("arrays reseteados y contenido vaciado")
     console.log(arrayimg)

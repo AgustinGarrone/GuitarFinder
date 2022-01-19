@@ -272,13 +272,78 @@ input {
   display: none;
 }
 
+.resultsCard {
+  height: 500px;
+  width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+          box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  position: relative;
+}
+
+.resultsCard img {
+  height: 300px;
+  width: 300px;
+}
+
+.resultsCardname {
+  text-align: center;
+}
+
+.resultsCardPorcentaje {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: yellow;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.resultsCardPorcentaje p {
+  color: black;
+  text-align: center;
+  padding-top: 8px;
+}
+
+.resultsCard:hover {
+  background-color: black;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.resultsCard:hovername {
+  color: white;
+}
+
+.resultsCard:hover img {
+  height: 350px;
+  width: 350px;
+}
+
 .activeimg {
   -webkit-filter: drop-shadow(10px 10px 10px yellow);
           filter: drop-shadow(10px 10px 10px yellow);
 }
 
 .results {
-  width: 1000px;
+  width: 70vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -292,7 +357,7 @@ input {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .resultsmatchs {
