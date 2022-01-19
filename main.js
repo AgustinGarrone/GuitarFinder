@@ -72,21 +72,21 @@ var brandfailed=[]
 
 
 
+/*OBTENCIÓN BOTONES DEL PROGRAMA*/
 
-var index=1;
-
-
-var startboton=document.querySelector(".startButton")
 var botones=document.querySelector(".guitarFinderButtonContainer")
+var startboton=document.querySelector(".startButton")
 var nextboton=document.getElementById("gfNextButton")
 var resetboton=document.querySelector(".backbutton")
 var results=document.querySelector(".results")
-var coincidencias1=document.querySelector(".results")
 
 startboton.addEventListener("click",empezar)
 resetboton.addEventListener("click",resetear)
 nextboton.addEventListener("click",mostrar)
 
+
+/*OBTENCIÓN DE OPCIÓN MOSTRADA Y ARRAYS DE INPUTS*/
+var index=1;
 var option = document.getElementById("option"+index)
 
 
@@ -182,7 +182,6 @@ function mostrar() {
 /*FUNCION SELECCION DE ITEM , COLOR AL IMG*/
 
 var arrayimg=document.getElementsByTagName("img")
-let inputindex=1;
 let letra="a"
 var input= document.getElementById("opt"+index+letra)  
 
@@ -207,6 +206,7 @@ function seleccion (indi){
 
 
 var contador=0
+//!NO ENTIENDO BIEN XQ FUNCIONA
 switch (index) {
     case 1:
         console.log("EL INDEX ESSS DE "+index)
