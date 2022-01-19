@@ -88,9 +88,10 @@ nextboton.addEventListener("click",mostrar)
 var startText=document.querySelector(".guitarFinderText")
 
 var h2option=document.createElement("h2")
+var divbodyoption=document.createElement("div") /*para info de bodys*/
 h2option.classList.add("animate__animated")
 h2option.classList.add("animate__fadeInRight")
-
+divbodyoption.classList.add("bodyinfo")
 /*OBTENCIÓN DE OPCIÓN MOSTRADA Y ARRAYS DE INPUTS*/
 var index=1;
 var option = document.getElementById("option"+index)
@@ -107,6 +108,7 @@ console.log(opt1inputs)
 function empezar () {
     startboton.style.display="none"
     startText.style.display="none"
+    document.querySelector(".guitarFinderApp").style.display="flex"
     botones.style.display="flex"
     option.style.display="flex"
     h2option.innerHTML="<h2>Are you a beginner or experienced guitarist?</h2>"
@@ -128,6 +130,7 @@ function mostrar() {
         break
         case 3:chequeado3("a",3);
         h2option.innerHTML="<h2>What were you thinking in terms of budget?</h2>"
+        divbodyoption.innerHTML=""
         console.log("ejecutada tercera opcion")
         break
         case 4:chequeado4("a",4);
@@ -200,21 +203,29 @@ var input= document.getElementById("opt"+index+letra)
 
 function seleccion (indi){
     let stop=false
-    while (stop!=true) {
-      if (opt1inputs[indi].checked==true) {
+    if (opt1inputs[indi].checked==true) {
         arrayimg[indi+1].classList.add("activeimg")
-        break
-      } else if (opt1inputs[indi].checked==false) {
+    } else if (opt1inputs[indi].checked==false) {
         arrayimg[indi+1].classList.remove("activeimg")
-        break
-      } 
-      indi++
-      console.log("AUMENTA INDI A "+ indi)
- /*      if (indi>=10) {
-          stop=true
-      } */
+    } 
+    if (indi==4 && opt1inputs[indi].checked==true) {
+        divbodyoption.innerHTML="<p>Solidbody electrics provide more sustain and are less susceptible to feedback. Solidbody electrics are staples in most popular music styles, including rock, country and blues.</p>"
+        document.querySelector(".guitarFinderApp").appendChild(divbodyoption)
+    } else if (indi==4 && opt1inputs[indi].checked==false) {
+        divbodyoption.innerHTML=""
     }
-
+    if (indi==5 && opt1inputs[indi].checked==true) {
+        divbodyoption.innerHTML="<p>Semi-hollow body electrics combine the style and resonant, warm sound of a hollowbody with the feedback-fighting benefits and longer sustain of a solidbody. Their distinctive tones are popular among rock, blues and rockabilly players.</p>"
+        document.querySelector(".guitarFinderApp").appendChild(divbodyoption)
+    } else if (indi==5 && opt1inputs[indi].checked==false) {
+        divbodyoption.innerHTML=""
+    }
+    if (indi==6 && opt1inputs[indi].checked==true) {
+        divbodyoption.innerHTML="<p>Hollowbody guitars retain the natural, airy and woody sound of an acoustic guitar, but are prone to feedback when amplified at high volume levels. Hollowbody guitars are popular among jazz, country and folk players.</p>"
+        document.querySelector(".guitarFinderApp").appendChild(divbodyoption)
+    } else if (indi==6 && opt1inputs[indi].checked==false) {
+        divbodyoption.innerHTML=""
+    }
 }
 
 

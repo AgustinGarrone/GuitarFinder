@@ -39,7 +39,7 @@ input {
 .guitarFinder {
   margin: auto;
   width: 100vw;
-  background-image: url("../img/posiblebackencio4.jpg");
+  background-image: url("../img/wallp1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -93,6 +93,36 @@ input {
       justify-content: space-around;
 }
 
+.guitarFinderApp {
+  width: 70vw;
+  height: 700px;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* justify-content: space-around; */
+  -webkit-box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+          box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.guitarFinderApp .bodyinfo {
+  margin-top: 70px;
+}
+
+.guitarFinderApp .bodyinfo p {
+  color: white;
+  text-align: center;
+  width: 500px;
+}
+
 .guitarFinderButtonContainer {
   width: 20%;
   display: none;
@@ -128,8 +158,9 @@ input {
   width: 250px;
   height: 70px;
   background: #c31432;
-  background: radial-gradient(circle, #c31432 0%, #240b36 35%, #240b36 69%);
+  background: black;
   border-radius: 50px;
+  color: white;
 }
 
 .guitarFinderText h1 {
@@ -165,6 +196,8 @@ input {
 #option1 img:hover {
   height: 450px;
   width: 450px;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 #option2 {
@@ -180,6 +213,8 @@ input {
 #option2 img:hover {
   height: 450px;
   width: 450px;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 #option3 {
@@ -195,6 +230,8 @@ input {
 #option3 img:hover {
   height: 350px;
   width: 350px;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 #option4 {
@@ -210,6 +247,8 @@ input {
 #option4 img:hover {
   height: 350px;
   width: 350px;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 #option5 {
@@ -225,6 +264,8 @@ input {
 #option5 img:hover {
   height: 350px;
   width: 350px;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 #option6 {
@@ -232,8 +273,8 @@ input {
 }
 
 .activeimg {
-  -webkit-filter: drop-shadow(10px 10px 10px orchid);
-          filter: drop-shadow(10px 10px 10px orchid);
+  -webkit-filter: drop-shadow(10px 10px 10px yellow);
+          filter: drop-shadow(10px 10px 10px yellow);
 }
 
 .results {
