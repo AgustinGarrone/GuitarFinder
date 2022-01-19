@@ -1,0 +1,219 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+video {
+    position: fixed;
+    top: -110px;
+ width: 100vw;
+ height: auto;
+ overflow: hidden;
+ z-index: -10;
+ visibility: visible;
+ animation:wipe-in-left 2.5s;
+}  
+
+.playbutton {
+    height: 64px;
+    width: 64px;
+    position: absolute;
+    bottom: 2px;
+    right: 10px;
+    cursor: pointer;
+    &:hover {
+        height: 68px;
+        width: 68px;
+    }
+}
+
+
+ /* input {
+    display: none;
+}  */
+.guitarFinder {
+    margin: auto;
+    width: 100vw;
+     background-image: url("../img/posiblebackk2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;  
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    &App {
+       width: 500px;
+       height: 300px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+}
+
+.guitarFinderAppInicio {
+    .slider {
+        width: 2000px;
+        height: 200px;
+        position: relative;
+        animation: slider 10s infinite;
+        display: flex;
+        align-items: center;
+        justify-content: space-around; 
+        
+    } 
+}
+
+
+.guitarFinderButtonContainer {
+    width: 20%;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    button {
+        background-color: red ;
+        border-radius: 40px;
+        width: 100px;
+        height: 50px;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+    }
+    .backbutton {
+        background-color: black ;
+        border-radius: 40px;
+        width: 100px;
+        height: 50px;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+    }
+}
+.guitarFinderStartButton {
+
+    .startButton {
+        width: 250px;
+        height: 70px;
+        background: rgb(195,20,50);
+        background: radial-gradient(circle, rgba(195,20,50,1) 0%, rgba(36,11,54,1) 35%, rgba(36,11,54,1) 69%);
+        border-radius: 50px;
+        
+    }
+}
+.guitarFinderText {
+    h1 {
+        font-size: 4rem;
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+    }
+    p {
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 30px;
+        color: white;
+    }
+}
+
+
+
+#option {
+    &1 {
+        display: none;
+        &-names {
+            display: flex;
+            p {
+                color: white;
+            }
+        }
+        img {
+            height: 400px;
+            width: 400px;
+            cursor:pointer;
+        }
+        img:hover {
+            height: 450px;
+            width: 450px;
+        }
+    }
+    &2 {
+        display: none;
+        img {
+            height: 400px;
+            width: 400px;
+            cursor:pointer;
+        }
+        img:hover {
+            height: 450px;
+            width: 450px;
+        }
+    }
+    &3 {
+        display: none;
+        img {
+            height: 300px;
+            width: 300px;
+            cursor:pointer;
+        }
+        img:hover {
+            height: 350px;
+            width: 350px;
+        }
+    }
+    &4 {
+        display: none;
+        img {
+            height: 300px;
+            width: 300px;
+            cursor:pointer;
+        }
+        img:hover {
+            height: 350px;
+            width: 350px;
+        }
+    }
+    &5 {
+        display: none;
+        img {
+            height: 300px;
+            width: 300px;
+            cursor:pointer;
+        }
+        img:hover {
+            height: 350px;
+            width: 350px;
+        }
+    }
+    &6 {
+        display: none;
+    }
+}
+
+
+    
+
+.activeimg {
+    filter: drop-shadow(10px 10px 10px orchid);
+}
+
+.results {
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+}
+.resultsmatchs {
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+}
+

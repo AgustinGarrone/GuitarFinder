@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuitarFinder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="./css/transition.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+   <!-- <video src="img/bckg2.mp4" autoplay muted loop></video>  -->
+  <img src="./img/playbt.png" alt="" class="playbutton">
+    <section class="guitarFinder">
+        <div class="guitarFinderText">
+          <!--  <img src="./img/logo.png" alt=""> -->
+           <h1 class="animate__animated animate__fadeInRight">The guitar finder</h1>
+           <p class="animate__animated animate__fadeInRight">Find your perfect electric guitar in seconds!</p>
+        </div>
+        <section class="results" id="option6">
+
+        </section>
+        <section class="resultsmatchs" id="option6">
+
+        </section>
+         <div class="guitarFinderApp">
+            <div  transition-style="in:circle:center" id="option1">
+                <div class="option1-names">
+                  <p>Basic</p>
+                  <p>Advanced</p>
+                </div>
+                <label for="opt1a">
+                  <input type="checkbox"  id="opt1a">
+                   <img class="animate__animated animate__fadeIn imgopt1" src="img/guitar2.png" alt="">
+                </label>
+                <input type="checkbox" id="opt1b" >
+                <label for="opt1b">
+                   <img class="animate__animated animate__fadeIn" src="img/guitar15.png" alt="">
+                </label>
+            </div>
+
+            <div id="option2">
+                <input type="checkbox"  id="opt2a"> Kid
+                <label for="opt2a">
+                  <img class="animate__animated animate__fadeIn"src="img/kid.png" alt="">
+                </label>
+                <input type="checkbox" id="opt2b">Adult
+                <label for="opt2b">
+                  <img class="animate__animated animate__fadeIn"src="img/adult.jpg" alt="">
+                </label>
+           </div>
+
+                <div id="option3">
+                  <label for="opt3a">
+                    <img class="animate__animated animate__fadeIn" src="img/guitar4.png" alt="">
+                  </label>
+                  <input type="checkbox" id="opt3a">Solid Body
+                  <label for="opt3b">
+                    <img class="animate__animated animate__fadeIn" src="img/guitar29.png" alt="">
+                  </label>
+                    <input type="checkbox" id="opt3b">Semi-Hollow Body
+                  <label for="opt3c">
+                    <img class="animate__animated animate__fadeIn" src="img/guitar34.png" alt="">
+                  </label>
+                    <input type="checkbox" id="opt3c">Hollow Body
+                  </div>
+                <div id="option4">
+                  <label for="opt4a">
+                    <img class="animate__animated animate__fadeIn"  src="img/money.png" alt="">
+                  </label>
+                    <input type="checkbox" id="opt4a">Something reasonably priced while learning
+                  <label for="opt4b">
+                    <img class="animate__animated animate__fadeIn" src="img/money.png" alt="">
+                  </label>
+                    <input type="checkbox" id="opt4b">Good quality at an affordable price
+                  <label for="opt4c">
+                    <img class="animate__animated animate__fadeIn" src="img/money.png" alt="">
+                  </label>
+                    <input type="checkbox" id="opt4c">Give me the best
+                  </div>
+                <div id="option5">
+                  <label for="opt5a">
+                    <img class="animate__animated animate__fadeIn" src="img/fenderlogo.png" alt="">
+                  </label>
+                    <input type="checkbox" id="opt5a">Fender
+                  <label for="opt5b">
+                    <img class="animate__animated animate__fadeIn" src="img/gibsonlogo.png" alt="">
+                  </label>
+                    <input type="checkbox" id="opt5b">Gibson
+                  <label for="opt5c">
+                    <img class="animate__animated animate__fadeIn" src="img/ibanezlogo.png" alt="">
+                  </label>
+                    <input type="checkbox" id="opt5c">Ibanez
+                  <label for="opt5d">
+                    <img class="animate__animated animate__fadeIn" src="img/wood.png" alt="">
+                  </label>
+                    <input type="checkbox" id="opt5d">Dont Mind
+
+                  </div>
+               <!--  <div id="option6">
+                  <label for="opt6a">
+                    <img src="img/wood.png" alt="">
+                  </label>
+                    <input type="checkbox" id="opt6a">Black
+                  <label for="opt6b">
+                    <img src="img/wood.png" alt="">
+                  </label>
+                    <input type="checkbox" id="opt6b">White
+                  <label for="opt6c">
+                    <img src="img/wood.png" alt="">
+                  </label>
+                    <input type="checkbox" id="opt6c">Other
+                  <label for="opt6d">
+                    <img src="img/wood.png" alt="">
+                  </label>
+                    <input type="checkbox" id="opt6d">Show me all
+                  </div> -->
+                  <audio src="hovereffect.mp3" id="enter"></audio>
+                  <audio src="hovereffect.mp3" id="leave"></audio>
+         </div>
+         <div class="guitarFinderStartButton">
+           <button class="startButton">START</button>
+           <!-- <a href="" class="startButton"><img src="img/puñopunk.png" alt=""></a> -->
+         </div>
+         <div class="guitarFinderButtonContainer">
+            <button class="backbutton">Reset</button>
+            <button id="gfNextButton">Next</button>
+          </div>
+         <audio class="cancion" src="loosingmyway.mp3"></audio>
+    </section>
+    <script
+       src="https://code.jquery.com/jquery-3.6.0.min.js"
+       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+       crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>

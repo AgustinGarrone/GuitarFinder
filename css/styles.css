@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+video {
+  position: fixed;
+  top: -110px;
+  width: 100vw;
+  height: auto;
+  overflow: hidden;
+  z-index: -10;
+  visibility: visible;
+  -webkit-animation: wipe-in-left 2.5s;
+          animation: wipe-in-left 2.5s;
+}
+
+.playbutton {
+  height: 64px;
+  width: 64px;
+  position: absolute;
+  bottom: 2px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.playbutton:hover {
+  height: 68px;
+  width: 68px;
+}
+
+/* input {
+    display: none;
+}  */
+.guitarFinder {
+  margin: auto;
+  width: 100vw;
+  background-image: url("../img/posiblebackk2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  overflow: hidden;
+}
+
+.guitarFinderApp {
+  width: 500px;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.guitarFinderAppInicio .slider {
+  width: 2000px;
+  height: 200px;
+  position: relative;
+  -webkit-animation: slider 10s infinite;
+          animation: slider 10s infinite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.guitarFinderButtonContainer {
+  width: 20%;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.guitarFinderButtonContainer button {
+  background-color: red;
+  border-radius: 40px;
+  width: 100px;
+  height: 50px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.guitarFinderButtonContainer .backbutton {
+  background-color: black;
+  border-radius: 40px;
+  width: 100px;
+  height: 50px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.guitarFinderStartButton .startButton {
+  width: 250px;
+  height: 70px;
+  background: #c31432;
+  background: radial-gradient(circle, #c31432 0%, #240b36 35%, #240b36 69%);
+  border-radius: 50px;
+}
+
+.guitarFinderText h1 {
+  font-size: 4rem;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+}
+
+.guitarFinderText p {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 30px;
+  color: white;
+}
+
+#option1 {
+  display: none;
+}
+
+#option1-names {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#option1-names p {
+  color: white;
+}
+
+#option1 img {
+  height: 400px;
+  width: 400px;
+  cursor: pointer;
+}
+
+#option1 img:hover {
+  height: 450px;
+  width: 450px;
+}
+
+#option2 {
+  display: none;
+}
+
+#option2 img {
+  height: 400px;
+  width: 400px;
+  cursor: pointer;
+}
+
+#option2 img:hover {
+  height: 450px;
+  width: 450px;
+}
+
+#option3 {
+  display: none;
+}
+
+#option3 img {
+  height: 300px;
+  width: 300px;
+  cursor: pointer;
+}
+
+#option3 img:hover {
+  height: 350px;
+  width: 350px;
+}
+
+#option4 {
+  display: none;
+}
+
+#option4 img {
+  height: 300px;
+  width: 300px;
+  cursor: pointer;
+}
+
+#option4 img:hover {
+  height: 350px;
+  width: 350px;
+}
+
+#option5 {
+  display: none;
+}
+
+#option5 img {
+  height: 300px;
+  width: 300px;
+  cursor: pointer;
+}
+
+#option5 img:hover {
+  height: 350px;
+  width: 350px;
+}
+
+#option6 {
+  display: none;
+}
+
+.activeimg {
+  -webkit-filter: drop-shadow(10px 10px 10px orchid);
+          filter: drop-shadow(10px 10px 10px orchid);
+}
+
+.results {
+  width: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 100px;
+}
+
+.resultsmatchs {
+  width: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 100px;
+}
+/*# sourceMappingURL=styles.css.map */
