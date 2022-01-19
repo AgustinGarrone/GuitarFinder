@@ -32,13 +32,14 @@ video {
   width: 68px;
 }
 
-/* input {
-    display: none;
-}  */
+input {
+  display: none;
+}
+
 .guitarFinder {
   margin: auto;
   width: 100vw;
-  background-image: url("../img/posiblebackk2.jpg");
+  background-image: url("../img/posiblebackencio4.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -55,6 +56,11 @@ video {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   overflow: hidden;
+}
+
+.guitarFinder h2 {
+  color: white;
+  text-align: center;
 }
 
 .guitarFinderApp {
@@ -144,14 +150,10 @@ video {
   display: none;
 }
 
-#option1-names {
+#option1items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-#option1-names p {
-  color: white;
 }
 
 #option1 img {

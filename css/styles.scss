@@ -31,13 +31,13 @@ video {
 }
 
 
- /* input {
+  input {
     display: none;
-}  */
+}  
 .guitarFinder {
     margin: auto;
     width: 100vw;
-     background-image: url("../img/posiblebackk2.jpg");
+     background-image: url("../img/posiblebackencio4.jpg");
     background-size: cover;
     background-repeat: no-repeat;  
     height: 100vh;
@@ -46,6 +46,10 @@ video {
     align-items: center;
     justify-content: space-around;
     overflow: hidden;
+    h2{
+        color: white;
+        text-align: center;
+    }
     &App {
        width: 500px;
        height: 300px;
@@ -124,11 +128,8 @@ video {
 #option {
     &1 {
         display: none;
-        &-names {
-            display: flex;
-            p {
-                color: white;
-            }
+        &items {
+            display:flex;
         }
         img {
             height: 400px;

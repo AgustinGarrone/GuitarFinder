@@ -84,6 +84,12 @@ startboton.addEventListener("click",empezar)
 resetboton.addEventListener("click",resetear)
 nextboton.addEventListener("click",mostrar)
 
+/*OBTENCIÓN TEXTOS PROGRAMA*/
+var startText=document.querySelector(".guitarFinderText")
+
+var h2option=document.createElement("h2")
+h2option.classList.add("animate__animated")
+h2option.classList.add("animate__fadeInRight")
 
 /*OBTENCIÓN DE OPCIÓN MOSTRADA Y ARRAYS DE INPUTS*/
 var index=1;
@@ -100,8 +106,11 @@ console.log(opt1inputs)
 /*FUNCION PARA EMPEZAR LA APP*/
 function empezar () {
     startboton.style.display="none"
+    startText.style.display="none"
     botones.style.display="flex"
     option.style.display="flex"
+    h2option.innerHTML="<h2>Are you a beginner or experienced guitarist?</h2>"
+    document.querySelector(".guitarFinder").prepend(h2option)
 }
 
   
@@ -110,15 +119,19 @@ function empezar () {
 function mostrar() {             
     switch(index) {
         case 1: chequeado1("a",1);
+        h2option.innerHTML="<h2>Awesome! Is this guitar for an adult or child?</h2>"
         console.log("ejectuando opcion1")
         break
         case 2:chequeado2("a",2);
+        h2option.innerHTML="<h2>Which body style are you most interested in?</h2>"
         console.log("ejectuando opcion2")
         break
         case 3:chequeado3("a",3);
+        h2option.innerHTML="<h2>What were you thinking in terms of budget?</h2>"
         console.log("ejecutada tercera opcion")
         break
         case 4:chequeado4("a",4);
+        h2option.innerHTML="<h2>Do you have a brand preference?</h2>"
         posiblescoincidencias4();
         console.log("ejecutada cuarta opcion")
         break
@@ -257,6 +270,7 @@ function resetear() {
     pricefailed=[]
     brandfailed=[]
     results.innerHTML=""
+    h2option.innerHTML="<h2>Are you a beginner or experienced guitarist?</h2>"
     console.log("arrays reseteados y contenido vaciado")
     console.log(arrayimg)
      for (let imagen of arrayimg) {
