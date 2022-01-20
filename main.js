@@ -92,9 +92,11 @@ var startText=document.querySelector(".guitarFinderText")
 
 var h2option=document.createElement("h2")
 var divbodyoption=document.createElement("div") /*para info de bodys*/
+var results=document.createElement("section")
 h2option.classList.add("animate__animated")
 h2option.classList.add("animate__fadeInRight")
 divbodyoption.classList.add("bodyinfo")
+results.classList.add("results")
 /*OBTENCIÓN DE OPCIÓN MOSTRADA Y ARRAYS DE INPUTS*/
 var index=1;
 var option = document.getElementById("option"+index)
@@ -147,7 +149,9 @@ function mostrar() {
         case 6: if (elecciones4.length>=0) {
                    alert("HAY"+elecciones4.length+" SELECCIONES DEL 100%")
                    document.querySelector(".guitarFinderApp").style.display="none"
+                   document.querySelector(".guitarFinder").prepend(results)
                    h2option.innerHTML="This is for YOU :)"
+                   document.querySelector(".guitarFinder").prepend(h2option)
                     for (eleccion of elecciones4) {
                         results.style.display="flex"
                         results.innerHTML += `    
