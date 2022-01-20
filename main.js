@@ -163,7 +163,6 @@ function mostrar() {
         case 5: chequeado5("a",5);
             option.style.display="none"   /*HACE QUE SE DESAPAREZCA LA ULTIMA OPCIÓN PARA DAR PASO A LOS RESULTADOS*/
         case 6: if (elecciones4.length>=0) {
-                   alert("HAY"+elecciones4.length+" SELECCIONES DEL 100%")
                    document.querySelector(".guitarFinderApp").style.display="none"
                    document.querySelector(".guitarFinder").prepend(results)
                    h2option.innerHTML="This is for YOU :)"
@@ -183,7 +182,6 @@ function mostrar() {
                     }
                 if (elecciones2.length>=0) {
                     let pricecoincidence=elecciones2.filter(el => !elecciones3.includes(el));
-                    alert("SIII")
                     for (i=0;i<=pricecoincidence.length;i++) {
                         if (i==6) {
                             break
