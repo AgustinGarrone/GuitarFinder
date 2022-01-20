@@ -6,16 +6,6 @@
     font-family: 'Roboto', sans-serif;
 }
 
-video {
-    position: fixed;
-    top: -110px;
- width: 100vw;
- height: auto;
- overflow: hidden;
- z-index: -10;
- visibility: visible;
- animation:wipe-in-left 2.5s;
-}  
 
 .playbutton {
     height: 64px;
@@ -45,7 +35,7 @@ video {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    overflow: hidden;
+    /* overflow: hidden; */
     h2{
         color: white;
         text-align: center;

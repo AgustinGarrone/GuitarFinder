@@ -1,3 +1,71 @@
+/*ANDABA BIEN HASTA AHORA CON NUMERO RAND*/
+ if (elecciones2.length>=0) {
+    let pricecoincidence=elecciones2.filter(el => !elecciones3.includes(el));
+    alert("SIII")
+    let checkrandom=-1
+    for (i=0;i<=10;i++) {
+        let randomnumber=random(pricecoincidence.length)
+            while (checkrandom==randomnumber) {
+               randomnumber=random(pricecoincidence.length)
+            }
+        checkrandom=randomnumber
+        if (elecciones4.length>0) {
+            if (pricecoincidence[randomnumber].brand===elecciones4[0].brand) {
+                results.innerHTML += `    
+               <div class=resultsCard>
+                 <span class=resultsCardPorcentaje><p>80%</p></span>
+                 <p class=resultsCardName>${pricecoincidence[randomnumber].name}</p>
+                 <img class=resultsCardImg src="${pricecoincidence[randomnumber].img}">
+                 <div class=resultsCardFail>
+                     <p>Price</p><img class=resultsCardFailImg src="./img/cruzroja.png">
+                 </div>
+               </div>
+                `;
+            } else {
+                results.innerHTML += `    
+                <div class=resultsCard>
+                  <span class=resultsCardPorcentaje><p>70%</p></span>
+                  <p class=resultsCardName>${pricecoincidence[randomnumber].name}</p>
+                  <img class=resultsCardImg src="${pricecoincidence[randomnumber].img}">
+                  <div class=resultsCardFail>
+                      <p>Price and brand</p><img class=resultsCardFailImg src="./img/cruzroja.png">
+                  </div>
+                </div>
+                 `;
+            }
+        }  else {
+            results.innerHTML += `    
+            <div class=resultsCard>
+              <span class=resultsCardPorcentaje><p>70%</p></span>
+              <p class=resultsCardName>${pricecoincidence[randomnumber].name}</p>
+              <img class=resultsCardImg src="${pricecoincidence[randomnumber].img}">
+              <div class=resultsCardFail>
+                  <p>Price and brand</p><img class=resultsCardFailImg src="./img/cruzroja.png">
+              </div>
+            </div>
+             `;
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*GUITARRAS DE DATABASE PARA ARROJAR ELECCIONES*/
 class GuitarrasDB {
     constructor (name,time,age,body,price,brand,color,img) {
@@ -97,7 +165,6 @@ h2option.classList.add("animate__animated")
 h2option.classList.add("animate__fadeInRight")
 divbodyoption.classList.add("bodyinfo")
 results.classList.add("results")
-results.setAttribute("id", "option6")
 /*OBTENCIÓN DE OPCIÓN MOSTRADA Y ARRAYS DE INPUTS*/
 var index=1;
 var option = document.getElementById("option"+index)
@@ -146,13 +213,15 @@ function mostrar() {
         divbodyoption.innerHTML=""
         console.log("ejecutada tercera opcion")
         break
-        case 4:chequeado4("a",4);
+        case 4:posiblescoincidencias4();
+            chequeado4("a",4);
         h2option.innerHTML="<h2>Do you have a brand preference?</h2>"
         console.log("ejecutada cuarta opcion")
         break
         case 5: chequeado5("a",5);
+            posiblescoincidencias5();
             option.style.display="none"   /*HACE QUE SE DESAPAREZCA LA ULTIMA OPCIÓN PARA DAR PASO A LOS RESULTADOS*/
-        case 6: if (elecciones4.length>=0) {
+        case 6: if (elecciones4.length>0) {
                    alert("HAY"+elecciones4.length+" SELECCIONES DEL 100%")
                    document.querySelector(".guitarFinderApp").style.display="none"
                    document.querySelector(".guitarFinder").prepend(results)
@@ -170,54 +239,66 @@ function mostrar() {
                           
                           guardarlocal(eleccion.name,JSON.stringify(eleccion))
                     }
-                if (elecciones2.length>=0) {
-                    let pricecoincidence=elecciones2.filter(el => !elecciones3.includes(el));
-                    alert("SIII")
-                    for (i=0;i<=pricecoincidence.length;i++) {
-                        if (i==6) {
-                            break
-                        }
-                        if (elecciones4.length>0) {
-                            if (pricecoincidence[i].brand===elecciones4[0].brand) {
-                                results.innerHTML += `    
+                } 
+                /*MUESTRA COINCIDENCIAS MENOS EN PRECIO Y MARCA,RESTANDO ARRAYS Y MOSTRANDO 3 ITEMS ALEATORIOS DEL ARRAY RESULTANTE*/
+                if (pricefailed.length>=0) {        
+                    alert("HAY " +pricefailed.length+". COINCIDENCIAS, CON PRECIO FALLADO")
+                    let restapricefailed=pricefailed.filter(el => !elecciones3.includes(el)); /*borro del array con los price failed los que estén incluidos en elecciones4*/
+                    let checkrandom=-1;
+                    for (let i=0; i<=1;i++) {
+                        let randomnumber=random(restapricefailed.length)
+                            while (checkrandom==randomnumber) {
+                               randomnumber=random(restapricefailed.length)
+                            }
+                            checkrandom=randomnumber
+                        alert("EL RANDOM NUMBER ES "+randomnumber)
+                        if (restapricefailed[randomnumber].brand===elecciones4[0].brand) {
+                            results.innerHTML += `    
                                <div class=resultsCard>
                                  <span class=resultsCardPorcentaje><p>80%</p></span>
-                                 <p class=resultsCardName>${pricecoincidence[i].name}</p>
-                                 <img class=resultsCardImg src="${pricecoincidence[i].img}">
+                                 <p class=resultsCardName>${restapricefailed[randomnumber].name}</p>
+                                 <img class=resultsCardImg src="${restapricefailed[randomnumber].img}">
                                  <div class=resultsCardFail>
                                      <p>Price</p><img class=resultsCardFailImg src="./img/cruzroja.png">
                                  </div>
                                </div>
-                                `;
-                            } else {
-                                results.innerHTML += `    
-                                <div class=resultsCard>
-                                  <span class=resultsCardPorcentaje><p>70%</p></span>
-                                  <p class=resultsCardName>${pricecoincidence[i].name}</p>
-                                  <img class=resultsCardImg src="${pricecoincidence[i].img}">
-                                  <div class=resultsCardFail>
-                                      <p>Price and brand</p><img class=resultsCardFailImg src="./img/cruzroja.png">
-                                  </div>
-                                </div>
-                                 `;
-                            }
+                    `;
                         }  else {
                             results.innerHTML += `    
-                            <div class=resultsCard>
-                              <span class=resultsCardPorcentaje><p>70%</p></span>
-                              <p class=resultsCardName>${pricecoincidence[i].name}</p>
-                              <img class=resultsCardImg src="${pricecoincidence[i].img}">
-                              <div class=resultsCardFail>
-                                  <p>Price and brand</p><img class=resultsCardFailImg src="./img/cruzroja.png">
-                              </div>
-                            </div>
-                             `;
+                    <div class=resultsCard>
+                        <span class=resultsCardPorcentaje><p>70%</p></span>
+                        <p class=resultsCardName>${restapricefailed[randomnumber].name}</p>
+                        <img class=resultsCardImg src="${restapricefailed[randomnumber].img}"
+                        <div class=resultsCardFail>
+                          <p>Price and Brand</p><img class=resultsCardFailImg src="./img/cruzroja.png">
+                        </div>
+                    </div>
+                    `; 
                         }
                     }
-
                 }
-                } 
-                
+                if (brandfailed.length>=0) {
+                    let restabrandfailed=brandfailed.filter(el => !elecciones4.includes(el));
+                    let checkrandom2=0;
+                    for (let i=0; i<=2;i++) {
+                        let randomnumber=random(restabrandfailed.length)
+                        while (checkrandom2==randomnumber) {
+                            randomnumber=random(restabrandfailed.length)
+                         }
+                         checkrandom2=randomnumber
+                        results.innerHTML += `    
+                    <div class=resultsCard>
+                        <span class=resultsCardPorcentaje><p>85%</p></span>
+                        <p class=resultsCardName>${restabrandfailed[randomnumber].name}</p>
+                        <img class=resultsCardImg src="${restabrandfailed[randomnumber].img}"
+                        <div class=resultsCardFail>
+                          <p>Brand</p><img class=resultsCardFailImg src="./img/cruzroja.png">
+                        </div>
+                    </div>
+                    `;
+                    }
+                }
+                /* break */
         }
         
     if (option.style.display ="flex") {    
@@ -304,7 +385,9 @@ console.log(opt1inputs)
 /*RESETEO DE INPUTS Y ARRAYS CON ELECCIONES*/
 
 function resetear() {
-    option.style.display="none"
+    if (index<=5) {
+        option.style.display="none"
+    }
     index=0;
     console.log(allinputs.length)
     for (let f=0; f<=allinputs[0].length;f++) {
@@ -483,20 +566,16 @@ function chequeado2(letra,inputindex) {
 
 /*FUNCIONES DE COINCIDENCIAS PARA IMPRIMIR*/
 
-/* function posiblescoincidencias4() {
-    pricefailed=elecciones2;
-    console.log("las price failed son "+pricefailed.length)
-    alert("encontramos coincidencias. Price X")
-} */
-
-/* function posiblescoincidencias5() {
-    if (elecciones4.length<2) {
-        brandfailed=elecciones3.concat(pricefailed);
-        console.log(brandfailed+" :BRAND FAILED")
-        alert("encontramos coincidencias. BRAND X") 
-    }
+function posiblescoincidencias4() {
+        pricefailed=elecciones2;
+        console.log("las price failed son "+pricefailed.length)
+        alert("encontramos coincidencias. Price X")
 }
- */
+function posiblescoincidencias5() {
+        brandfailed=elecciones3
+        alert("encontramos coincidencias. BRAND X") 
+}
+
 
  /*EFECTOS MUSICA */
 
