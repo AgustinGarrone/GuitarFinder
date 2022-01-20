@@ -140,7 +140,7 @@ function random (max) {
 
 
 /*FUNCIONES DE MOSTRAR RESULTADOS*/
-
+var marcaelegida=""
 function mostrar() {             
     switch(index) {
         case 1: chequeado1("a",1);
@@ -171,11 +171,11 @@ function mostrar() {
                     for (eleccion of elecciones4) {
                         results.style.display="flex"
                         results.innerHTML += `    
-                           <div class=resultsCard>
+                           <div class=resultsCard100>
                            <span class=resultsCardPorcentaje><p>100%</p></span>
-                           <p class=resultsCardName>${eleccion.name}</p>
-                           <img class=resultsCardImg src="${eleccion.img}"
-                           <p>${eleccion.price}</p>
+                           <p class=resultsCard100Name>${eleccion.name}</p>
+                           <img class=resultsCard100Img src="${eleccion.img}"
+                           <p class=resultsCardPrice>${eleccion.price}$</p>
                           </div>
                           `;
                           
@@ -188,51 +188,36 @@ function mostrar() {
                         if (i==6) {
                             break
                         }
-                        if (elecciones4.length>0) {
-                            if (pricecoincidence[i].brand===elecciones4[0].brand) {
-                                results.innerHTML += `    
-                               <div class=resultsCard>
-                                 <span class=resultsCardPorcentaje><p>80%</p></span>
-                                 <p class=resultsCardName>${pricecoincidence[i].name}</p>
-                                 <img class=resultsCardImg src="${pricecoincidence[i].img}">
+                        if (pricecoincidence[i].brand===marcaelegida) {
+                            results.innerHTML += `    
+                               <div class=resultsCard85>
+                                 <span class=resultsCardPorcentaje><p>85%</p></span>
+                                 <p class=resultsCard85Name>${pricecoincidence[i].name}</p>
+                                 <img class=resultsCard85Img src="${pricecoincidence[i].img}">
                                  <div class=resultsCardFail>
                                      <p>Price</p><img class=resultsCardFailImg src="./img/cruzroja.png">
                                  </div>
-                                 <p>${pricecoincidence[i].price}</p>
+                                 <p class=resultsCardPrice>${pricecoincidence[i].price}$</p>
                                </div>
-                                `;
-                            } else {
+                            `;
+                        }   else {
                                 results.innerHTML += `    
-                                <div class=resultsCard>
+                                <div class=resultsCard70>
                                   <span class=resultsCardPorcentaje><p>70%</p></span>
-                                  <p class=resultsCardName>${pricecoincidence[i].name}</p>
-                                  <img class=resultsCardImg src="${pricecoincidence[i].img}">
+                                  <p class=resultsCard70Name>${pricecoincidence[i].name}</p>
+                                  <img class=resultsCard70Img src="${pricecoincidence[i].img}">
                                   <div class=resultsCardFail>
                                       <p>Price and brand</p><img class=resultsCardFailImg src="./img/cruzroja.png">
                                   </div>
-                                  <p>${pricecoincidence[i].price}</p>
+                                  <p class=resultsCardPrice>${pricecoincidence[i].price}$</p>
                                 </div>
                                  `;
                             }
-                        }  else {
-                            results.innerHTML += `    
-                            <div class=resultsCard>
-                              <span class=resultsCardPorcentaje><p>70%</p></span>
-                              <p class=resultsCardName>${pricecoincidence[i].name}</p>
-                              <img class=resultsCardImg src="${pricecoincidence[i].img}">
-                              <div class=resultsCardFail>
-                                  <p>Price and brand</p><img class=resultsCardFailImg src="./img/cruzroja.png">
-                              </div>
-                              <p>${pricecoincidence[i].price}</p>
-                            </div>
-                             `;
-                        }
-                    }
+                    }  
+                }
 
                 }
                 } 
-                
-        }
         
     if (option.style.display ="flex") {    
        option.style.display ="none"
@@ -333,6 +318,7 @@ function resetear() {
     elecciones4=[]
     pricefailed=[]
     brandfailed=[]
+    marcaelegida=""
     results.innerHTML=""
     document.querySelector(".guitarFinderApp").style.display="flex"
     h2option.innerHTML="<h2>Are you a beginner or experienced guitarist?</h2>"
@@ -465,16 +451,19 @@ function chequeado2(letra,inputindex) {
         input= document.getElementById("opt"+inputindex+letra) 
         if (input.checked && letra=="a") {
              elecciones4=elecciones3.filter(p=>p.brand==="fender")
+             marcaelegida="fender"
              console.log(elecciones4)
              break
         }
         else if (input.checked && letra=="b") {
             elecciones4=elecciones3.filter(p=>p.brand==="gibson")
+            marcaelegida="gibson"
             console.log(elecciones4)
             break
         }
         else if (input.checked && letra=="c") {
             elecciones4=elecciones3.filter(p=>p.brand==="ibanez")
+            marcaelegida="ibanez"
             console.log(elecciones4)
             break
         }

@@ -49,18 +49,6 @@
     }
 }
 
-.guitarFinderAppInicio {
-    .slider {
-        width: 2000px;
-        height: 200px;
-        position: relative;
-        animation: slider 10s infinite;
-        display: flex;
-        align-items: center;
-        justify-content: space-around; 
-        
-    } 
-}
 
 .guitarFinderApp {
     width: 70vw;
@@ -213,7 +201,7 @@
 }
 
 
-.resultsCard {
+.resultsCard100 {
     height: 500px;
     width: 350px;
     display: flex;
@@ -225,6 +213,49 @@
     border-radius: 15px;
     backdrop-filter: blur(5px);
     position: relative;
+    order: 1;
+    &Img {
+        height: 300px;
+        width: 300px;
+    }
+    &name {
+        text-align: center;
+    }
+}
+.resultsCard85 {
+    height: 500px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    background: rgba(255,255,255,0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    position: relative;
+    order: 2;
+    &Img {
+        height: 300px;
+        width: 300px;
+    }
+    &name {
+        text-align: center;
+    }
+}
+.resultsCard70 {
+    height: 500px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    background: rgba(255,255,255,0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    position: relative;
+    order: 3;
     &Img {
         height: 300px;
         width: 300px;
@@ -235,12 +266,67 @@
 }
 
 
-.resultsCard:hover {
+
+.resultsCard100:hover {
     background-color: black;
     transition: 0.8s;
+    .resultsCardPrice {
+        width: 50px;
+        height: 20px;
+        background-color: green;
+        margin-top: 10px;
+        text-align: center;
+    }
     &name {
         color: white;
     }
+    
+    &Img:hover {
+        height: 350px;
+        width: 350px;
+
+    }
+    p {
+        color:white;
+    }
+}  
+.resultsCard85:hover {
+    background-color: black;
+    transition: 0.8s;
+    .resultsCardPrice {
+        width: 50px;
+        height: 20px;
+        background-color: green;
+        margin-top: 10px;
+        text-align: center;
+    }
+    &name {
+        color: white;
+    }
+    
+    &Img:hover {
+        height: 350px;
+        width: 350px;
+
+    }
+    p {
+        color:white;
+    }
+}  
+.resultsCard70:hover {
+    background-color: black;
+    transition: 0.8s;
+    .resultsCardPrice {
+        width: 50px;
+        height: 20px;
+        background-color: green;
+        margin-top: 10px;
+        text-align: center;
+    }
+    &name {
+        color: white;
+    }
+    
     &Img:hover {
         height: 350px;
         width: 350px;
@@ -272,15 +358,19 @@
         color: black;
     }
 }
+
+
 .resultsCardFail {
     display: flex;
     align-items: center;
+    padding-top: 10px;
     p {
         color: white;
     }
     &Img {
         width: 20px;
         height: 20px;
+        margin-left: 15px;
     }
 }
 
@@ -295,7 +385,6 @@
     flex-direction: row;
     justify-content: center;
     margin-top: 80px;
-    flex-wrap: wrap;
 }
 
 

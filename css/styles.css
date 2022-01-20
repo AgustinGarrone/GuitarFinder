@@ -65,22 +65,6 @@ input {
           justify-content: center;
 }
 
-.guitarFinderAppInicio .slider {
-  width: 2000px;
-  height: 200px;
-  position: relative;
-  -webkit-animation: slider 10s infinite;
-          animation: slider 10s infinite;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
 .guitarFinderApp {
   width: 70vw;
   height: 700px;
@@ -265,7 +249,7 @@ input {
   display: none;
 }
 
-.resultsCard {
+.resultsCard100 {
   height: 500px;
   width: 350px;
   display: -webkit-box;
@@ -288,33 +272,172 @@ input {
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   position: relative;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 
-.resultsCardImg {
+.resultsCard100Img {
   height: 300px;
   width: 300px;
 }
 
-.resultsCardname {
+.resultsCard100name {
   text-align: center;
 }
 
-.resultsCard:hover {
+.resultsCard85 {
+  height: 500px;
+  width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+          box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  position: relative;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.resultsCard85Img {
+  height: 300px;
+  width: 300px;
+}
+
+.resultsCard85name {
+  text-align: center;
+}
+
+.resultsCard70 {
+  height: 500px;
+  width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+          box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  position: relative;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+.resultsCard70Img {
+  height: 300px;
+  width: 300px;
+}
+
+.resultsCard70name {
+  text-align: center;
+}
+
+.resultsCard100:hover {
   background-color: black;
   -webkit-transition: 0.8s;
   transition: 0.8s;
 }
 
-.resultsCard:hovername {
+.resultsCard100:hover .resultsCardPrice {
+  width: 50px;
+  height: 20px;
+  background-color: green;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.resultsCard100:hovername {
   color: white;
 }
 
-.resultsCard:hoverImg:hover {
+.resultsCard100:hoverImg:hover {
   height: 350px;
   width: 350px;
 }
 
-.resultsCard:hover p {
+.resultsCard100:hover p {
+  color: white;
+}
+
+.resultsCard85:hover {
+  background-color: black;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.resultsCard85:hover .resultsCardPrice {
+  width: 50px;
+  height: 20px;
+  background-color: green;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.resultsCard85:hovername {
+  color: white;
+}
+
+.resultsCard85:hoverImg:hover {
+  height: 350px;
+  width: 350px;
+}
+
+.resultsCard85:hover p {
+  color: white;
+}
+
+.resultsCard70:hover {
+  background-color: black;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.resultsCard70:hover .resultsCardPrice {
+  width: 50px;
+  height: 20px;
+  background-color: green;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.resultsCard70:hovername {
+  color: white;
+}
+
+.resultsCard70:hoverImg:hover {
+  height: 350px;
+  width: 350px;
+}
+
+.resultsCard70:hover p {
   color: white;
 }
 
@@ -345,6 +468,7 @@ input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 10px;
 }
 
 .resultsCardFail p {
@@ -354,6 +478,7 @@ input {
 .resultsCardFailImg {
   width: 20px;
   height: 20px;
+  margin-left: 15px;
 }
 
 .activeimg {
@@ -377,7 +502,5 @@ input {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 80px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 /*# sourceMappingURL=styles.css.map */
