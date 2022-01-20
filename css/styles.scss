@@ -166,6 +166,10 @@
     }
     &3 {
         display: none;
+        .firstimage {
+            width: 350;
+            height: 300px;
+        }
         img {
             height: 300px;
             width: 300px;
@@ -291,6 +295,7 @@
     flex-direction: row;
     justify-content: center;
     margin-top: 80px;
+    flex-wrap: wrap;
 }
 
 

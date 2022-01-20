@@ -54,12 +54,22 @@ const prod38=new GuitarrasDB("Fender Player Stratocaster Maple Fingerboard Elect
 const prod39=new GuitarrasDB("Fender American Performer Stratocaster HSS Maple","basicadvanced","kidadult","solidbody",1300,"fender","other","./img/guitar39.png")
 const prod40=new GuitarrasDB("Fender Telecaster Richie Kotzen Solid Body Electric Guitar Brown Sunburst","advanced","kidadult","solidbody",1700,"fender","other","./img/guitar40.png")
 const prod41=new GuitarrasDB("Squier Stratocaster Electric Guitar Pack With Squier Frontman 10G Amp Black","basic","kidadult","solidbody",289,"fender","blackother","./img/guitar41.png")
+const prod42=new GuitarrasDB("Fender Stratocaster HSS Plus Top Maple Limited-Edition","basicadvanced","kidadult","solidbody",900,"fender","blackother","./img/guitar42.png")
+const prod43=new GuitarrasDB("Epiphone 1959 Les Paul Standard Outfit Electric Guitar Aged Dark Burst","basicadvanced","kidadult","hollowbody",849,"gibson","other","./img/guitar43.png")
+const prod44=new GuitarrasDB("Squier Bullet Stratocaster HSS Hardtail Limited-Edition","basicadvanced","kidadult","solidbody",249,"fender","black","./img/guitar44.png")
+const prod45=new GuitarrasDB("Squier Affinity Series Starcaster Maple Fingerboard Electric Guitar Olympic White","basicadvanced","kidadult","semihollow",329,"fender","white","./img/guitar45.png")
+const prod46=new GuitarrasDB("Ibanez AM73B Electric Guitar Flat Tobacco","basicadvanced","adult","semihollow",399,"ibanez","other","./img/guitar46.png")
+const prod47=new GuitarrasDB("Ibanez AG85 AG Hollow Body Electric Guitar Flat Black","basicadvanced","kidadult","hollowbody",399,"ibanez","black","./img/guitar47.png")
+const prod48=new GuitarrasDB("Ibanez GB10EM George Benson Hollowbody Electric Guitar Jet Blue Burst","basicadvanced","kidadult","hollowbody",699,"ibanez","other","./img/guitar48.png")
+const prod49=new GuitarrasDB("Epiphone Firebird Electric Guitar Vintage Sunburst","basicadvanced","kidadult","solidbody",649,"gibson","other","./img/guitar49.png")
+const prod50=new GuitarrasDB("Guild Starfire I SC with Guild Vibrato Tailpiece Semi-Hollow Electric Guitar Sea Foam Green","basicadvanced","kidadult","semihollow",649,"other","other","./img/guitar50.png")
+const prod51=new GuitarrasDB("Guild Starfire I DC with Guild Vibrato Tailpiece Semi-Hollow Electric Guitar Pelham Blue","basicadvanced","kidadult","semihollow",565,"other","other","./img/guitar51.png")
 
 
 
 /*ARRAYS DE LAS OPCIONES*/
-var timeBasic=[prod1,prod2,prod3,prod4,prod5,prod6,prod7,prod8,prod9,prod10,prod11,prod12,prod14,prod19,prod20,prod21,prod25,prod26,prod28,prod29,prod30,prod31,prod32,prod33,prod34,prod38,prod39,prod41]
-var timeAdvanced=[prod9,prod10,prod11,prod12,prod13,prod14,prod15,prod16,prod17,prod18,prod19,prod20,prod21,prod22,prod23,prod24,prod25,prod26,prod27,prod28,prod29,prod30,prod31,prod32,prod33,prod34,prod35,prod36,prod37,prod38,prod39,prod40]
+var timeBasic=[prod1,prod2,prod3,prod4,prod5,prod6,prod7,prod8,prod9,prod10,prod11,prod12,prod14,prod19,prod20,prod21,prod25,prod26,prod28,prod29,prod30,prod31,prod32,prod33,prod34,prod38,prod39,prod41,prod42,prod43,prod44,prod45,prod46,prod47,prod48,prod49,prod50,prod51]
+var timeAdvanced=[prod9,prod10,prod11,prod12,prod13,prod14,prod15,prod16,prod17,prod18,prod19,prod20,prod21,prod22,prod23,prod24,prod25,prod26,prod27,prod28,prod29,prod30,prod31,prod32,prod33,prod34,prod35,prod36,prod37,prod38,prod39,prod40,prod42,prod43,prod44,prod45,prod46,prod47,prod48,prod49,prod50,prod51]
 
 /*FUNCIÓN PARA GUARDAR EN LOCALSTORAGE*/
 const guardarlocal=(clave,valor)=>{localStorage.setItem(clave,valor)}
@@ -165,6 +175,7 @@ function mostrar() {
                            <span class=resultsCardPorcentaje><p>100%</p></span>
                            <p class=resultsCardName>${eleccion.name}</p>
                            <img class=resultsCardImg src="${eleccion.img}"
+                           <p>${eleccion.price}</p>
                           </div>
                           `;
                           
@@ -187,6 +198,7 @@ function mostrar() {
                                  <div class=resultsCardFail>
                                      <p>Price</p><img class=resultsCardFailImg src="./img/cruzroja.png">
                                  </div>
+                                 <p>${pricecoincidence[i].price}</p>
                                </div>
                                 `;
                             } else {
@@ -198,6 +210,7 @@ function mostrar() {
                                   <div class=resultsCardFail>
                                       <p>Price and brand</p><img class=resultsCardFailImg src="./img/cruzroja.png">
                                   </div>
+                                  <p>${pricecoincidence[i].price}</p>
                                 </div>
                                  `;
                             }
@@ -210,6 +223,7 @@ function mostrar() {
                               <div class=resultsCardFail>
                                   <p>Price and brand</p><img class=resultsCardFailImg src="./img/cruzroja.png">
                               </div>
+                              <p>${pricecoincidence[i].price}</p>
                             </div>
                              `;
                         }
@@ -416,13 +430,13 @@ function chequeado2(letra,inputindex) {
     for (let m=1;m<4;m++ ) {
         input= document.getElementById("opt"+inputindex+letra) 
         if (input.checked && letra=="a") {
-             elecciones3=elecciones2.filter(p=>p.price<=300)
+             elecciones3=elecciones2.filter(p=>p.price<=400)
              console.log(elecciones3)
              console.log("anda el precio")
              break
         }
         else if (input.checked && letra=="b") {
-            elecciones3=elecciones2.filter(p=>p.price>300 && p.price<=700)
+            elecciones3=elecciones2.filter(p=>p.price>400 && p.price<=700)
             console.log(elecciones3)
             console.log("anda el precio")
             break

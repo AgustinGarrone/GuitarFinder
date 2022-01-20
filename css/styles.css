@@ -209,6 +209,11 @@ input {
   display: none;
 }
 
+#option3 .firstimage {
+  width: 350;
+  height: 300px;
+}
+
 #option3 img {
   height: 300px;
   width: 300px;
@@ -372,5 +377,7 @@ input {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 80px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 /*# sourceMappingURL=styles.css.map */
