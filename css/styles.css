@@ -297,7 +297,7 @@ input {
   position: relative;
 }
 
-.resultsCard img {
+.resultsCardImg {
   height: 300px;
   width: 300px;
 }
@@ -316,7 +316,7 @@ input {
   color: white;
 }
 
-.resultsCard:hover img {
+.resultsCard:hoverImg:hover {
   height: 350px;
   width: 350px;
 }
@@ -343,6 +343,24 @@ input {
 
 .resultsCardPorcentaje:hover p {
   color: black;
+}
+
+.resultsCardFail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.resultsCardFail p {
+  color: white;
+}
+
+.resultsCardFailImg {
+  width: 20px;
+  height: 20px;
 }
 
 .activeimg {

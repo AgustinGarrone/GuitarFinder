@@ -120,6 +120,13 @@ function empezar () {
     document.querySelector(".guitarFinder").prepend(h2option)
 }
 
+/*FUNCIÓN PARA MOSTRAR NUMERO RANDOM DENTRO DE ARRAY*/
+
+function random (max) {
+    let num=Math.floor(Math.random()*max);
+    return num
+}  
+
 
 /*FUNCIONES DE MOSTRAR RESULTADOS*/
 
@@ -138,9 +145,9 @@ function mostrar() {
         divbodyoption.innerHTML=""
         console.log("ejecutada tercera opcion")
         break
-        case 4:chequeado4("a",4);
+        case 4:posiblescoincidencias4();
+            chequeado4("a",4);
         h2option.innerHTML="<h2>Do you have a brand preference?</h2>"
-        posiblescoincidencias4();
         console.log("ejecutada cuarta opcion")
         break
         case 5: chequeado5("a",5);
@@ -158,22 +165,43 @@ function mostrar() {
                            <div class=resultsCard>
                            <span class=resultsCardPorcentaje><p>100%</p></span>
                            <p class=resultsCardName>${eleccion.name}</p>
-                           <img src="${eleccion.img}"
+                           <img class=resultsCardImg src="${eleccion.img}"
                           </div>
                           `;
                           
                           guardarlocal(eleccion.name,JSON.stringify(eleccion))
                     }
-                }
-                if (pricefailed.length>=0) {
+                } 
+                /*MUESTRA COINCIDENCIAS MENOS EN PRECIO Y MARCA,RESTANDO ARRAYS Y MOSTRANDO 3 ITEMS ALEATORIOS DEL ARRAY RESULTANTE*/
+                if (pricefailed.length>=0) {        
                     alert("HAY " +pricefailed.length+". COINCIDENCIAS, CON PRECIO FALLADO")
-                    for (let i=0; i<=pricefailed.length;i++) {
-                        results.innerHTML += `    
-                    <div class=resultsCardMatchs1>
-                        <p>${pricefailed[i].name}</p>
-                        <img src="${pricefailed[i].img}"
-                    </div>
+                    let restapricefailed=pricefailed.filter(el => !elecciones4.includes(el));
+                    for (let i=0; i<=2;i++) {
+                        let randomnumber=random(restapricefailed.length)
+                        alert("EL RANDOM NUMBER ES "+randomnumber)
+                        if (restapricefailed[randomnumber].brand===elecciones4[0].brand) {
+                            results.innerHTML += `    
+                               <div class=resultsCard>
+                                 <span class=resultsCardPorcentaje><p>80%</p></span>
+                                 <p class=resultsCardName>${restapricefailed[randomnumber].name}</p>
+                                 <img class=resultsCardImg src="${restapricefailed[randomnumber].img}">
+                                 <div class=resultsCardFail>
+                                     <p>Price</p><img class=resultsCardFailImg src="./img/cruzroja.png">
+                                 </div>
+                               </div>
                     `;
+                        }  else {
+                            results.innerHTML += `    
+                    <div class=resultsCard>
+                        <span class=resultsCardPorcentaje><p>70%</p></span>
+                        <p class=resultsCardName>${restapricefailed[randomnumber].name}</p>
+                        <img class=resultsCardImg src="${restapricefailed[randomnumber].img}"
+                        <div class=resultsCardFail>
+                          <p>Price and Brand</p><img class=resultsCardFailImg src="./img/cruzroja.png">
+                        </div>
+                    </div>
+                    `; 
+                        }
                     }
                 }
                 if (brandfailed.length>=0) {
@@ -187,7 +215,7 @@ function mostrar() {
                     `;
                     }
                 }
-                break
+                /* break */
         }
         
     if (option.style.display ="flex") {    
@@ -452,13 +480,11 @@ function chequeado2(letra,inputindex) {
 
 
 /*FUNCIONES DE COINCIDENCIAS PARA IMPRIMIR*/
-  
+
 function posiblescoincidencias4() {
-    if (elecciones3.length<2) {
         pricefailed=elecciones2;
-        console.log(pricefailed)
+        console.log("las price failed son "+pricefailed.length)
         alert("encontramos coincidencias. Price X")
-    }
 }
 function posiblescoincidencias5() {
     if (elecciones4.length<2) {

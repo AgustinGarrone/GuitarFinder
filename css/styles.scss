@@ -231,7 +231,7 @@ video {
     border-radius: 15px;
     backdrop-filter: blur(5px);
     position: relative;
-    img {
+    &Img {
         height: 300px;
         width: 300px;
     }
@@ -247,7 +247,7 @@ video {
     &name {
         color: white;
     }
-    img {
+    &Img:hover {
         height: 350px;
         width: 350px;
 
@@ -276,6 +276,17 @@ video {
 .resultsCardPorcentaje:hover {
     p {
         color: black;
+    }
+}
+.resultsCardFail {
+    display: flex;
+    align-items: center;
+    p {
+        color: white;
+    }
+    &Img {
+        width: 20px;
+        height: 20px;
     }
 }
 
