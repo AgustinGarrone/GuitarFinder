@@ -61,6 +61,9 @@ const prod41=new GuitarrasDB("Squier Stratocaster Electric Guitar Pack With Squi
 var timeBasic=[prod1,prod2,prod3,prod4,prod5,prod6,prod7,prod8,prod9,prod10,prod11,prod12,prod14,prod19,prod20,prod21,prod25,prod26,prod28,prod29,prod30,prod31,prod32,prod33,prod34,prod38,prod39,prod41]
 var timeAdvanced=[prod9,prod10,prod11,prod12,prod13,prod14,prod15,prod16,prod17,prod18,prod19,prod20,prod21,prod22,prod23,prod24,prod25,prod26,prod27,prod28,prod29,prod30,prod31,prod32,prod33,prod34,prod35,prod36,prod37,prod38,prod39,prod40]
 
+/*FUNCIÓN PARA GUARDAR EN LOCALSTORAGE*/
+const guardarlocal=(clave,valor)=>{localStorage.setItem(clave,valor)}
+
 var elecciones=[]
 var elecciones1=[]
 var elecciones2=[]
@@ -115,7 +118,7 @@ function empezar () {
     document.querySelector(".guitarFinder").prepend(h2option)
 }
 
-  
+
 /*FUNCIONES DE MOSTRAR RESULTADOS*/
 
 function mostrar() {             
@@ -144,6 +147,7 @@ function mostrar() {
         case 6: if (elecciones4.length>=0) {
                    alert("HAY"+elecciones4.length+" SELECCIONES DEL 100%")
                    document.querySelector(".guitarFinderApp").style.display="none"
+                   h2option.innerHTML="This is for YOU :)"
                     for (eleccion of elecciones4) {
                         results.style.display="flex"
                         results.innerHTML += `    
@@ -153,6 +157,8 @@ function mostrar() {
                            <img src="${eleccion.img}"
                           </div>
                           `;
+                          
+                          guardarlocal(eleccion.name,JSON.stringify(eleccion))
                     }
                 }
                 if (pricefailed.length>=0) {
@@ -437,6 +443,8 @@ function chequeado2(letra,inputindex) {
        
     }
  }
+
+
 
 
 /*FUNCIONES DE COINCIDENCIAS PARA IMPRIMIR*/

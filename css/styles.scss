@@ -239,6 +239,25 @@ video {
         text-align: center;
     }
 }
+
+
+.resultsCard:hover {
+    background-color: black;
+    transition: 0.8s;
+    &name {
+        color: white;
+    }
+    img {
+        height: 350px;
+        width: 350px;
+
+    }
+    p {
+        color:white;
+    }
+}  
+
+
 .resultsCardPorcentaje {
     width: 40px;
     height: 40px;
@@ -254,18 +273,11 @@ video {
     }
 }
 
-.resultsCard:hover {
-    background-color: black;
-    transition: 0.8s;
-    &name {
-        color: white;
+.resultsCardPorcentaje:hover {
+    p {
+        color: black;
     }
-    img {
-        height: 350px;
-        width: 350px;
-
-    }
-}  
+}
 
 .activeimg {
     filter: drop-shadow(10px 10px 10px yellow);

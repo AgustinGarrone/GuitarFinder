@@ -306,6 +306,25 @@ input {
   text-align: center;
 }
 
+.resultsCard:hover {
+  background-color: black;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.resultsCard:hovername {
+  color: white;
+}
+
+.resultsCard:hover img {
+  height: 350px;
+  width: 350px;
+}
+
+.resultsCard:hover p {
+  color: white;
+}
+
 .resultsCardPorcentaje {
   width: 40px;
   height: 40px;
@@ -322,19 +341,8 @@ input {
   padding-top: 8px;
 }
 
-.resultsCard:hover {
-  background-color: black;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
-}
-
-.resultsCard:hovername {
-  color: white;
-}
-
-.resultsCard:hover img {
-  height: 350px;
-  width: 350px;
+.resultsCardPorcentaje:hover p {
+  color: black;
 }
 
 .activeimg {
