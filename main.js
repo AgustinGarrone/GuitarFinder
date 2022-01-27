@@ -404,7 +404,7 @@ function chequeado2(letra,inputindex) {
     for (let m=1;m<4;m++ ) {
         input= document.getElementById("opt"+inputindex+letra) 
         if (input.checked && letra=="a") {
-             elecciones3=elecciones2.filter(p=>p.price<=400
+             elecciones3=elecciones2.filter(p=>p.price<=400)
              console.log(elecciones3)
              console.log("anda el precio")
              break
