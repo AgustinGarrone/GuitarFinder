@@ -79,9 +79,6 @@ var elecciones1=[]
 var elecciones2=[]
 var elecciones3=[]
 var elecciones4=[]
-var pricefailed=[]
-var brandfailed=[]
-
 
 
 
@@ -309,8 +306,6 @@ function resetear() {
     elecciones2=[]
     elecciones3=[]
     elecciones4=[]
-    pricefailed=[]
-    brandfailed=[]
     marcaelegida=""
     results.innerHTML=""
     document.querySelector(".guitarFinderApp").style.display="flex"
@@ -409,7 +404,7 @@ function chequeado2(letra,inputindex) {
     for (let m=1;m<4;m++ ) {
         input= document.getElementById("opt"+inputindex+letra) 
         if (input.checked && letra=="a") {
-             elecciones3=elecciones2.filter(p=>p.price<=400)
+             elecciones3=elecciones2.filter(p=>p.price<=400
              console.log(elecciones3)
              console.log("anda el precio")
              break
