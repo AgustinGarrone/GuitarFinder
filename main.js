@@ -87,15 +87,14 @@ var brandfailed=[]
 
 /*OBTENCIÓN BOTONES DEL PROGRAMA*/
 
-var botones=document.querySelector(".guitarFinderButtonContainer")
-var startboton=document.querySelector(".startButton")
-var nextboton=document.getElementById("gfNextButton")
-var resetboton=document.querySelector(".backbutton")
-var results=document.querySelector(".results")
+var botones=$(".guitarFinderButtonContainer")
+var startboton=$(".startButton")
+var nextboton=$("#gfNextButton")
+var resetboton=$(".backbutton")
 
-startboton.addEventListener("click",empezar)
-resetboton.addEventListener("click",resetear)
-nextboton.addEventListener("click",mostrar)
+startboton.click(empezar)
+resetboton.click(resetear)
+nextboton.click(mostrar)
 
 /*OBTENCIÓN TEXTOS PROGRAMA*/
 var startText=document.querySelector(".guitarFinderText")
@@ -113,19 +112,15 @@ var index=1;
 var option = document.getElementById("option"+index)
 
 
-var allinputs=new Array(document.getElementsByTagName("input"))
-var opt1inputs=[allinputs[0][0],allinputs[0][1],allinputs[0][2],allinputs[0][3],allinputs[0][4],allinputs[0][5],allinputs[0][6],allinputs[0][7],allinputs[0][8],allinputs[0][9],allinputs[0][10],allinputs[0][11],allinputs[0][12],allinputs[0][13],allinputs[0][14]]
-console.log(allinputs[0])
-console.log(opt1inputs)
-
-
+var allinputs=document.getElementsByTagName("input")
 
 /*FUNCION PARA EMPEZAR LA APP*/
 function empezar () {
-    startboton.style.display="none"
+    startboton.hide()
     startText.style.display="none"
     document.querySelector(".guitarFinderApp").style.display="flex"
-    botones.style.display="flex"
+    botones.show()
+    botones.css('display', 'flex');
     option.style.display="flex"
     h2option.innerHTML="<h2>Are you a beginner or experienced guitarist?</h2>"
     document.querySelector(".guitarFinder").prepend(h2option)
@@ -239,27 +234,27 @@ var input= document.getElementById("opt"+index+letra)
 
 function seleccion (indi){
     let stop=false
-    if (opt1inputs[indi].checked==true) {
+    if (allinputs[indi].checked==true) {
         arrayimg[indi+1].classList.add("activeimg")
-    } else if (opt1inputs[indi].checked==false) {
+    } else if (allinputs[indi].checked==false) {
         arrayimg[indi+1].classList.remove("activeimg")
     } 
-    if (indi==4 && opt1inputs[indi].checked==true) {
+    if (indi==4 && allinputs[indi].checked==true) {
         divbodyoption.innerHTML="<p>Solidbody electrics provide more sustain and are less susceptible to feedback. Solidbody electrics are staples in most popular music styles, including rock, country and blues.</p>"
         document.querySelector(".guitarFinderApp").appendChild(divbodyoption)
-    } else if (indi==4 && opt1inputs[indi].checked==false) {
+    } else if (indi==4 && allinputs[indi].checked==false) {
         divbodyoption.innerHTML=""
     }
-    if (indi==5 && opt1inputs[indi].checked==true) {
+    if (indi==5 && allinputs[indi].checked==true) {
         divbodyoption.innerHTML="<p>Semi-hollow body electrics combine the style and resonant, warm sound of a hollowbody with the feedback-fighting benefits and longer sustain of a solidbody. Their distinctive tones are popular among rock, blues and rockabilly players.</p>"
         document.querySelector(".guitarFinderApp").appendChild(divbodyoption)
-    } else if (indi==5 && opt1inputs[indi].checked==false) {
+    } else if (indi==5 && allinputs[indi].checked==false) {
         divbodyoption.innerHTML=""
     }
-    if (indi==6 && opt1inputs[indi].checked==true) {
+    if (indi==6 && allinputs[indi].checked==true) {
         divbodyoption.innerHTML="<p>Hollowbody guitars retain the natural, airy and woody sound of an acoustic guitar, but are prone to feedback when amplified at high volume levels. Hollowbody guitars are popular among jazz, country and folk players.</p>"
         document.querySelector(".guitarFinderApp").appendChild(divbodyoption)
-    } else if (indi==6 && opt1inputs[indi].checked==false) {
+    } else if (indi==6 && allinputs[indi].checked==false) {
         divbodyoption.innerHTML=""
     }
 }
@@ -270,28 +265,28 @@ var contador=0
 switch (index) {
     case 1:
         console.log("EL INDEX ESSS DE "+index)
-        opt1inputs[contador].addEventListener("change",()=> seleccion(0))
-        opt1inputs[contador+1].addEventListener("change",()=> seleccion(1))
+        allinputs[contador].addEventListener("change",()=> seleccion(0))
+        allinputs[contador+1].addEventListener("change",()=> seleccion(1))
     case 2:
         contador=2
         console.log("EL INDEX ESSS DE "+index)
-        opt1inputs[contador].addEventListener("change",()=> seleccion(2))
-        opt1inputs[contador+1].addEventListener("change",()=> seleccion(3))
+        allinputs[contador].addEventListener("change",()=> seleccion(2))
+        allinputs[contador+1].addEventListener("change",()=> seleccion(3))
     case 3:
         console.log("EL INDEX ESSS DE "+index)
         contador=4
-        opt1inputs[contador].addEventListener("change",()=> seleccion(4))
-        opt1inputs[contador+1].addEventListener("change",()=> seleccion(5))
-        opt1inputs[contador+2].addEventListener("change",()=> seleccion(6))
-        opt1inputs[contador+3].addEventListener("change",()=> seleccion(7))
-        opt1inputs[contador+4].addEventListener("change",()=> seleccion(8))
-        opt1inputs[contador+5].addEventListener("change",()=> seleccion(9))
-        opt1inputs[contador+6].addEventListener("change",()=> seleccion(10))
-        opt1inputs[contador+7].addEventListener("change",()=> seleccion(11))
-        opt1inputs[contador+8].addEventListener("change",()=> seleccion(12))
+        allinputs[contador].addEventListener("change",()=> seleccion(4))
+        allinputs[contador+1].addEventListener("change",()=> seleccion(5))
+        allinputs[contador+2].addEventListener("change",()=> seleccion(6))
+        allinputs[contador+3].addEventListener("change",()=> seleccion(7))
+        allinputs[contador+4].addEventListener("change",()=> seleccion(8))
+        allinputs[contador+5].addEventListener("change",()=> seleccion(9))
+        allinputs[contador+6].addEventListener("change",()=> seleccion(10))
+        allinputs[contador+7].addEventListener("change",()=> seleccion(11))
+        allinputs[contador+8].addEventListener("change",()=> seleccion(12))
    /*  case 2:opt2inputs[contador].addEventListener */
 }
-console.log(opt1inputs)
+console.log(allinputs)
 
 
 
