@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="./css/transition.min.css">
+    <link rel="stylesheet" href="/splide-3.6.12/dist/css/splide.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
@@ -21,35 +22,37 @@
            <h1 class="animate__animated animate__fadeInRight">The guitar finder</h1>
            <p class="animate__animated animate__fadeInRight">Find your perfect electric guitar in seconds!</p>
         </div>
-         <div transition-style="in:circle:center" class="guitarFinderApp">
-<!--             <div class="animation-area">
-              <ul class="box-area">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+        <section class="results">
+          <div class="splide">
+            <div class="splide__track">
+              <ul class="splide__list">
               </ul>
-            </div> -->
+            </div>
+          </div>
+        </section>
+         <div transition-style="in:circle:center" class="guitarFinderApp">
             <div id="option1">
                 <label for="opt1a">
+                  <p class="option__text">Beginner</p>
                   <input type="checkbox"  id="opt1a">
                    <img class="animate__animated animate__fadeIn imgopt1" src="img/guitar2.png" alt="">
                 </label>
                 <input type="checkbox" id="opt1b" >
                 <label for="opt1b">
+                  <p class="option__text">Experienced</p>
                    <img class="animate__animated animate__fadeIn" src="img/guitar15.png" alt="">
                 </label>
             </div>
 
             <div id="option2">
-                <input type="checkbox"  id="opt2a"> Kid
+                <input type="checkbox"  id="opt2a"> 
                 <label for="opt2a">
+                  <p class="option__text">Kid</p>
                   <img class="animate__animated animate__fadeIn"src="img/kid.png" alt="">
                 </label>
-                <input type="checkbox" id="opt2b">Adult
+                <input type="checkbox" id="opt2b">
                 <label for="opt2b">
+                  <p class="option__text">Adult</p>
                   <img class="animate__animated animate__fadeIn"src="img/adult.jpg" alt="">
                 </label>
            </div>
@@ -70,17 +73,20 @@
                   </div>
                 <div id="option4">
                   <label for="opt4a">
+                    <p class="option__text">Something reasonably priced while learning</p>
                     <img class="animate__animated animate__fadeIn"  src="img/money.png" alt="">
                   </label>
-                    <input type="checkbox" id="opt4a">Something reasonably priced while learning
+                    <input type="checkbox" id="opt4a">
                   <label for="opt4b">
+                    <p class="option__text">Good quality at an affordable price</p>
                     <img class="animate__animated animate__fadeIn" src="img/money.png" alt="">
                   </label>
-                    <input type="checkbox" id="opt4b">Good quality at an affordable price
+                    <input type="checkbox" id="opt4b">
                   <label for="opt4c">
+                    <p class="option__text">Give me the best</p>
                     <img class="animate__animated animate__fadeIn" src="img/money.png" alt="">
                   </label>
-                    <input type="checkbox" id="opt4c">Give me the best
+                    <input type="checkbox" id="opt4c">
                   </div>
                 <div id="option5">
                   <label for="opt5a">
@@ -100,25 +106,7 @@
                   </label>
                     <input type="checkbox" id="opt5d">
 
-                  </div>
-               <!--  <div id="option6">
-                  <label for="opt6a">
-                    <img src="img/wood.png" alt="">
-                  </label>
-                    <input type="checkbox" id="opt6a">Black
-                  <label for="opt6b">
-                    <img src="img/wood.png" alt="">
-                  </label>
-                    <input type="checkbox" id="opt6b">White
-                  <label for="opt6c">
-                    <img src="img/wood.png" alt="">
-                  </label>
-                    <input type="checkbox" id="opt6c">Other
-                  <label for="opt6d">
-                    <img src="img/wood.png" alt="">
-                  </label>
-                    <input type="checkbox" id="opt6d">Show me all
-                  </div> -->
+                  </div>            
                   <audio src="hovereffect.mp3" id="enter"></audio>
                   <audio src="hovereffect.mp3" id="leave"></audio>
          </div>
@@ -135,7 +123,13 @@
     <script
        src="https://code.jquery.com/jquery-3.6.0.min.js"
        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-       crossorigin="anonymous"></script>
-    <script src="main.js"></script>
+       crossorigin="anonymous">
+    </script>
+    <script src="/splide-3.6.12/dist/js/splide.min.js"></script>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/guitarras.js"></script>
+    <script src="./scripts/resetFinder.js"></script>
+    <script src="./scripts/resultados.js"></script>
+    <script src="./scripts/slider.js"></script>
 </body>
 </html>

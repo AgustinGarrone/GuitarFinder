@@ -117,6 +117,10 @@ input {
   text-decoration: none;
 }
 
+.guitarFinderButtonContainer button:disabled {
+  cursor: not-allowed;
+}
+
 .guitarFinderButtonContainer .backbutton {
   background-color: black;
   border-radius: 40px;
@@ -148,6 +152,10 @@ input {
   text-align: center;
   margin-top: 30px;
   color: white;
+}
+
+.results {
+  width: 100vw;
 }
 
 #option1 {
@@ -250,6 +258,24 @@ input {
   display: none;
 }
 
+.option__text {
+  text-align: center;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.bodyDescription {
+  border-top: 1px solid white;
+}
+
+/* .splide__track {
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 80px; 
+} */
 .resultsCard100 {
   height: 500px;
   width: 350px;
@@ -286,6 +312,10 @@ input {
 
 .resultsCard100name {
   text-align: center;
+}
+
+.resultsCard100 .resultsCardPrice {
+  margin-top: 43px;
 }
 
 .resultsCard85 {
@@ -374,21 +404,18 @@ input {
   width: 50px;
   height: 20px;
   background-color: green;
-  margin-top: 10px;
+  color: white;
+  margin-top: 43px;
   text-align: center;
 }
 
-.resultsCard100:hovername {
+.resultsCard100:hover .resultsCard100Name {
   color: white;
 }
 
 .resultsCard100:hoverImg:hover {
   height: 350px;
   width: 350px;
-}
-
-.resultsCard100:hover p {
-  color: white;
 }
 
 .resultsCard85:hover {
@@ -398,6 +425,7 @@ input {
 }
 
 .resultsCard85:hover .resultsCardPrice {
+  color: white;
   width: 50px;
   height: 20px;
   background-color: green;
@@ -405,17 +433,13 @@ input {
   text-align: center;
 }
 
-.resultsCard85:hovername {
+.resultsCard85:hover .resultsCard85Name {
   color: white;
 }
 
 .resultsCard85:hoverImg:hover {
   height: 350px;
   width: 350px;
-}
-
-.resultsCard85:hover p {
-  color: white;
 }
 
 .resultsCard70:hover {
@@ -425,6 +449,7 @@ input {
 }
 
 .resultsCard70:hover .resultsCardPrice {
+  color: white;
   width: 50px;
   height: 20px;
   background-color: green;
@@ -432,17 +457,13 @@ input {
   text-align: center;
 }
 
-.resultsCard70:hovername {
+.resultsCard70:hover .resultsCard70Name {
   color: white;
 }
 
 .resultsCard70:hoverImg:hover {
   height: 350px;
   width: 350px;
-}
-
-.resultsCard70:hover p {
-  color: white;
 }
 
 .resultsCardPorcentaje {
@@ -461,8 +482,69 @@ input {
   padding-top: 8px;
 }
 
-.resultsCardPorcentaje:hover p {
-  color: black;
+.active {
+  /* .resultsCard70 {
+    background-color: black;
+    transition: 0.8s;
+    .resultsCardPrice {
+        color: white;
+        width: 50px;
+        height: 20px;
+        background-color: green;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .resultsCard70Name {
+        color: white;
+    }
+    &Img:hover {
+        height: 350px;
+        width: 350px;
+
+    }
+  }
+  .resultsCard85 {
+    background-color: black;
+    transition: 0.8s;
+    .resultsCardPrice {
+        color: white;
+        width: 50px;
+        height: 20px;
+        background-color: green;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .resultsCard85Name {
+        color: white;
+    }
+    &Img:hover {
+        height: 350px;
+        width: 350px;
+
+    } 
+
+  }
+  .resultsCard100 {
+    background-color: black;
+    transition: 0.8s;
+    .resultsCardPrice {
+        color: white;
+        width: 50px;
+        height: 20px;
+        background-color: green;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .resultsCard100Name {
+        color: white;
+    }
+    &Img:hover {
+        height: 350px;
+        width: 350px;
+
+    }
+  }*/
+  background-color: red;
 }
 
 .resultsCardFail {
@@ -490,121 +572,8 @@ input {
           filter: drop-shadow(10px 10px 10px yellow);
 }
 
-.results {
-  width: 70vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 80px;
-}
-
-.box-area {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.box-area li {
-  position: absolute;
-  display: block;
-  list-style: none;
-  width: 25px;
-  height: 25px;
-  background: rgba(45, 160, 125, 0.2);
-  border-radius: 100px;
-  -webkit-animation: animate 20s linear infinite;
-          animation: animate 20s linear infinite;
-  bottom: -150px;
-}
-
-.box-area li:nth-child(1) {
-  left: 86%;
-  width: 80px;
-  height: 80px;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-}
-
-.box-area li:nth-child(2) {
-  left: 12%;
-  width: 30px;
-  height: 30px;
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
-}
-
-.box-area li:nth-child(3) {
-  left: 70%;
-  width: 100px;
-  height: 100px;
-  -webkit-animation-delay: 5.5s;
-          animation-delay: 5.5s;
-}
-
-.box-area li:nth-child(4) {
-  left: 42%;
-  width: 150px;
-  height: 150px;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-duration: 15s;
-          animation-duration: 15s;
-}
-
-.box-area li:nth-child(5) {
-  left: 65%;
-  width: 40px;
-  height: 40px;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-}
-
-.box-area li:nth-child(5) {
-  left: 15%;
-  width: 110px;
-  height: 110px;
-  -webkit-animation-delay: 3.5s;
-          animation-delay: 3.5s;
-}
-
-@-webkit-keyframes animate {
-  0% {
-    -webkit-transform: translateY(0) rotate(0deg);
-            transform: translateY(0) rotate(0deg);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: translateY(-800px) rotate(360deg);
-            transform: translateY(-800px) rotate(360deg);
-    opacity: 0;
-  }
-}
-
-@keyframes animate {
-  0% {
-    -webkit-transform: translateY(0) rotate(0deg);
-            transform: translateY(0) rotate(0deg);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: translateY(-800px) rotate(360deg);
-            transform: translateY(-800px) rotate(360deg);
-    opacity: 0;
-  }
+.preloader {
+  width: 100vw;
+  height: 100vh;
 }
 /*# sourceMappingURL=styles.css.map */

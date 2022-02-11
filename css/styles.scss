@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -85,6 +84,9 @@
         text-align: center;
         text-decoration: none;
     }
+    button:disabled {
+        cursor: not-allowed;
+    }
     .backbutton {
         background-color: black ;
         border-radius: 40px;
@@ -121,6 +123,10 @@
     }
 }
 
+.results {
+    width: 100vw;
+
+} 
 
 
 #option {
@@ -200,6 +206,24 @@
         display: none;
     }
 }
+.option__text {
+    text-align:center;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.bodyDescription {
+    border-top: 1px solid white;
+}
+
+/* .splide__track {
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 80px; 
+} */
 
 
 .resultsCard100 {
@@ -222,6 +246,9 @@
     }
     &name {
         text-align: center;
+    }
+    .resultsCardPrice {
+        margin-top: 43px;
     }
 }
 .resultsCard85 {
@@ -271,63 +298,58 @@
 
 
 
-.resultsCard100:hover {
+ .resultsCard100:hover {
     background-color: black;
     transition: 0.8s;
     .resultsCardPrice {
         width: 50px;
         height: 20px;
         background-color: green;
-        margin-top: 10px;
+        color: white;
+        margin-top: 43px;
         text-align: center;
     }
-    &name {
+    .resultsCard100Name {
         color: white;
     }
-    
     &Img:hover {
         height: 350px;
         width: 350px;
 
-    }
-    p {
-        color:white;
     }
 }  
 .resultsCard85:hover {
     background-color: black;
     transition: 0.8s;
     .resultsCardPrice {
+        color: white;
         width: 50px;
         height: 20px;
         background-color: green;
         margin-top: 10px;
         text-align: center;
     }
-    &name {
+    .resultsCard85Name {
         color: white;
     }
-    
     &Img:hover {
         height: 350px;
         width: 350px;
 
-    }
-    p {
-        color:white;
     }
 }  
 .resultsCard70:hover {
     background-color: black;
     transition: 0.8s;
     .resultsCardPrice {
+        color: white;
         width: 50px;
         height: 20px;
         background-color: green;
         margin-top: 10px;
         text-align: center;
     }
-    &name {
+    .resultsCard70Name {
         color: white;
     }
     
@@ -336,11 +358,8 @@
         width: 350px;
 
     }
-    p {
-        color:white;
-    }
 }  
-
+ 
 
 .resultsCardPorcentaje {
     width: 40px;
@@ -357,10 +376,70 @@
     }
 }
 
-.resultsCardPorcentaje:hover {
-    p {
-        color: black;
+
+.active {
+  /* .resultsCard70 {
+    background-color: black;
+    transition: 0.8s;
+    .resultsCardPrice {
+        color: white;
+        width: 50px;
+        height: 20px;
+        background-color: green;
+        margin-top: 10px;
+        text-align: center;
     }
+    .resultsCard70Name {
+        color: white;
+    }
+    &Img:hover {
+        height: 350px;
+        width: 350px;
+
+    }
+  }
+  .resultsCard85 {
+    background-color: black;
+    transition: 0.8s;
+    .resultsCardPrice {
+        color: white;
+        width: 50px;
+        height: 20px;
+        background-color: green;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .resultsCard85Name {
+        color: white;
+    }
+    &Img:hover {
+        height: 350px;
+        width: 350px;
+
+    } 
+
+  }
+  .resultsCard100 {
+    background-color: black;
+    transition: 0.8s;
+    .resultsCardPrice {
+        color: white;
+        width: 50px;
+        height: 20px;
+        background-color: green;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .resultsCard100Name {
+        color: white;
+    }
+    &Img:hover {
+        height: 350px;
+        width: 350px;
+
+    }
+  }*/
+  background-color: red;
 }
 
 
@@ -382,81 +461,9 @@
     filter: drop-shadow(10px 10px 10px yellow);
 }
 
-.results {
-    width: 70vw;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 80px;
-}
 
 
-.box-area {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    li {
-        position: absolute;
-        display: block;
-        list-style: none;
-        width: 25px;
-        height: 25px;
-        background: rgba(45, 160, 125, 0.2);
-        border-radius: 100px;
-        animation: animate 20s linear infinite;
-        bottom: -150px;
-    }
-}
-
-.box-area li:nth-child(1) {
-    left: 86%;
-    width: 80px;
-    height: 80px;
-    animation-delay: 0s;
-}
-.box-area li:nth-child(2) {
-    left: 12%;
-    width: 30px;
-    height: 30px;
-    animation-delay: 1.5s;
-    animation-duration: 10s;
-}
-.box-area li:nth-child(3) {
-    left: 70%;
-    width: 100px;
-    height: 100px;
-    animation-delay: 5.5s;
-}
-.box-area li:nth-child(4) {
-    left: 42%;
-    width: 150px;
-    height: 150px;
-    animation-delay: 0s;
-    animation-duration: 15s;
-}
-.box-area li:nth-child(5) {
-    left: 65%;
-    width: 40px;
-    height: 40px;
-    animation-delay: 0s;
-}
-.box-area li:nth-child(5) {
-    left: 15%;
-    width: 110px;
-    height: 110px;
-    animation-delay: 3.5s;
-}
-@keyframes animate {
-    0% {
-        transform: translateY(0) rotate(0deg);
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(-800px) rotate(360deg);
-        opacity: 0;
-    }
+.preloader {
+    width: 100vw;
+    height: 100vh;
 }

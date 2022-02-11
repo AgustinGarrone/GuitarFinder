@@ -1,0 +1,514 @@
+{
+    "guitars":[
+        {
+            "id":1,
+            "name":"SQUIER AFFINITY MINI STRATOCASTER V2 ELECTRIC GUITAR BLACK",
+            "time":"basic",
+            "age":"kid",
+            "body":"solidbody",
+            "price":150,
+            "brand":"fender",
+            "img":"./img/guitar1.png"
+        },
+        {
+            "id":2,
+            "name":"Squier Affinity Mini Stratocaster V2 Electric Guitar Shell Pink",
+            "time":"basic",
+            "age":"kid",
+            "body":"solidbody",
+            "price":150,
+            "brand":"fender",
+            "img":"./img/guitar2.png"
+        },
+        {
+            "id":3,
+            "name":"Squier Mini Jazzmaster HH Maple Fingerboard Electric Guitar Daphne Blue",
+            "time":"basic",
+            "age":"kid",
+            "body":"solidbody",
+            "price":170,
+            "brand":"fender",
+            "img":"./img/guitar3.png"
+        },
+        {
+            "id":4,
+            "name":"Ibanez GRGM21M Electric Guitar Orange Burst",
+            "time":"basic",
+            "age":"kidadult",
+            "body":"solidbody",
+            "price":170,
+            "brand":"ibanez",
+            "img":"./img/guitar4.png"
+        },
+        {
+            "id":5,
+            "name":"Ibanez GRGM21M Electric Guitar Metallic Purple",
+            "time":"basic",
+            "age":"kidadult",
+            "body":"solidbody",
+            "price":150,
+            "brand":"ibanez",
+            "img":"./img/guitar5.png"
+        },
+        {
+            "id":6,
+            "name":"Ibanez Paul Stanley Signature miKro Electric Guitar Black",
+            "time":"basic",
+            "age":"kid",
+            "body":"solidbody",
+            "price":250,
+            "brand":"ibanez",
+            "img":"./img/guitar6.png"
+        },
+        {
+            "id":7,
+            "name":"Ibanez PGMM11 Paul Gilbert Signature 6str miKro Electric Guitar Jewel Blue",
+            "time":"basic",
+            "age":"kid",
+            "body":"solidbody",
+            "price":200,
+            "brand":"ibanez",
+            "img":"./img/guitar7.png"
+        },
+        {
+            "id":8,
+            "name":"Ibanez GRGM21M Electric Guitar Flat Black",
+            "time":"basic",
+            "age":"kidadult",
+            "body":"solidbody",
+            "price":150,
+            "brand":"ibanez",
+            "img":"./img/guitar8.png"
+        },
+        {
+            "id":9,
+            "name":"Squier Affinity Series Starcaster Maple Fingerboard Electric Guitar Black",
+            "time":"basicadvanced",
+            "age":"adult",
+            "body":"semihollow",
+            "price":299,
+            "brand":"fender",
+            "img":"./img/guitar9.png"
+        },
+        {
+            "id":10,
+            "name":"Ibanez Artcore AS53 Semi-Hollow Electric Guitar Flat Transparent Black" ,
+            "time":"basicadvanced",
+            "age":"adult",
+            "body":"semihollow",
+            "price":280,
+            "brand":"ibanez",
+            "img":"./img/guitar10.png"
+        },
+        {
+            "id":11,
+            "name":"Fender Kurt Cobain Jaguar NOS Electric Guitar 3-Color Sunburst",
+            "time":"basicadvanced",
+            "age":"adult",
+            "body":"solidbody",
+            "price":1400,
+            "brand":"fender",
+            "img":"./img/guitar11.png"
+        },
+        {
+            "id":12,
+            "name":"Epiphone Les Paul Studio Electric Guitar Wine Red",
+            "time":"basicadvanced",
+            "age":"adult",
+            "body":"hollowbody",
+            "price":500,
+            "brand":"gibson",
+            "img":"./img/guitar12.png"
+        },
+        {
+            "id":13,
+            "name":"Gibson Les Paul Standard '50s P-90 Electric Guitar Gold Top",
+            "time":"advanced",
+            "age":"adult",
+            "body":"hollowbody",
+            "price":500,
+            "brand":"gibson",
+            "img":"./img/guitar13.png"
+        },
+        {
+            "id":14,
+            "name":"Ibanez AF95FM Artcore Expressionist Series Electric Guitar Antique Yellow Sunburst",
+            "time":"basicadvanced",
+            "age":"adult",
+            "body":"hollowbody",
+            "price":710,
+            "brand":"ibanez",
+            "img":"./img/guitar14.png"
+        },
+        {
+            "id":15,
+            "name":"Gibson SG Standard '61 Maestro Vibrola Electric Guitar Vintage Cherry" ,
+            "time":"advanced",
+            "age":"adult",
+            "body":"semihollow",
+            "price":2199,
+            "brand":"gibson",
+            "img":"./img/guitar15.png"
+        },
+        {
+            "id":16,
+            "name":"Gibson Les Paul Standard '60s Limited-Edition Electric Guitar Tri-Burst" ,
+            "time":"advanced",
+            "age":"adult",
+            "body":"hollowbody",
+            "price":2200,
+            "brand":"gibson",
+            "img":"./img/guitar16.png"
+        },
+        {
+            "id":17,
+            "name":"Fender American Professional II Stratocaster Maple Fingerboard Electric Guitar Dark Night"  ,
+            "time":"advanced",
+            "age":"adult",
+            "body":"solidbody",
+            "price":2100,
+            "brand":"fender",
+            "img":"./img/guitar17.png"
+        },
+        {
+            "id":18,
+            "name":"Ibanez JEMJR Steve Vai Signature JEM Series Electric Guitar White"  ,
+            "time":"advanced",
+            "age":"kidadult",
+            "body":"solidbody",
+            "price":400,
+            "brand":"ibanez",
+            "img":"./img/guitar18.png"
+        },
+        {
+            "id":19,
+            "name":"Squier Paranormal Series Offset Telecaster Maple Fingerboard Olympic White" ,
+            "time":"basicadvanced",
+            "age":"kidadult",
+            "body":"hollowbody",
+            "price":500,
+            "brand":"fender",
+            "img":"./img/guitar19.png"
+        },
+        {
+            "id":20,
+            "name":"Ibanez GRGM21 Mikro Electric Guitar White" ,
+            "time":"basicadvanced",
+            "age":"kidadult",
+            "body":"solidbody",
+            "price":150,
+            "brand":"ibanez",
+            "img":"./img/guitar20.png"
+        },
+        {
+            "id":21,
+            "name":"Ibanez GRGA120 GIO RGA Series Electric Guitar White" ,
+            "time":"basicadvanced",
+            "age":"kidadult",
+            "body":"solidbody",
+            "price":200,
+            "brand":"ibanez",
+            "img":"./img/guitar21.png"
+        },
+        {
+            "id":22,
+            "name":"Epiphone SG Standard Left-Handed Electric Guitar Alpine White" ,
+            "time":"advanced",
+            "age":"kidadult",
+            "body":"semihollow",
+            "price":500,
+            "brand":"gibson",
+            "img":"./img/guitar22.png"
+        },
+        {
+            "id":23,
+            "name":"Epiphone B.B. King Lucille Semi-Hollow Electric Guitar Ebony" ,
+            "time":"advanced",
+            "age":"adult",
+            "body":"semihollow",
+            "price":949,
+            "brand":"gibson",
+            "img":"./img/guitar23.png"
+        },
+        {
+            "id":24,
+            "name":"Squier Classic Vibe '70s Telecaster Thinline Limited-Edition Electric Guitar Olympic White",
+            "time":"advanced",
+            "age":"adult",
+            "body":"semihollow",
+            "price":499,
+            "brand":"fender",
+            "img":"./img/guitar24.png"
+        },
+        {
+            "id":25,
+            "name":"Ibanez Artcore AS73G Semi-Hollow Electric Guitar Metallic Purple Flat",
+            "time":"basicadvanced",
+            "age":"kidadult",
+            "body":"semihollow",
+            "price":299,
+            "brand":"ibanez",
+            "img":"./img/guitar25.png"
+        },
+        {
+            "id":26,
+            "name":"G&L Tribute ASAT Classic Bluesboy Semi-Hollow Electric Guitar Blonde Rosewood Fretboard",
+            "time":"basicadvanced",
+            "age":"kidadult",
+            "body":"semihollow",
+            "price":599,
+            "brand":"fender",
+            "img":"./img/guitar26.png"
+        },
+        {
+            "id":27,
+            "name":"Ibanez JSM20 John Scofield Signature Electric Guitar Black Low Gloss",
+            "time":"advanced",
+            "age":"adult",
+            "body":"semihollow",
+            "price":999,
+            "brand":"ibanez",
+            "img":"./img/guitar27.png"
+        },
+        {
+            "id":28,
+            "name":"Epiphone Casino Hollowbody Electric Guitar Vintage Sunburst",
+            "time":"basicadvanced",
+            "age":"kidadult",
+            "body":"semihollow",
+            "price":699,
+            "brand":"gibson",
+            "img":"./img/guitar28.png"
+        },
+        {
+            "id":29,
+            "name":"Ibanez Artcore AM53 Semi-Hollow Electric Guitar Flat Sunset Red",
+            "time":"basicadvanced",
+            "age":"kidadult",
+            "body":"hollowbody",
+            "price":299,
+            "brand":"ibanez",
+            "img":"./img/guitar29.png"
+        },
+        {
+            "id":30,
+            "name":"Ibanez Artcore AF75 Hollowbody Electric Guitar Vintage Sunburst",
+            "time":"basicadvanced",
+            "age":"kidadult",
+            "body":"hollowbody",
+            "price":399,
+            "brand":"ibanez",
+            "img":"./img/guitar30.png"
+        },
+        {
+            "id":31,
+            "name":"Squier Contemporary Active Starcaster Maple Fingerboard Flat Black",
+            "time":"basicadvanced",
+            "age":"kidadult",
+            "body":"hollowbody",
+            "price":399,
+            "brand":"fender",
+            "img":"./img/guitar31.png"
+        },
+        {
+            "id":32,
+            "name":"Squier Contemporary Active Starcaster Maple Fingerboard Ice Blue Metallic",
+            "time":"basicadvanced",
+            "age":"kidadult",
+            "body":"hollowbody",
+            "price":280,
+            "brand":"fender",
+            "img":"./img/guitar32.png"
+        },
+        {
+            "id":33,
+            "name":"Ibanez AM93QM Artcore Expressionist Series Electric Guitar Jet Blue Burst",
+            "time":"basicadvanced",
+            "age":"adult",
+            "body":"hollowbody",
+            "price":649,
+            "brand":"ibanez",
+            "img":"./img/guitar33.png"
+        },
+        {
+            "id":34,
+            "name":"Epiphone Joe Pass Emperor-II Pro Hollowbody Electric Guitar Vintage Sunburst",
+            "time":"basicadvanced",
+            "age":"kidadult",
+            "body":"hollowbody",
+            "price":750,
+            "brand":"gibson",
+            "img":"./img/guitar34.png"
+        },
+        {
+            "id":35,
+            "name":"Ibanez GB Series GB10SE George Benson Signature Hollow Body",
+            "time":"advanced",
+            "age":"adult",
+            "body":"hollowbody",
+            "price":1200,
+            "brand":"ibanez",
+            "img":"./img/guitar35.png"
+        },
+        {
+            "id":36,
+            "name":"Gibson Les Paul Tribute Electric Guitar Satin Honey Burst",
+            "time":"advanced",
+            "age":"kidadult",
+            "body":"solidbody",
+            "price":1200,
+            "brand":"gibson",
+            "img":"./img/guitar36.png"
+        },
+        {
+            "id":37,
+            "name":"Epiphone ES-335 Figured Semi-Hollow Electric Guitar Blueberry Burst",
+            "time":"advanced",
+            "age":"kidadult",
+            "body":"semihollow",
+            "price":650,
+            "brand":"gibson",
+            "img":"./img/guitar37.png"
+        },
+        {
+            "id":38,
+            "name":"Fender Player Stratocaster Maple Fingerboard Electric Guitar 3-Color Sunburst",
+            "time":"basicadvanced",
+            "age":"kidadult",
+            "body":"solidbody",
+            "price":849,
+            "brand":"fender",
+            "img":"./img/guitar38.png"
+        },
+        {
+            "id":39,
+            "name":"Fender American Performer Stratocaster HSS Maple",
+            "time":"basicadvanced",
+            "age":"kidadult",
+            "body":"solidbody",
+            "price":1300,
+            "brand":"fender",
+            "img":"./img/guitar39.png"
+        },
+        {
+            "id":40,
+            "name":"Fender Telecaster Richie Kotzen Solid Body Electric Guitar Brown Sunburst",
+            "time":"advanced",
+            "age":"kidadult",
+            "body":"solidbody",
+            "price":1700,
+            "brand":"fender",
+            "img":"./img/guitar40.png"
+        },
+        {
+            "id":41,
+            "name":"Squier Stratocaster Electric Guitar Pack With Squier Frontman 10G Amp Black",
+            "time":"basic",
+            "age":"kidadult",
+            "body":"solidbody",
+            "price":289,
+            "brand":"fender",
+            "img":"./img/guitar41.png"
+        },
+        {
+            "id":42,
+            "name":"Fender Stratocaster HSS Plus Top Maple Limited-Edition",
+            "time":"basicadvanced",
+            "age":"kidadult",
+            "body":"solidbody",
+            "price":900,
+            "brand":"fender",
+            "img":"./img/guitar42.png"
+        },
+        {
+            "id":43,
+            "name":"Epiphone 1959 Les Paul Standard Outfit Electric Guitar Aged Dark Burst",
+            "time":"basicadvanced",
+            "age":"kidadult",
+            "body":"hollowbody",
+            "price":849,
+            "brand":"gibson",
+            "img":"./img/guitar43.png"
+        },
+        {
+            "id":44,
+            "name":"Squier Bullet Stratocaster HSS Hardtail Limited-Edition",
+            "time":"basicadvanced",
+            "age":"kidadult",
+            "body":"solidbody",
+            "price":249,
+            "brand":"fender",
+            "img":"./img/guitar44.png"
+        },
+        {
+            "id":45,
+            "name":"Squier Affinity Series Starcaster Maple Fingerboard Electric Guitar Olympic White",
+            "time":"basicadvanced",
+            "age":"kidadult",
+            "body":"semihollow",
+            "price":329,
+            "brand":"fender",
+            "img":"./img/guitar45.png"
+        },
+        {
+            "id":46,
+            "name":"Ibanez AM73B Electric Guitar Flat Tobacco",
+            "time":"basicadvanced",
+            "age":"adult",
+            "body":"semihollow",
+            "price":399,
+            "brand":"ibanez",
+            "img":"./img/guitar46.png"
+        },
+        {
+            "id":47,
+            "name":"Ibanez AG85 AG Hollow Body Electric Guitar Flat Black",
+            "time":"basicadvanced",
+            "age":"kidadult",
+            "body":"hollowbody",
+            "price":399,
+            "brand":"ibanez",
+            "img":"./img/guitar47.png"
+        },
+        {
+            "id":48,
+            "name":"Ibanez GB10EM George Benson Hollowbody Electric Guitar Jet Blue Burst",
+            "time":"basicadvanced",
+            "age":"kidadult",
+            "body":"hollowbody",
+            "price":699,
+            "brand":"ibanez",
+            "img":"./img/guitar48.png"
+        },
+        {
+            "id":49,
+            "name":"Epiphone Firebird Electric Guitar Vintage Sunburst",
+            "time":"basicadvanced",
+            "age":"kidadult",
+            "body":"solidbody",
+            "price":649,
+            "brand":"gibson",
+            "img":"./img/guitar49.png"
+        },
+        {
+            "id":50,
+            "name":"Guild Starfire I SC with Guild Vibrato Tailpiece Semi-Hollow Electric Guitar Sea Foam Green",
+            "time":"basicadvanced",
+            "age":"kidadult",
+            "body":"semihollow",
+            "price":649,
+            "brand":"other",
+            "img":"./img/guitar50.png"
+        },
+        {
+            "id":51,
+            "name":"Guild Starfire I DC with Guild Vibrato Tailpiece Semi-Hollow Electric Guitar Pelham Blue",
+            "time":"basicadvanced",
+            "age":"kidadult",
+            "body":"semihollow",
+            "price":565,
+            "brand":"other",
+            "img":"./img/guitar51.png"
+        }
+    ]
+}
