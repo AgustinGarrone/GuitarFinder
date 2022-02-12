@@ -36,6 +36,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    position: relative;
     /* overflow: hidden; */
     h2{
         color: white;
@@ -126,8 +127,24 @@
 }
 
 .results {
-    width: 100vw;
+    width: 80vw;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    display: none;
 } 
+.results__active {
+    width: 50%;
+}
+
+.results__grid {
+    width: 40%;
+    max-height: 80vh;
+    overflow: scroll;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:  auto;
+}
 
 
 #option {
@@ -226,10 +243,65 @@
     margin-top: 80px; 
 } */
 
+.resultsCardActive {
+    min-height: 80vh;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    background: rgba(255,255,255,0.1);
+    transition: 1s;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    position: relative;
+    cursor:pointer;
+   /*  &Img {
+        height: 300px;
+        width: 300px;
+    } */
+    &Name {
+        text-align: center;
+        color: white;
+    }
+    .resultsCardPrice {
+        margin-top: 43px;
+    }
+}
+
+.backgroundActive {
+  z-index: 1000;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+}
+@keyframes wipe-in-down {
+    from {
+      clip-path: inset(0 0 100% 0);
+    }
+    to {
+      clip-path: inset(0 0 0 0);
+    }
+  }
+  
+  [transition-style="in:wipe:down"] {
+    animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-down both;
+  }
+
+
+.resultsCardActive_imgs {
+    width: 100%;
+    height: 150px;
+    border-top: 1px solid white;
+    img {
+        height: 150px;
+    }
+}
 
 .resultsCard100 {
-    height: 500px;
-    width: 350px;
+    height: 400px;
+    width: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -253,8 +325,8 @@
     }
 }
 .resultsCard85 {
-    height: 500px;
-    width: 350px;
+    height: 400px;
+    width: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -275,8 +347,8 @@
     }
 }
 .resultsCard70 {
-    height: 500px;
-    width: 350px;
+    height: 400px;
+    width: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -299,7 +371,7 @@
 
 
 
- .resultsCard100:hover {
+  .resultsCard100:hover {
     background-color: black;
     transition: 0.8s;
     .resultsCardPrice {
@@ -316,9 +388,8 @@
     &Img:hover {
         height: 350px;
         width: 350px;
-
     }
-}  
+}   
 .resultsCard85:hover {
     background-color: black;
     transition: 0.8s;
@@ -377,6 +448,12 @@
     }
 }
 
+/* .resultsCardPorcentaje:after {
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+    border-radius: 50px;
+} */
 
 .active {
   /* .resultsCard70 {
@@ -467,4 +544,21 @@
 .preloader {
     width: 100vw;
     height: 100vh;
+}
+
+
+
+.cambiarVista {
+   height: 100px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   align-self: right;
+   position: absolute;
+   top: 10px;
+   right: 50px;
+   img {
+       height: 50px;
+       width: 50px;
+   }
 }

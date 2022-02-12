@@ -46,6 +46,7 @@
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  position: relative;
   /* overflow: hidden; */
 }
 
@@ -158,7 +159,34 @@
 }
 
 .results {
-  width: 100vw;
+  width: 80vw;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+}
+
+.results__active {
+  width: 50%;
+}
+
+.results__grid {
+  width: 40%;
+  max-height: 80vh;
+  overflow: scroll;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
 }
 
 #option1 {
@@ -279,9 +307,93 @@
     justify-content: center;
     margin-top: 80px; 
 } */
+.resultsCardActive {
+  min-height: 80vh;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+          box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-transition: 1s;
+  transition: 1s;
+  border-radius: 15px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  position: relative;
+  cursor: pointer;
+  /*  &Img {
+        height: 300px;
+        width: 300px;
+    } */
+}
+
+.resultsCardActiveName {
+  text-align: center;
+  color: white;
+}
+
+.resultsCardActive .resultsCardPrice {
+  margin-top: 43px;
+}
+
+.backgroundActive {
+  z-index: 1000;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+}
+
+@-webkit-keyframes wipe-in-down {
+  from {
+    -webkit-clip-path: inset(0 0 100% 0);
+            clip-path: inset(0 0 100% 0);
+  }
+  to {
+    -webkit-clip-path: inset(0 0 0 0);
+            clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes wipe-in-down {
+  from {
+    -webkit-clip-path: inset(0 0 100% 0);
+            clip-path: inset(0 0 100% 0);
+  }
+  to {
+    -webkit-clip-path: inset(0 0 0 0);
+            clip-path: inset(0 0 0 0);
+  }
+}
+
+[transition-style="in:wipe:down"] {
+  -webkit-animation: 2.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-down both;
+          animation: 2.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-down both;
+}
+
+.resultsCardActive_imgs {
+  width: 100%;
+  height: 150px;
+  border-top: 1px solid white;
+}
+
+.resultsCardActive_imgs img {
+  height: 150px;
+}
+
 .resultsCard100 {
-  height: 500px;
-  width: 350px;
+  height: 400px;
+  width: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -322,8 +434,8 @@
 }
 
 .resultsCard85 {
-  height: 500px;
-  width: 350px;
+  height: 400px;
+  width: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -360,8 +472,8 @@
 }
 
 .resultsCard70 {
-  height: 500px;
-  width: 350px;
+  height: 400px;
+  width: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -485,6 +597,12 @@
   padding-top: 8px;
 }
 
+/* .resultsCardPorcentaje:after {
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+    border-radius: 50px;
+} */
 .active {
   /* .resultsCard70 {
     background-color: black;
@@ -578,5 +696,28 @@
 .preloader {
   width: 100vw;
   height: 100vh;
+}
+
+.cambiarVista {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: right;
+      align-self: right;
+  position: absolute;
+  top: 10px;
+  right: 50px;
+}
+
+.cambiarVista img {
+  height: 50px;
+  width: 50px;
 }
 /*# sourceMappingURL=styles.css.map */
