@@ -2,7 +2,8 @@
 let marcaelegida=""
 nextboton.click(mostrar)
 
-
+let resultadosMostrados=false
+let guitarrasMostradas=0
 /* let results=document.createElement("section")
 results.classList.add("results")
 results.setAttribute("id", "option6") */
@@ -39,7 +40,10 @@ function mostrar() {
        option.style.display ="none"
        index++;                                                         
        option = document.getElementById("option"+index)
-       option.style.display="flex"
+       if (option!==null) {
+         option.style.display="flex"
+           console.log("aasaa")
+       }
     } else if (option.style.display ="none") {
         option.style.display="flex"
         index++;
@@ -51,6 +55,7 @@ function mostrar() {
 
 
 function terminado() {   
+    resultadosMostrados=true
     if (elecciones4.length>=0) {
         document.querySelector(".guitarFinderApp").style.display="none"
         $(".results").show()
@@ -72,6 +77,7 @@ function terminado() {
      if (elecciones2.length>=0) {
          let pricecoincidence=elecciones2.filter(el => !elecciones3.includes(el));
          console.log("PRICECOINCI ES")
+         guitarrasMostradas=pricecoincidence.length+elecciones4.length
          for (i=0;i<pricecoincidence.length;i++) {
  /*             if (i==6) {
                  break

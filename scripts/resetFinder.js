@@ -4,25 +4,36 @@ let resetboton=$(".backbutton")
 resetboton.click(resetear)
 
 function resetear() {
-    option.style.display="none"
+    if (option!==null) {
+       option.style.display="none"
+        console.log("aasaa")
+    } else {
+        option=document.getElementById("option1")
+    }
     index=0;
     console.log(allinputs.length)
     nextboton.prop( "disabled", true )
-    for (let f=0; f<=allinputs[0].length;f++) {
+    for (input of allinputs) {
+        input.checked=false
+    }
+   /*  for (let f=0; f<=allinputs[0].length;f++) {
         if (allinputs[0][f]!==undefined) {
             console.log("BORRANDO LOS INPUT")
             allinputs[0][f].checked=false
-        }
-    }
+        } 
+    }*/
     elecciones1=[]
     elecciones2=[]
     elecciones3=[]
     elecciones4=[]
     marcaelegida=""
-    results.innerHTML=""
+    if (resultadosMostrados===true) {
+        document.querySelector(".splide__arrows").remove()
+        document.querySelector(".splide__list").innerHTML="" 
+        document.querySelector(".splide__pagination").remove()
+    }
     $(".bodyDescription").hide()
     document.querySelector(".guitarFinderApp").style.display="flex"
-   /*  document.querySelector(".guitarFinderApp").innerHTML="" */
     h2option.innerHTML="<h2>Are you a beginner or experienced guitarist?</h2>"
     console.log("arrays reseteados y contenido vaciado")
     console.log(arrayimg)
@@ -32,5 +43,8 @@ function resetear() {
         } 
         imagen++
     } 
-    mostrar()
+    resultadosMostrados=false
+    mostrar() 
+
+
 }

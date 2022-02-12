@@ -1,8 +1,10 @@
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    user-select: none;
 }
 
 
@@ -20,9 +22,9 @@
 }
 
 
-  input {
+ /*  input {
     display: none;
-}  
+}   */
 .guitarFinder {
     margin: auto;
     width: 100vw;
@@ -125,7 +127,6 @@
 
 .results {
     width: 100vw;
-
 } 
 
 

@@ -21,8 +21,3 @@ $.getJSON(JSONGuitars, function (respuesta,estado) {
 })
 console.log(timeBasic)
 console.log(timeAdvanced)
-let elecciones=[]
-let elecciones1=[]
-let elecciones2=[]
-let elecciones3=[]
-let elecciones4=[]

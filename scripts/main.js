@@ -14,7 +14,7 @@ let botones=$(".guitarFinderButtonContainer")
 let startboton=$(".startButton")
 let nextboton=$("#gfNextButton")
 
-nextboton.prop( "disabled", true )
+ nextboton.prop( "disabled", true )  
 
 startboton.click(empezar)
 
@@ -29,6 +29,12 @@ h2option.classList.add("animate__fadeInRight")
 /*OBTENCIÓN DE OPCIÓN MOSTRADA Y ARRAYS DE INPUTS*/
 let index=1;
 let option = document.getElementById("option"+index)
+
+let elecciones=[]
+let elecciones1=[]
+let elecciones2=[]
+let elecciones3=[]
+let elecciones4=[]
 
 
 let allinputs=document.getElementsByTagName("input")
@@ -59,9 +65,10 @@ function seleccion (indi){
     let stop=false
     if (allinputs[indi].checked==true) {
         arrayimg[indi+1].classList.add("activeimg")
-        nextboton.prop( "disabled", false )
+        nextboton.prop( "disabled", false )  
     } else if (allinputs[indi].checked==false) {
         arrayimg[indi+1].classList.remove("activeimg")
+        nextboton.prop( "disabled", true ) 
     } 
     if (indi==4 && allinputs[indi].checked==true) {
         divbodyoption.innerHTML=`<p class="bodyDescription">Solidbody electrics provide more sustain and are less susceptible to feedback. Solidbody electrics are staples in most popular music styles, including rock, country and blues.</p>"`
@@ -126,12 +133,13 @@ function chequeado1(letra,inputindex){
         input= document.getElementById("opt"+inputindex+letra)  
         if (input.checked && letra=="a") {
               elecciones= timeBasic.filter(p=> p)
-              nextboton.prop( "disabled", false)  //! INTENTANDO DISABLEAR BOTON
+              console.log(timeBasic)
               break;
         }
         else if (input.checked && letra=="b") {
             elecciones=timeAdvanced.filter(p=>p)
-              nextboton.prop( "disabled", false )
+            console.log(timeBasic)
+
         }
         else {
             letra="b"

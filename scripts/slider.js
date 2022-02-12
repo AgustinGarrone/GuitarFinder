@@ -18,12 +18,32 @@ splide__track.prepend(splide__list) */
 
 
 function slideron (){
-    var splide=new Splide( ".splide", {
-        type: 'loop',
-        perPage: 1,
-        focus:'center',
-        autoWidth: true
+  /*   if (guitarrasMostradas>5) {
+        let splide=new Splide( ".splide", {
+          type: 'slide',
+          perPage:5,
+          clones:0,
+          autoplay:true,
+          interval:3000,
+          wheel:true,
+          releaseWheel:true,
+          focus:'center'
     }).mount();
+  }  */
+    let splide=new Splide( ".splide", {
+      type: 'slide',
+      perPage:5,
+      clones:0,
+      autoplay:true,
+      interval:3000,
+      wheel:true,
+      releaseWheel:true,
+      focus:'center'
+    }).mount();
+
+    console.log("LA CANTIDAD DE GUITARS MOSTRADAS ES ")
+    console.log(guitarrasMostradas)
+}
 /*     let guitarras=document.getElementsByClassName("splide__slide")
     for (let i=0;i=guitarras.length;i++) {
         if (guitarras[i].classList.contains("is-visible is-next") || guitarras[i].classList.contains("is-visible is-prev") || guitarras[i].classList.contains("is-visible is-active")){
@@ -60,10 +80,8 @@ function slideron (){
     }
       } );
  */
-      splide.on( 'active', function (slide) {
-          slide.style.backgroundColor = "red";
-      })
- }
+
+ 
 
 
 
