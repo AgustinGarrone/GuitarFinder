@@ -8,7 +8,19 @@
             "body":"solidbody",
             "price":150,
             "brand":"fender",
-            "img":"./img/guitar1.png"
+            "img":"./img/guitar1.png",
+            "img2":"./img/guitarPreviews/guitar1-2.png",
+            "img3":"./img/guitarPreviews/guitar-1-3.png",
+            "img4":"./img/guitarPreviews/guitar1-4.png",
+            "neck1":"Neck shape: C standard ",
+            "neck2":"Neck wood: Maple",
+            "neck3":"Scale length: 22.75 in.",
+            "fretboard1":"Material: Indian laurel",
+            "fretboard2":"Fret size: Medium ",
+            "fretboard3":"Number of frets: 21",
+            "pickups1":"Neck: Standard single-coil Strat",
+            "pickups2":"Middle: Standard single-coil Strat",
+            "pickups3":"Bridge: Standard single-coil Strat"
         },
         {
             "id":2,
@@ -18,7 +30,10 @@
             "body":"solidbody",
             "price":150,
             "brand":"fender",
-            "img":"./img/guitar2.png"
+            "img":"./img/guitar2.png",
+            "img2":"./img/guitarPreviews/guitar2-1.png",
+            "img3":"./img/guitarPreviews/guitar2-2.png",
+            "img4":"./img/guitarPreviews/guitar2-3.png"
         },
         {
             "id":3,
@@ -28,7 +43,10 @@
             "body":"solidbody",
             "price":170,
             "brand":"fender",
-            "img":"./img/guitar3.png"
+            "img":"./img/guitar3.png",
+            "img2":"./img/guitarPreviews/guitar3-2.png",
+            "img3":"./img/guitarPreviews/guitar3-3.png",
+            "img4":"./img/guitarPreviews/guitar3-4.png"
         },
         {
             "id":4,
@@ -38,7 +56,10 @@
             "body":"solidbody",
             "price":170,
             "brand":"ibanez",
-            "img":"./img/guitar4.png"
+            "img":"./img/guitar4.png",
+            "img2":"./img/guitarPreviews/guitar4-1.png",
+            "img3":"./img/guitarPreviews/guitar4-2.png",
+            "img4":"./img/guitarPreviews/guitar4-3.png"
         },
         {
             "id":5,

@@ -334,6 +334,9 @@ body {
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   position: relative;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  /*para la rotacio*/
   cursor: pointer;
   /*  &Img {
         height: 300px;
@@ -348,13 +351,6 @@ body {
 
 .resultsCardActive .resultsCardPrice {
   margin-top: 43px;
-}
-
-.backgroundActive {
-  z-index: 1000;
-  background-color: black;
-  width: 100%;
-  height: 100%;
 }
 
 @-webkit-keyframes wipe-in-down {
@@ -384,6 +380,12 @@ body {
           animation: 2.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-down both;
 }
 
+.rotateCardActive {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
 .resultsCardActive_imgs {
   width: 100%;
   height: 150px;
@@ -394,6 +396,167 @@ body {
   height: 150px;
 }
 
+/*  INTENTANDO A PLENO LA ROTACION*/
+.card {
+  width: 80%;
+  height: 80vh;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.card__inner {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}
+
+.card__inner.is-flipped {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+  border-radius: 16px;
+  -webkit-box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+
+.card__face--front {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(var(--primary)), to(var(--secondary)));
+  background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.resultsCardActiveName {
+  margin-top: 60px;
+}
+
+.specifications__text {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 10px 0px;
+  background-color: black;
+}
+
+.card__face--front h2 {
+  color: #FFF;
+  font-size: 32px;
+}
+
+.card__face--back {
+  background-color: var(--light);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.card__content {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card__header {
+  position: relative;
+  padding: 30px 30px 40px;
+}
+
+.card__header:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: -webkit-gradient(linear, right top, left bottom, color-stop(10%, var(--primary)), color-stop(115%, var(--secondary)));
+  background-image: linear-gradient(to bottom left, var(--primary) 10%, var(--secondary) 115%);
+  z-index: -1;
+  border-radius: 0px 0px 50% 0px;
+}
+
+.pp {
+  display: block;
+  width: 128px;
+  height: 128px;
+  margin: 0 auto 30px;
+  border-radius: 50%;
+  background-color: #FFF;
+  border: 5px solid #FFF;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card__header h2 {
+  color: #FFF;
+  font-size: 32px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.card__body {
+  padding: 30px;
+}
+
+.card__body li {
+  color: white;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.card__body h3 {
+  color: var(--dark);
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/*CIERRO ROTA*/
 .resultsCard100 {
   height: 400px;
   width: 250px;
