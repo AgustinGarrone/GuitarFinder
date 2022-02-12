@@ -10,6 +10,13 @@
           user-select: none;
 }
 
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: #006a91;
+}
+
 .playbutton {
   height: 64px;
   width: 64px;
