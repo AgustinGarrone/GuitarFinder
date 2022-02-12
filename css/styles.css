@@ -10,6 +10,41 @@
           user-select: none;
 }
 
+::-webkit-scrollbar {
+  width: 20px;
+  border: 3px solid rgba(0, 0, 0, 0.479);
+  height: 20px;
+  background-image: url(./src/img/pantallaNavMovil.png);
+  background-position: top;
+}
+
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #faeed7;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #faeed7;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #fcfcfc;
+}
+
+::-webkit-scrollbar-track {
+  border: 0px none #ffffff;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
 body {
   height: 100vh;
   width: 100vw;
@@ -187,7 +222,7 @@ body {
 .results__grid {
   width: 40%;
   max-height: 80vh;
-  overflow: scroll;
+  overflow-y: scroll;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -378,6 +413,48 @@ body {
 [transition-style="in:wipe:down"] {
   -webkit-animation: 2.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-down both;
           animation: 2.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-down both;
+}
+
+/*   @keyframes square-in-hesitate {
+    0% {
+      clip-path: inset(90% 90% 90% 90%);
+    }
+    40% {
+      clip-path: inset(33% 33% 33% 33%);
+    }
+    100% {
+      clip-path: inset(0 0 0 0);
+    }
+  }
+  
+  [transition-style="in:square:hesitate"] {
+    animation: 2.5s cubic-bezier(.25, 1, .30, 1) square-in-hesitate both;
+  }
+ */
+@-webkit-keyframes wipe-in-right {
+  from {
+    -webkit-clip-path: inset(0 100% 0 0);
+            clip-path: inset(0 100% 0 0);
+  }
+  to {
+    -webkit-clip-path: inset(0 0 0 0);
+            clip-path: inset(0 0 0 0);
+  }
+}
+@keyframes wipe-in-right {
+  from {
+    -webkit-clip-path: inset(0 100% 0 0);
+            clip-path: inset(0 100% 0 0);
+  }
+  to {
+    -webkit-clip-path: inset(0 0 0 0);
+            clip-path: inset(0 0 0 0);
+  }
+}
+
+[transition-style="in:wipe:right"] {
+  -webkit-animation: 2.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-right both;
+          animation: 2.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-right both;
 }
 
 .rotateCardActive {

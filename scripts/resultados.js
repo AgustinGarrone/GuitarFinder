@@ -14,6 +14,7 @@ cambiarVista.classList.add("cambiarVista")
 /*CREACION DE ELEMENTOS PARA SLIDER*/
 const splideHTML = document.createElement("div")
 splideHTML.classList.add("splide")
+splideHTML.setAttribute("transition-style","in:wipe:right")
 const splide__trackHTML = document.createElement("div")
 splide__trackHTML.classList.add("splide__track")
 const splide__listHTML = document.createElement("ul")
