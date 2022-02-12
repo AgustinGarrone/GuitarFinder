@@ -377,7 +377,7 @@ input {
 }
 
 .resultsCardActiveImg {
-  max-height: 500px;
+  height: 500px;
 }
 
 .resultsCardActiveName {
