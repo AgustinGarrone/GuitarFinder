@@ -11,6 +11,18 @@ results.setAttribute("id", "option6") */
 const cambiarVista=document.createElement("div")
 cambiarVista.classList.add("cambiarVista")
 
+/*CREACION DE ELEMENTOS PARA SLIDER*/
+const splideHTML=document.createElement("div")
+splideHTML.classList.add("splide")
+const splide__trackHTML=document.createElement("div")
+splide__trackHTML.classList.add("splide__track")
+const splide__listHTML=document.createElement("ul")
+splide__listHTML.classList.add("splide__list")
+
+splideHTML.prepend(splide__trackHTML)
+splide__trackHTML.prepend(splide__listHTML)
+
+
 
 function mostrar() {             
     switch(index) {
@@ -60,63 +72,15 @@ function terminado() {
     resultadosMostrados=true
     document.querySelector(".guitarFinderApp").style.display="none"
     cambiarVista.innerHTML=`<img src="./img/gridicon.png">
-                            <img src="./img/on-slider.png">
+                            <img class="cambiarAFlex" src="./img/on-slider.png">
                             <img src="./img/flexicon.png" >`
     document.querySelector(".guitarFinder").prepend(cambiarVista)
+    document.querySelector(".cambiarAFlex").addEventListener("click",cargarFlexResults)
     document.querySelector(".results").style.display="flex"
     h2option.innerHTML="This is for YOU :)"
+
     document.querySelector(".guitarFinder").prepend(h2option)
-    if (elecciones4.length>=0) {
-         for (eleccion of elecciones4) {
-             document.querySelector(".results__grid").innerHTML+= ` 
-             <li class=splide__slide>   
-                <div class=resultsCard100>
-                <span class=resultsCardPorcentaje><p>100%</p></span>
-                <p class=resultsCard100Name>${eleccion.name}</p>
-                <img class=resultsCard100Img src="${eleccion.img}">
-               </div>
-            </li>
-               `;
-            guardarlocal(eleccion.name,JSON.stringify(eleccion))
-         }
-    }
-     if (elecciones2.length>=0) {
-         let pricecoincidence=elecciones2.filter(el => !elecciones3.includes(el));
-         console.log("PRICECOINCI ES")
-         guitarrasMostradas=pricecoincidence.length+elecciones4.length
-         for (i=0;i<pricecoincidence.length;i++) {
- /*             if (i==6) {
-                 break
-             } */
-             if (pricecoincidence[i].brand===marcaelegida) {
-                document.querySelector(".results__grid").innerHTML += `
-                   <li class=splide__slide>    
-                    <div class=resultsCard85 >
-                      <span class=resultsCardPorcentaje><p>85%</p></span>
-                      <p class=resultsCard85Name>${pricecoincidence[i].name}</p>
-                      <img class=resultsCard85Img src="${pricecoincidence[i].img}">
-                      <div class=resultsCardFail>
-                          <p>Price</p><img class=resultsCardFailImg src="./img/cruzroja.png">
-                      </div>
-                    </div>
-                  </li>
-                 `;
-             }   else {
-                     document.querySelector(".results__grid").innerHTML += `
-                     <li class=splide__slide>       
-                     <div class=resultsCard70> 
-                       <span class=resultsCardPorcentaje><p>70%</p></span>
-                       <p class=resultsCard70Name>${pricecoincidence[i].name}</p>
-                       <img class=resultsCard70Img src="${pricecoincidence[i].img}">
-                       <div class=resultsCardFail>
-                           <p>Price and brand</p><img class=resultsCardFailImg src="./img/cruzroja.png">
-                       </div>
-                     </div>
-                     <li
-                      `;
-                 }
-         }  
-     }
+    cargarGridResults()
      /* document.querySelector(".resultsCardPorcentaje").addEventListener("mouseenter",function (){
          alert("Porcentaje de tu eleccion")
      })*/
@@ -151,8 +115,6 @@ function cargarCardClicks(){
      for (let t=0;t<cards.length;t++){
          cards[t].addEventListener('click', event => {
              document.querySelector(".results__active").innerHTML=` <div class=resultsCardActive transition-style="in:wipe:down">
-             <div class=backgroundActive transition-style="in:wipe:down">
-             </div>
              <span class=resultsCardPorcentaje><p>100%</p></span>
              <p class=resultsCardActiveName>${elecciones4[t].name}</p>
              <img class=resultsCardActiveImg src="${elecciones4[t].img}">

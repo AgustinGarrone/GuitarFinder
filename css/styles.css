@@ -299,14 +299,10 @@
   border-top: 1px solid white;
 }
 
-/* .splide__track {
-    width: 70vw;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 80px; 
-} */
+.splide {
+  width: 100vw;
+}
+
 .resultsCardActive {
   min-height: 80vh;
   width: 80%;
@@ -577,6 +573,204 @@
 }
 
 .resultsCard70:hoverImg:hover {
+  height: 350px;
+  width: 350px;
+}
+
+.resultsCard100Flex {
+  height: 500px;
+  width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+          box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  position: relative;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  cursor: pointer;
+}
+
+.resultsCard100FlexImg {
+  height: 300px;
+  width: 300px;
+}
+
+.resultsCard100Flexname {
+  text-align: center;
+}
+
+.resultsCard100Flex .resultsCardPrice {
+  margin-top: 43px;
+}
+
+.resultsCard85Flex {
+  height: 500px;
+  width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+          box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  position: relative;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  cursor: pointer;
+}
+
+.resultsCard85FlexImg {
+  height: 300px;
+  width: 300px;
+}
+
+.resultsCard85Flexname {
+  text-align: center;
+}
+
+.resultsCard85Flex .resultsCardPrice {
+  margin-top: 43px;
+}
+
+.resultsCard70Flex {
+  height: 500px;
+  width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+          box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  position: relative;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  cursor: pointer;
+}
+
+.resultsCard70FlexImg {
+  height: 300px;
+  width: 300px;
+}
+
+.resultsCard70Flexname {
+  text-align: center;
+}
+
+.resultsCard70Flex .resultsCardPrice {
+  margin-top: 43px;
+}
+
+.resultsCard100Flex:hover {
+  background-color: black;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.resultsCard100Flex:hover .resultsCardPrice {
+  color: white;
+  width: 50px;
+  height: 20px;
+  background-color: green;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.resultsCard100Flex:hover .resultsCard70Name {
+  color: white;
+}
+
+.resultsCard100Flex:hoverImg:hover {
+  height: 350px;
+  width: 350px;
+}
+
+.resultsCard85Flex:hover {
+  background-color: black;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.resultsCard85Flex:hover .resultsCardPrice {
+  color: white;
+  width: 50px;
+  height: 20px;
+  background-color: green;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.resultsCard85Flex:hover .resultsCard70Name {
+  color: white;
+}
+
+.resultsCard85Flex:hoverImg:hover {
+  height: 350px;
+  width: 350px;
+}
+
+.resultsCard70Flex:hover {
+  background-color: black;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.resultsCard70Flex:hover .resultsCardPrice {
+  color: white;
+  width: 50px;
+  height: 20px;
+  background-color: green;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.resultsCard70Flex:hover .resultsCard70Name {
+  color: white;
+}
+
+.resultsCard70Flex:hoverImg:hover {
   height: 350px;
   width: 350px;
 }

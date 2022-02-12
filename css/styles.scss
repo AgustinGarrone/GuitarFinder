@@ -234,14 +234,9 @@
     border-top: 1px solid white;
 }
 
-/* .splide__track {
-    width: 70vw;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 80px; 
-} */
+.splide {
+    width: 100vw;
+} 
 
 .resultsCardActive {
     min-height: 80vh;
@@ -432,6 +427,146 @@
     }
 }  
  
+.resultsCard100Flex {
+    height: 500px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    background: rgba(255,255,255,0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    position: relative;
+    order: 1;
+    cursor:pointer;
+    &Img {
+        height: 300px;
+        width: 300px;
+    }
+    &name {
+        text-align: center;
+    }
+    .resultsCardPrice {
+        margin-top: 43px;
+    }
+}
+.resultsCard85Flex {
+    height: 500px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    background: rgba(255,255,255,0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    position: relative;
+    order: 1;
+    cursor:pointer;
+    &Img {
+        height: 300px;
+        width: 300px;
+    }
+    &name {
+        text-align: center;
+    }
+    .resultsCardPrice {
+        margin-top: 43px;
+    }
+}
+.resultsCard70Flex {
+    height: 500px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    background: rgba(255,255,255,0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    position: relative;
+    order: 1;
+    cursor:pointer;
+    &Img {
+        height: 300px;
+        width: 300px;
+    }
+    &name {
+        text-align: center;
+    }
+    .resultsCardPrice {
+        margin-top: 43px;
+    }
+}
+
+.resultsCard100Flex:hover {
+    background-color: black;
+    transition: 0.8s;
+    .resultsCardPrice {
+        color: white;
+        width: 50px;
+        height: 20px;
+        background-color: green;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .resultsCard70Name {
+        color: white;
+    }
+    
+    &Img:hover {
+        height: 350px;
+        width: 350px;
+
+    }
+}  
+.resultsCard85Flex:hover {
+    background-color: black;
+    transition: 0.8s;
+    .resultsCardPrice {
+        color: white;
+        width: 50px;
+        height: 20px;
+        background-color: green;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .resultsCard70Name {
+        color: white;
+    }
+    
+    &Img:hover {
+        height: 350px;
+        width: 350px;
+
+    }
+}  
+.resultsCard70Flex:hover {
+    background-color: black;
+    transition: 0.8s;
+    .resultsCardPrice {
+        color: white;
+        width: 50px;
+        height: 20px;
+        background-color: green;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .resultsCard70Name {
+        color: white;
+    }
+    
+    &Img:hover {
+        height: 350px;
+        width: 350px;
+
+    }
+}  
+
 
 .resultsCardPorcentaje {
     width: 40px;

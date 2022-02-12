@@ -34,8 +34,8 @@ function slideron (){
       type: 'slide',
       perPage:5,
       clones:0,
-      autoplay:true,
-      interval:3000,
+     /*  autoplay:true,
+      interval:3000, */
       wheel:true,
       releaseWheel:true,
       focus:'center'
