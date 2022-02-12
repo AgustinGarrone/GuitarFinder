@@ -98,6 +98,7 @@ function cargarCardClicks() {
                     <p class=resultsCardActiveName>${elecciones4[t].name}</p>
                     <img class=resultsCardActiveImg src="${elecciones4[t].img}">
                     <div class="resultsCardActive_imgs">
+                        <img class="fotoRelacionada" src="${elecciones4[t].img}">
                         <img class="fotoRelacionada" src="${elecciones4[t].img2}">
                         <img class="fotoRelacionada" src="${elecciones4[t].img3}">
                         <img class="fotoRelacionada" src="${elecciones4[t].img4}">
@@ -114,21 +115,24 @@ function cargarCardClicks() {
                             <div class="resultsCard__specs">
                                 <ul class=specifications__neck>
                                 <p class=specifications__text>NECK</p>
-                                <li>${elecciones4[t].neck1}</li>
-                                <li>${elecciones4[t].neck2}</li>
-                                <li>${elecciones4[t].neck3}</li>
+                                <li class="specification__neck">${elecciones4[t].specifications[0].neck1}</li>
+                                <li class="specification__neck">${elecciones4[t].specifications[0].neck2}</li>
+                                <li class="specification__neck">${elecciones4[t].specifications[0].neck3}</li>
+                                <li class="specification__neck">${elecciones4[t].specifications[0].neck4}</li>
                                 <ul>
                                 <ul class=specifications__fret>
                                 <p class=specifications__text>FREATBOARD</p>
-                                <li>${elecciones4[t].fretboard1}</li>
-                                <li>${elecciones4[t].fretboard2}</li>
-                                <li>${elecciones4[t].fretboard3}</li>
+                                <li class="specification__fretboard">${elecciones4[t].specifications[0].fretboard1}</li>
+                                <li class="specification__fretboard">${elecciones4[t].specifications[0].fretboard2}</li>
+                                <li class="specification__fretboard">${elecciones4[t].specifications[0].fretboard3}</li>
+                                <li class="specification__fretboard">${elecciones4[t].specifications[0].fretboard4}</li>
                                 <ul>
                                 <ul class=specifications__pickups>
                                 <p class=specifications__text>PICKUPS</p>
-                                <li>${elecciones4[t].pickups1}</li>
-                                <li>${elecciones4[t].pickups2}</li>
-                                <li>${elecciones4[t].pickups3}</li>
+                                <li class="specification__pickup">${elecciones4[t].specifications[0].pickups1}</li>
+                                <li class="specification__pickup">${elecciones4[t].specifications[0].pickups2}</li>
+                                <li class="specification__pickup">${elecciones4[t].specifications[0].pickups3}</li>
+                                <li class="specification__pickup">${elecciones4[t].specifications[0].pickups4}</li>
                                 <ul>
                             </div>
                         </div>
@@ -144,8 +148,44 @@ function cargarCardClicks() {
             let atributo=foto.getAttribute("src")
             if (atributo=="undefined") {
                 foto.remove()
+            } else {           /*Si la foto no es undefined, le agrega evento para cambiar imagen*/
+                let fotoActiva=document.createElement("div")
+                fotoActiva.classList.add(".resultsCardActiveImg")
+                let insertarAntesDe=document.querySelector(".resultsCardActive_imgs")
+                foto.addEventListener("click", function (){
+                    document.querySelector(".resultsCardActiveImg").remove()
+                    document.querySelector(".card__face--front").insertBefore(fotoActiva, insertarAntesDe)
+                    fotoActiva.innerHTML=`<img class="resultsCardActiveImg" src="${atributo}">`
+                })
             }
         }   
+
+         /* eliminar info undefined*/
+        let especificacionesNeck=document.querySelectorAll(".specification__neck")
+        for (neck of especificacionesNeck) {
+            let neckTexto=neck.textContent
+            if (neckTexto=="undefined") {
+                neck.remove()
+            }
+        }  
+        
+        let especificacionesFret=document.querySelectorAll(".specification__fretboard")
+        for (fret of especificacionesFret) {
+            let fretTexto=fret.textContent
+            if (fretTexto=="undefined") {
+                fret.remove()
+            }
+        }  
+
+        let especificacionesPickup=document.querySelectorAll(".specification__pickup")
+        for (pickup of especificacionesPickup) {
+            let pickupTexto=pickup.textContent
+            if (pickupTexto=="undefined") {
+                pickup.remove()
+            }
+        }  
+ 
+
             
         /*Activa rotacion de card*/
             const carta=document.querySelectorAll(".rotateCardActive")  
