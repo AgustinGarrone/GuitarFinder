@@ -82,37 +82,11 @@ function terminado() {
 
     document.querySelector(".guitarFinder").prepend(h2option)
     cargarGridResults()
-    /* document.querySelector(".resultsCardPorcentaje").addEventListener("mouseenter",function (){
-        alert("Porcentaje de tu eleccion")
-    })*/
     cargarCardClicks()
 }
-/*  slideron() */
 
 
 function cargarCardClicks() {
-    /*  const cards=document.getElementsByClassName("resultsCard100")
-     console.log("CARDS ES")
-     console.log(cards)
-     console.log(elecciones4)
-     for (let i=0;i=cards.length;i++) {
-       console.log(i)
-       conso
-       cards[i].addEventListener("click", function() {
-           document.querySelector(".results__active").innerHTML=` <div class=resultsCardActive>
-                                                                               <img class=rotateCardActive src="./img/rotateicon.png">
-                                                                               <span class=resultsCardPorcentaje><p>100%</p></span>
-                                                                               <p class=resultsCardActiveName>${elecciones4[i].name}</p>
-                                                                               <img class=resultsCardActiveImg src="${elecciones4[i].img}">
-                                                                               <div class="resultsCardActive_imgs">
-                                                                                   <img src="${elecciones4[i].img}">
-                                                                                   <img src="${elecciones4[i].img}">
-                                                                                   <img src="${elecciones4[i].img}">
-                                                                               </div> 
-                                                                         </div>` 
-                                                                     }) 
-                                                           
-     }*/
     let cards = document.querySelectorAll(".resultsCard100")
     for (let t = 0; t < cards.length; t++) {
         cards[t].addEventListener('click', event => {
@@ -124,9 +98,9 @@ function cargarCardClicks() {
                     <p class=resultsCardActiveName>${elecciones4[t].name}</p>
                     <img class=resultsCardActiveImg src="${elecciones4[t].img}">
                     <div class="resultsCardActive_imgs">
-                        <img src="${elecciones4[t].img2}">
-                        <img src="${elecciones4[t].img3}">
-                        <img src="${elecciones4[t].img4}">
+                        <img class="fotoRelacionada" src="${elecciones4[t].img2}">
+                        <img class="fotoRelacionada" src="${elecciones4[t].img3}">
+                        <img class="fotoRelacionada" src="${elecciones4[t].img4}">
                     </div> 
                 </div>
                 <div class="card__face card__face--back">
@@ -162,7 +136,19 @@ function cargarCardClicks() {
                 </div>
             </div>
         </div>`
-            const carta=document.querySelectorAll(".rotateCardActive")
+
+        /*elimina fotos undefined*/
+         let fotocargada=document.querySelectorAll(".fotoRelacionada") 
+        console.log(fotocargada)
+        for (foto of fotocargada) {
+            let atributo=foto.getAttribute("src")
+            if (atributo=="undefined") {
+                foto.remove()
+            }
+        }   
+            
+        /*Activa rotacion de card*/
+            const carta=document.querySelectorAll(".rotateCardActive")  
             for (cart of carta){
                 cart.addEventListener("click", function (e) {
                     document.querySelector(".card__inner").classList.toggle('is-flipped');
