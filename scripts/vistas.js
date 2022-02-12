@@ -119,9 +119,9 @@ function cambiarVistaFlex () {
     }
     document.querySelector(".results__grid").style.display="none"
     document.querySelector(".results__active").style.display="none"
-    cambiarVista.innerHTML=`<img src="./img/gridicon.png">
+    cambiarVista.innerHTML=` <img src="./img/flexicon.png" >
     <img class="cambiarAGrid" src="./img/off-slider.png">
-    <img src="./img/flexicon.png" >`
+    <img src="./img/gridicon.png">`
    /*  if (elecciones4.length>=0) {
         for (eleccion of elecciones4) {
             document.querySelector(".splide__list").innerHTML+= ` 
@@ -146,8 +146,8 @@ function cambiarVistaGrid (){
     splidecargado=false
     document.querySelector(".results__grid").style.display="grid"
     document.querySelector(".results__active").style.display="flex"
-    cambiarVista.innerHTML=`<img src="./img/gridicon.png">
+    cambiarVista.innerHTML=` <img src="./img/flexicon.png" >
     <img class="cambiarAFlex" src="./img/on-slider.png">
-    <img src="./img/flexicon.png" >`
+    <img src="./img/gridicon.png">`
     document.querySelector(".cambiarAFlex").addEventListener("click",cambiarVistaFlex)
 }

@@ -55,9 +55,9 @@ body {
 }
 
 
- /*  input {
+ input {
     display: none;
-}   */
+}  
 .guitarFinder {
     margin: auto;
     width: 100vw;
@@ -287,10 +287,9 @@ body {
     position: relative;
     perspective: 1000px; /*para la rotacio*/
     cursor:pointer;
-   /*  &Img {
-        height: 300px;
-        width: 300px;
-    } */
+     &Img {
+        max-height: 500px;
+    } 
     &Name {
         text-align: center;
         color: white;

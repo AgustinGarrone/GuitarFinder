@@ -14,7 +14,7 @@
   width: 20px;
   border: 3px solid rgba(0, 0, 0, 0.479);
   height: 20px;
-  /* background-image: url(./src/img/pantallaNavMovil.png); */
+  background-image: url(./src/img/pantallaNavMovil.png);
   background-position: top;
 }
 
@@ -66,9 +66,10 @@ body {
   width: 68px;
 }
 
-/*  input {
-    display: none;
-}   */
+input {
+  display: none;
+}
+
 .guitarFinder {
   margin: auto;
   width: 100vw;
@@ -373,10 +374,10 @@ body {
           perspective: 1000px;
   /*para la rotacio*/
   cursor: pointer;
-  /*  &Img {
-        height: 300px;
-        width: 300px;
-    } */
+}
+
+.resultsCardActiveImg {
+  max-height: 500px;
 }
 
 .resultsCardActiveName {
