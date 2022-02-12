@@ -140,8 +140,13 @@ function cambiarVistaFlex () {
 }
 
 function cambiarVistaGrid (){
-    document.querySelector(".splide__arrows").remove()
-    document.querySelector(".splide__pagination").remove()
+    /*Vemos si el slider flex puso flechas y paginación. De ser asi las eliminar*/
+    if (document.querySelector(".splide__arrows")!=null){  
+        document.querySelector(".splide__arrows").remove() 
+    }   
+    if (document.querySelector(".splide__pagination")!=null) {
+        document.querySelector(".splide__pagination").remove()
+    }
     document.querySelector(".splide").remove()
     splidecargado=false
     document.querySelector(".results__grid").style.display="grid"

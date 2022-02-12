@@ -71,6 +71,9 @@ function mostrar() {
 
 function terminado() {
     resultadosMostrados = true
+    nextboton.remove()
+    botones.append(`<button class="button__compare">Compare</button>`)
+    $(".button__compare").click(compararGuitarras)
     document.querySelector(".guitarFinderApp").style.display = "none"
     cambiarVista.innerHTML = ` <img src="./img/flexicon.png" >
                             <img class="cambiarAFlex" src="./img/on-slider.png">
