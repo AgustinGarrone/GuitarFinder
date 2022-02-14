@@ -144,49 +144,8 @@ function cargarCardClicks() {
             </div>
         </div>`
 
-        /*elimina fotos undefined*/
-         let fotocargada=document.querySelectorAll(".fotoRelacionada") 
-        console.log(fotocargada)
-        for (foto of fotocargada) {
-            let atributo=foto.getAttribute("src")
-            if (atributo=="undefined") {
-                foto.remove()
-            } else {           /*Si la foto no es undefined, le agrega evento para cambiar imagen*/
-                let fotoActiva=document.createElement("div")
-                fotoActiva.classList.add(".resultsCardActiveImg")
-                let insertarAntesDe=document.querySelector(".resultsCardActive_imgs")
-                foto.addEventListener("click", function (){
-                    document.querySelector(".resultsCardActiveImg").remove()
-                    document.querySelector(".card__face--front").insertBefore(fotoActiva, insertarAntesDe)
-                    fotoActiva.innerHTML=`<img class="resultsCardActiveImg" src="${atributo}">`
-                })
-            }
-        }   
 
-         /* eliminar info undefined*/
-        let especificacionesNeck=document.querySelectorAll(".specification__neck")
-        for (neck of especificacionesNeck) {
-            let neckTexto=neck.textContent
-            if (neckTexto=="undefined") {
-                neck.remove()
-            }
-        }  
-        
-        let especificacionesFret=document.querySelectorAll(".specification__fretboard")
-        for (fret of especificacionesFret) {
-            let fretTexto=fret.textContent
-            if (fretTexto=="undefined") {
-                fret.remove()
-            }
-        }  
-
-        let especificacionesPickup=document.querySelectorAll(".specification__pickup")
-        for (pickup of especificacionesPickup) {
-            let pickupTexto=pickup.textContent
-            if (pickupTexto=="undefined") {
-                pickup.remove()
-            }
-        }  
+         eliminarUndefineds()
  
 
             
@@ -201,10 +160,14 @@ function cargarCardClicks() {
         })
     }
 
-    let cards85 = document.querySelectorAll(".resultsCard85")
+    let cardsCoincidence = document.querySelectorAll(".resultsCardCoincidence")
     let pricecoincidence=elecciones2.filter(el => !elecciones3.includes(el)); 
-    for (let t = 0; t < cards85.length; t++) {
-        cards85[t].addEventListener('click', event => {
+    console.log("PRICECOINCIDENCE ES")
+    console.log(pricecoincidence)
+    for (let t = 0; t < cardsCoincidence.length; t++) {
+        cardsCoincidence[t].addEventListener('click', event => {
+            console.log("LA GUITARA APRETADA ES")
+            console.log(pricecoincidence[t])
             document.querySelector(".results__active").innerHTML = ` <div class="card" transition-style="in:wipe:down">
             <div class="card__inner">
                 <div class="card__face card__face--front">
@@ -257,52 +220,8 @@ function cargarCardClicks() {
         </div>`
            
             
-             /*elimina fotos undefined*/
-         let fotocargada=document.querySelectorAll(".fotoRelacionada") 
-         console.log(fotocargada)
-         for (foto of fotocargada) {
-             let atributo=foto.getAttribute("src")
-             if (atributo=="undefined") {
-                 foto.remove()
-             } else {           /*Si la foto no es undefined, le agrega evento para cambiar imagen*/
-                 let fotoActiva=document.createElement("div")
-                 fotoActiva.classList.add(".resultsCardActiveImg")
-                 let insertarAntesDe=document.querySelector(".resultsCardActive_imgs")
-                 foto.addEventListener("click", function (){
-                     document.querySelector(".resultsCardActiveImg").remove()
-                     document.querySelector(".card__face--front").insertBefore(fotoActiva, insertarAntesDe)
-                     fotoActiva.innerHTML=`<img class="resultsCardActiveImg" src="${atributo}">`
-                 })
-             }
-         }   
-            
-             /* eliminar info undefined*/
-             let especificacionesNeck=document.querySelectorAll(".specification__neck")
-             for (neck of especificacionesNeck) {
-                 let neckTexto=neck.textContent
-                 if (neckTexto=="undefined") {
-                     neck.remove()
-                 }
-             }  
-             
-             let especificacionesFret=document.querySelectorAll(".specification__fretboard")
-             for (fret of especificacionesFret) {
-                 let fretTexto=fret.textContent
-                 if (fretTexto=="undefined") {
-                     fret.remove()
-                 }
-             }  
-     
-             let especificacionesPickup=document.querySelectorAll(".specification__pickup")
-             for (pickup of especificacionesPickup) {
-                 let pickupTexto=pickup.textContent
-                 if (pickupTexto=="undefined") {
-                     pickup.remove()
-                 }
-             }  
-      
-     
-                 
+           
+        eliminarUndefineds()
              /*Activa rotacion de card*/
                  const carta=document.querySelectorAll(".rotateCardActive")  
                  for (cart of carta){
@@ -313,4 +232,52 @@ function cargarCardClicks() {
     })
     
 } /*ACA TERMINA EL FOR DE CARD85*/
+}
+
+function eliminarUndefineds() {
+      /*elimina fotos undefined*/
+      let fotocargada=document.querySelectorAll(".fotoRelacionada") 
+      console.log(fotocargada)
+      for (foto of fotocargada) {
+          let atributo=foto.getAttribute("src")
+          if (atributo=="undefined") {
+              foto.remove()
+          } else {           /*Si la foto no es undefined, le agrega evento para cambiar imagen*/
+              let fotoActiva=document.createElement("div")
+              fotoActiva.classList.add(".resultsCardActiveImg")
+              let insertarAntesDe=document.querySelector(".resultsCardActive_imgs")
+              foto.addEventListener("click", function (){
+                  document.querySelector(".resultsCardActiveImg").remove()
+                  document.querySelector(".card__face--front").insertBefore(fotoActiva, insertarAntesDe)
+                  fotoActiva.innerHTML=`<img class="resultsCardActiveImg" src="${atributo}">`
+              })
+          }
+      }   
+         
+          /* eliminar info undefined*/
+          let especificacionesNeck=document.querySelectorAll(".specification__neck")
+          for (neck of especificacionesNeck) {
+              let neckTexto=neck.textContent
+              if (neckTexto=="undefined") {
+                  neck.remove()
+              }
+          }  
+          
+          let especificacionesFret=document.querySelectorAll(".specification__fretboard")
+          for (fret of especificacionesFret) {
+              let fretTexto=fret.textContent
+              if (fretTexto=="undefined") {
+                  fret.remove()
+              }
+          }  
+  
+          let especificacionesPickup=document.querySelectorAll(".specification__pickup")
+          for (pickup of especificacionesPickup) {
+              let pickupTexto=pickup.textContent
+              if (pickupTexto=="undefined") {
+                  pickup.remove()
+              }
+          }  
+   
+  
 }

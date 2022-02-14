@@ -268,7 +268,10 @@
                 "fretboard1":"Material: Other",
                 "fretboard2":"Fret size: Jumbo ",
                 "fretboard3":"Number of frets: 22",
-                "fretboard4":"Radius: 12'"
+                "fretboard4":"Radius: 12'",
+                "pickups1":"Configuration: HH",
+                "pickups2":"Neck: Proprietary Humbucker",
+                "pickups3":"Bridge: Proprietary Humbucker"
             }]
         },
         {
@@ -412,9 +415,9 @@
                 "fretboard2":"Fret size: Jumbo ",
                 "fretboard3":"Number of frets: 21",
                 "pickups1":"Pickup configuration: HSH",
-                "pickups2":"Neck Pickup: Quantum Neck Humbucker (Passive/Ceramic)",
-                "pickups3":"Middle Pickup:Quantum single-coil mid pickup (Passive/Ceramic)",
-                "pickups4":"Bridge Pickup: Quantum Bridge Humbucker (Passive/Ceramic)"
+                "pickups2":"Neck Pickup: Quantum Neck Humbucker ",
+                "pickups3":"Middle Pickup:Quantum single-coil mid pickup",
+                "pickups4":"Bridge Pickup: Quantum Bridge Humbucker "
             }]
         },
         {

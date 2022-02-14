@@ -131,8 +131,12 @@ function cargarResultadosDeComparacion(){
 
 function salirDeComparacion(){
     document.querySelector(".splide__comparacion").innerHTML=``
-    document.querySelector(".splide__comparacion").remove()
+    document.querySelector(".splide2").remove()
+    let gridVision=document.createElement("div")
+    gridVision.classList.add("results__grid")
+    document.querySelector(".results").appendChild(gridVision)
     cargarGridResults()
+    cargarCardClicks()
     botones.html(`<button class="backbutton">Reset</button><button class="button__compare">Compare</button>`)
     $(".button__compare").click(compararGuitarras)
 }
