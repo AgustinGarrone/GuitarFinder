@@ -294,7 +294,6 @@ body {
     backdrop-filter: blur(5px);
     position: relative;
     perspective: 1000px; /*para la rotacio*/
-    cursor:pointer;
      &Img {
         height: 500px;
     } 
@@ -353,7 +352,8 @@ body {
 .rotateCardActive {
     position: absolute;
     top: 5px;
-    left: 5px
+    left: 5px;
+    cursor: pointer;
 }
 
 .resultsCardActive_imgs {
@@ -362,6 +362,7 @@ body {
     border-top: 1px solid white;
     img {
         height: 150px;
+        cursor: pointer;
     }
 }
 
@@ -390,7 +391,6 @@ body {
     height: 100%;
     transition: transform 1s;
     transform-style: preserve-3d;
-    cursor: pointer;
     position: relative;
   }
   

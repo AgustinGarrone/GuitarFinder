@@ -405,8 +405,6 @@
             "brand":"ibanez",
             "img":"./img/guitar18.png",
             "img2":"./img/guitarPreviews/guitar18-1.png",
-            "img3":"./img/guitarPreviews/guitar18-2.png",
-            "img4":"./img/guitarPreviews/guitar18-3.png",
             "specifications":[{
                 "neck1":"Type: Wizard III neck",
                 "neck2":"Neck wood: Maple",
@@ -452,6 +450,7 @@
             "img3":"./img/guitarPreviews/guitar20-2.png",
             "img4":"./img/guitarPreviews/guitar20-3.png",
             "specifications":[{
+                "neck1":"Neck wood: Maple",
                 "fretboard1":"22-1/5' scale",
                 "fretboard2":"Fret size: Medium ",
                 "fretboard3":"Number of frets: 24",

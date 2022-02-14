@@ -381,7 +381,6 @@ input {
   -webkit-perspective: 1000px;
           perspective: 1000px;
   /*para la rotacio*/
-  cursor: pointer;
 }
 
 .resultsCardActiveImg {
@@ -470,6 +469,7 @@ input {
   position: absolute;
   top: 5px;
   left: 5px;
+  cursor: pointer;
 }
 
 .resultsCardActive_imgs {
@@ -480,6 +480,7 @@ input {
 
 .resultsCardActive_imgs img {
   height: 150px;
+  cursor: pointer;
 }
 
 /*CARDS DE COMPARACION*/
@@ -512,7 +513,6 @@ input {
   transition: transform 1s, -webkit-transform 1s;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  cursor: pointer;
   position: relative;
 }
 
