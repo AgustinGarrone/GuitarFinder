@@ -90,9 +90,9 @@ function terminado() {
 
 
 function cargarCardClicks() {
-    let cards = document.querySelectorAll(".resultsCard100")
-    for (let t = 0; t < cards.length; t++) {
-        cards[t].addEventListener('click', event => {
+    let cards100 = document.querySelectorAll(".resultsCard100")
+    for (let t = 0; t < cards100.length; t++) {
+        cards100[t].addEventListener('click', event => {
             document.querySelector(".results__active").innerHTML = ` <div class="card" transition-style="in:wipe:down">
             <div class="card__inner">
                 <div class="card__face card__face--front">
@@ -200,4 +200,117 @@ function cargarCardClicks() {
 
         })
     }
-} 
+
+    let cards85 = document.querySelectorAll(".resultsCard85")
+    let pricecoincidence=elecciones2.filter(el => !elecciones3.includes(el)); 
+    for (let t = 0; t < cards85.length; t++) {
+        cards85[t].addEventListener('click', event => {
+            document.querySelector(".results__active").innerHTML = ` <div class="card" transition-style="in:wipe:down">
+            <div class="card__inner">
+                <div class="card__face card__face--front">
+                    <img class=rotateCardActive src="./img/rotateicon.png">
+                    <span class=resultsCardPorcentaje><p>85%</p></span>
+                    <p class=resultsCardActiveName>${pricecoincidence[t].name}</p>
+                    <img class=resultsCardActiveImg src="${pricecoincidence[t].img}">
+                    <div class="resultsCardActive_imgs">
+                        <img class="fotoRelacionada" src="${pricecoincidence[t].img}">
+                        <img class="fotoRelacionada" src="${pricecoincidence[t].img2}">
+                        <img class="fotoRelacionada" src="${pricecoincidence[t].img3}">
+                        <img class="fotoRelacionada" src="${pricecoincidence[t].img4}">
+                    </div> 
+                </div>
+                <div class="card__face card__face--back">
+                    <div class="card__content">
+                        <div class="card__header">
+                           <img class=rotateCardActive src="./img/rotateicon.png">
+                            <img src="./img/puaguitar.png" alt="" class="pp" />
+                            <h2>SPECIFICATIONS</h2>
+                        </div>
+                        <div class="card__body">
+                            <div class="resultsCard__specs">
+                                <ul class=specifications__neck>
+                                <p class=specifications__text>NECK</p>
+                                <li class="specification__neck">${pricecoincidence[t].specifications[0].neck1}</li>
+                                <li class="specification__neck">${pricecoincidence[t].specifications[0].neck2}</li>
+                                <li class="specification__neck">${pricecoincidence[t].specifications[0].neck3}</li>
+                                <li class="specification__neck">${pricecoincidence[t].specifications[0].neck4}</li>
+                                <ul>
+                                <ul class=specifications__fret>
+                                <p class=specifications__text>FREATBOARD</p>
+                                <li class="specification__fretboard">${pricecoincidence[t].specifications[0].fretboard1}</li>
+                                <li class="specification__fretboard">${pricecoincidence[t].specifications[0].fretboard2}</li>
+                                <li class="specification__fretboard">${pricecoincidence[t].specifications[0].fretboard3}</li>
+                                <li class="specification__fretboard">${pricecoincidence[t].specifications[0].fretboard4}</li>
+                                <ul>
+                                <ul class=specifications__pickups>
+                                <p class=specifications__text>PICKUPS</p>
+                                <li class="specification__pickup">${pricecoincidence[t].specifications[0].pickups1}</li>
+                                <li class="specification__pickup">${pricecoincidence[t].specifications[0].pickups2}</li>
+                                <li class="specification__pickup">${pricecoincidence[t].specifications[0].pickups3}</li>
+                                <li class="specification__pickup">${pricecoincidence[t].specifications[0].pickups4}</li>
+                                <ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>`
+           
+            
+             /*elimina fotos undefined*/
+         let fotocargada=document.querySelectorAll(".fotoRelacionada") 
+         console.log(fotocargada)
+         for (foto of fotocargada) {
+             let atributo=foto.getAttribute("src")
+             if (atributo=="undefined") {
+                 foto.remove()
+             } else {           /*Si la foto no es undefined, le agrega evento para cambiar imagen*/
+                 let fotoActiva=document.createElement("div")
+                 fotoActiva.classList.add(".resultsCardActiveImg")
+                 let insertarAntesDe=document.querySelector(".resultsCardActive_imgs")
+                 foto.addEventListener("click", function (){
+                     document.querySelector(".resultsCardActiveImg").remove()
+                     document.querySelector(".card__face--front").insertBefore(fotoActiva, insertarAntesDe)
+                     fotoActiva.innerHTML=`<img class="resultsCardActiveImg" src="${atributo}">`
+                 })
+             }
+         }   
+            
+             /* eliminar info undefined*/
+             let especificacionesNeck=document.querySelectorAll(".specification__neck")
+             for (neck of especificacionesNeck) {
+                 let neckTexto=neck.textContent
+                 if (neckTexto=="undefined") {
+                     neck.remove()
+                 }
+             }  
+             
+             let especificacionesFret=document.querySelectorAll(".specification__fretboard")
+             for (fret of especificacionesFret) {
+                 let fretTexto=fret.textContent
+                 if (fretTexto=="undefined") {
+                     fret.remove()
+                 }
+             }  
+     
+             let especificacionesPickup=document.querySelectorAll(".specification__pickup")
+             for (pickup of especificacionesPickup) {
+                 let pickupTexto=pickup.textContent
+                 if (pickupTexto=="undefined") {
+                     pickup.remove()
+                 }
+             }  
+      
+     
+                 
+             /*Activa rotacion de card*/
+                 const carta=document.querySelectorAll(".rotateCardActive")  
+                 for (cart of carta){
+                     cart.addEventListener("click", function (e) {
+                         document.querySelector(".card__inner").classList.toggle('is-flipped');
+                     });
+                 }
+    })
+    
+} /*ACA TERMINA EL FOR DE CARD85*/
+}

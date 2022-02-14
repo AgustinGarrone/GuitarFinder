@@ -44,3 +44,15 @@ function slideron (){
     console.log("LA CANTIDAD DE GUITARS MOSTRADAS ES ")
     console.log(guitarrasMostradas)
 }
+
+function sliderComparacion(){
+  new Splide( ".splide2", {
+    type: 'fade',
+    perPage:1,
+    clones:0,
+   /*  autoplay:true,
+    interval:3000, */
+    focus:'center'
+  }).mount();
+
+}

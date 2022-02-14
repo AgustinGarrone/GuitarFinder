@@ -43,10 +43,10 @@
                 "fretboard1":"Material: Indian laurel",
                 "fretboard2":"Fret size: Medium ",
                 "fretboard3":"Number of frets: 21",
-                "pickups1":"Neck: Standard single-coil Strat",
-                "pickups2":"Middle: Standard single-coil Strat",
-                "pickups3":"Bridge: Standard single-coil Strat",
-                "pickups4":"passive parallel Fender "
+                "pickups1":"Configuration: SSS ",
+                "pickups2":"Neck: Standard single-coil Strat",
+                "pickups3":"Middle: Standard single-coil Strat",
+                "pickups4":"Bridge: Standard single-coil Strat"
             }]
         },
         {
@@ -63,14 +63,10 @@
             "img4":"./img/guitarPreviews/guitar3-4.png",
             "specifications":[{
                 "neck1":"Neck shape: C standard ",
-                "neck2":"Neck wood: Maple",
                 "neck3":"Scale length: 22.75 in.",
-                "fretboard1":"Material: Indian laurel",
                 "fretboard2":"Fret size: Medium ",
                 "fretboard3":"Number of frets: 21",
-                "pickups1":"Neck: Standard single-coil Strat",
-                "pickups2":"Middle: Standard single-coil Strat",
-                "pickups3":"Bridge: Standard single-coil Strat"
+                "pickups1":"Dual humbucking pickups"
             }]
         },
         {
@@ -86,10 +82,10 @@
             "img3":"./img/guitarPreviews/guitar4-2.png",
             "img4":"./img/guitarPreviews/guitar4-3.png",
             "specifications":[{
-                "neck":"Neck shape: GRGM",
-                "neck1":"Joint: Set-in",
-                "neck2":"Neck wood: Maple",
-                "neck3":"Scale length: 22.22 in.",
+                "neck1":"Neck shape: GRGM",
+                "neck2":"Joint: Set-in",
+                "neck3":"Neck wood: Maple",
+                "neck4":"Scale length: 22.22 in.",
                 "fretboard1":"Material: Maple",
                 "fretboard2":"Fret size: Medium ",
                 "fretboard3":"Number of frets: 22",
@@ -244,9 +240,6 @@
             "price":1400,
             "brand":"fender",
             "img":"./img/guitar11.png",
-            "img2":"./img/guitarPreviews/guitar11-1.png",
-            "img3":"./img/guitarPreviews/guitar11-2.png",
-            "img4":"",
             "specifications":[{
                 "neck1":"Neck: Rosewood, Modern C Shape",
                 "neck2":"Neck Finish: Gloss Urethane",
@@ -287,19 +280,20 @@
             "price":500,
             "brand":"gibson",
             "img":"./img/guitar13.png",
-            "img2":"./img/guitarPreviews/guitar4-1.png",
-            "img3":"./img/guitarPreviews/guitar4-2.png",
-            "img4":"./img/guitarPreviews/guitar4-3.png",
+            "img2":"./img/guitarPreviews/guitar13-1.png",
+            "img3":"./img/guitarPreviews/guitar13-2.png",
+            "img4":"./img/guitarPreviews/guitar13-3.png",
             "specifications":[{
-                "neck1":"Neck shape: C standard ",
-                "neck2":"Neck wood: Maple",
-                "neck3":"Scale length: 22.75 in.",
-                "fretboard1":"Material: Indian laurel",
-                "fretboard2":"Fret size: Medium ",
-                "fretboard3":"Number of frets: 21",
-                "pickups1":"Neck: Standard single-coil Strat",
-                "pickups2":"Middle: Standard single-coil Strat",
-                "pickups3":"Bridge: Standard single-coil Strat"
+                "neck1":"Neck shape: '50s Vintage",
+                "neck2":"Neck wood: Mahogany",
+                "neck3":"Scale length:24.75 in.",
+                "neck4":"Neck finish: Gloss Nitrocellulose",
+                "fretboard1":"Material: Rosewood",
+                "fretboard2":"Fret size: Medium jumbo",
+                "fretboard3":"Number of frets: 22",
+                "pickups1":"Configuration: SS",
+                "pickups2":"Neck: P-90",
+                "pickups3":"Bridge: P-90"
             }]
         },
         {
@@ -311,19 +305,20 @@
             "price":710,
             "brand":"ibanez",
             "img":"./img/guitar14.png",
-            "img2":"./img/guitarPreviews/guitar4-1.png",
-            "img3":"./img/guitarPreviews/guitar4-2.png",
-            "img4":"./img/guitarPreviews/guitar4-3.png",
+            "img2":"./img/guitarPreviews/guitar14-1.png",
+            "img3":"./img/guitarPreviews/guitar14-2.png",
+            "img4":"./img/guitarPreviews/guitar14-3.png",
             "specifications":[{
-                "neck1":"Neck shape: C standard ",
-                "neck2":"Neck wood: Maple",
-                "neck3":"Scale length: 22.75 in.",
-                "fretboard1":"Material: Indian laurel",
-                "fretboard2":"Fret size: Medium ",
-                "fretboard3":"Number of frets: 21",
-                "pickups1":"Neck: Standard single-coil Strat",
-                "pickups2":"Middle: Standard single-coil Strat",
-                "pickups3":"Bridge: Standard single-coil Strat"
+                "neck1":"Neck wood: Mahogany/maple/mahogany",
+                "neck2":"Joint: Set-in",
+                "neck3":"Scale length: 24.75" ,
+                "fretboard1":"Material: Ebony",
+                "fretboard2":"Radius: 15.75 ",
+                "fretboard3":"Number of frets: 22",
+                "fretboard4":"Fret size: Medium",
+                "pickups1":"Configuration: HH",
+                "pickups2":"Neck: Super 58 Custom",
+                "pickups3":"Bridge: Super 58 Custom"
             }]
         },
         {
@@ -335,19 +330,20 @@
             "price":2199,
             "brand":"gibson",
             "img":"./img/guitar15.png",
-            "img2":"./img/guitarPreviews/guitar4-1.png",
-            "img3":"./img/guitarPreviews/guitar4-2.png",
-            "img4":"./img/guitarPreviews/guitar4-3.png",
+            "img2":"./img/guitarPreviews/guitar15-1.png",
+            "img3":"./img/guitarPreviews/guitar15-2.png",
+            "img4":"./img/guitarPreviews/guitar15-3.png",
             "specifications":[{
-                "neck1":"Neck shape: C standard ",
-                "neck2":"Neck wood: Maple",
-                "neck3":"Scale length: 22.75 in.",
-                "fretboard1":"Material: Indian laurel",
-                "fretboard2":"Fret size: Medium ",
-                "fretboard3":"Number of frets: 21",
-                "pickups1":"Neck: Standard single-coil Strat",
-                "pickups2":"Middle: Standard single-coil Strat",
-                "pickups3":"Bridge: Standard single-coil Strat"
+                "neck1":"Neck shape: SlimTaper",
+                "neck2":"Neck wood: Mahogany",
+                "neck3":"Scale length: 24.75 in",
+                "fretboard1":"Material: Rosewood",
+                "fretboard2":"Fret size: Medium Jumbo",
+                "fretboard3":"Radius: 12 in.",
+                "fretboard4":"Number of frets: 22",
+                "pickups1":"Configuration: HH",
+                "pickups2":"Neck: BurstBucker 61R",
+                "pickups3":"Bridge: BurstBucker 61T"
             }]
         },
         {
@@ -359,19 +355,18 @@
             "price":2200,
             "brand":"gibson",
             "img":"./img/guitar16.png",
-            "img2":"./img/guitarPreviews/guitar4-1.png",
-            "img3":"./img/guitarPreviews/guitar4-2.png",
-            "img4":"./img/guitarPreviews/guitar4-3.png",
+            "img2":"./img/guitarPreviews/guitar16-1.png",
+            "img3":"./img/guitarPreviews/guitar16-2.png",
             "specifications":[{
-                "neck1":"Neck shape: C standard ",
-                "neck2":"Neck wood: Maple",
-                "neck3":"Scale length: 22.75 in.",
-                "fretboard1":"Material: Indian laurel",
-                "fretboard2":"Fret size: Medium ",
-                "fretboard3":"Number of frets: 21",
-                "pickups1":"Neck: Standard single-coil Strat",
-                "pickups2":"Middle: Standard single-coil Strat",
-                "pickups3":"Bridge: Standard single-coil Strat"
+                "neck1":"Neck shape: SlimTaper ",
+                "neck2":"Neck wood: Mahogany",
+                "neck3":"Scale length: 24.75'",
+                "fretboard1":"Material: Rosewood",
+                "fretboard2":"Fret size: Medium Jumbo",
+                "fretboard3":"Number of frets: 22",
+                "pickups1":"Configuration: HH",
+                "pickups2":"Neck: Proprietary Humbucker",
+                "pickups3":"Bridge: Proprietary Humbucker"
             }]
         },
         {
@@ -383,19 +378,21 @@
             "price":2100,
             "brand":"fender",
             "img":"./img/guitar17.png",
-            "img2":"./img/guitarPreviews/guitar4-1.png",
-            "img3":"./img/guitarPreviews/guitar4-2.png",
-            "img4":"./img/guitarPreviews/guitar4-3.png",
+            "img2":"./img/guitarPreviews/guitar17-1.png",
+            "img3":"./img/guitarPreviews/guitar17-2.png",
+            "img4":"./img/guitarPreviews/guitar17-3.png",
             "specifications":[{
-                "neck1":"Neck shape: C standard ",
+                "neck1":"Neck shape: C ",
                 "neck2":"Neck wood: Maple",
-                "neck3":"Scale length: 22.75 in.",
-                "fretboard1":"Material: Indian laurel",
-                "fretboard2":"Fret size: Medium ",
-                "fretboard3":"Number of frets: 21",
-                "pickups1":"Neck: Standard single-coil Strat",
-                "pickups2":"Middle: Standard single-coil Strat",
-                "pickups3":"Bridge: Standard single-coil Strat"
+                "neck3":"Scale length: 25.5 in.",
+                "fretboard1":"Material: Rolled-edge Maple",
+                "fretboard2":"Fret size: Narrow-Tall",
+                "fretboard3":"Number of frets: 22",
+                "fretboard4":"Radius: 9.5'",
+                "pickups1":"Configuration: SSS",
+                "pickups2":"Neck: Proprietary Single Coil",
+                "pickups3":"Bridge: Proprietary Single Coil",
+                "pickups4":"Control layout: Master volume Individual tone"
             }]
         },
         {
@@ -407,19 +404,19 @@
             "price":400,
             "brand":"ibanez",
             "img":"./img/guitar18.png",
-            "img2":"./img/guitarPreviews/guitar4-1.png",
-            "img3":"./img/guitarPreviews/guitar4-2.png",
-            "img4":"./img/guitarPreviews/guitar4-3.png",
+            "img2":"./img/guitarPreviews/guitar18-1.png",
+            "img3":"./img/guitarPreviews/guitar18-2.png",
+            "img4":"./img/guitarPreviews/guitar18-3.png",
             "specifications":[{
-                "neck1":"Neck shape: C standard ",
+                "neck1":"Type: Wizard III neck",
                 "neck2":"Neck wood: Maple",
-                "neck3":"Scale length: 22.75 in.",
-                "fretboard1":"Material: Indian laurel",
-                "fretboard2":"Fret size: Medium ",
+                "fretboard1":"Fretboard: Jatoba",
+                "fretboard2":"Fret size: Jumbo ",
                 "fretboard3":"Number of frets: 21",
-                "pickups1":"Neck: Standard single-coil Strat",
-                "pickups2":"Middle: Standard single-coil Strat",
-                "pickups3":"Bridge: Standard single-coil Strat"
+                "pickups1":"Pickup configuration: HSH",
+                "pickups2":"Neck Pickup: Quantum Neck Humbucker (Passive/Ceramic)",
+                "pickups3":"Middle Pickup:Quantum single-coil mid pickup (Passive/Ceramic)",
+                "pickups4":"Bridge Pickup: Quantum Bridge Humbucker (Passive/Ceramic)"
             }]
         },
         {
@@ -431,19 +428,15 @@
             "price":500,
             "brand":"fender",
             "img":"./img/guitar19.png",
-            "img2":"./img/guitarPreviews/guitar4-1.png",
-            "img3":"./img/guitarPreviews/guitar4-2.png",
-            "img4":"./img/guitarPreviews/guitar4-3.png",
+            "img2":"./img/guitarPreviews/guitar19-1.png",
+            "img3":"./img/guitarPreviews/guitar19-2.png",
+            "img4":"./img/guitarPreviews/guitar19-3.png",
             "specifications":[{
                 "neck1":"Neck shape: C standard ",
                 "neck2":"Neck wood: Maple",
-                "neck3":"Scale length: 22.75 in.",
-                "fretboard1":"Material: Indian laurel",
                 "fretboard2":"Fret size: Medium ",
                 "fretboard3":"Number of frets: 21",
-                "pickups1":"Neck: Standard single-coil Strat",
-                "pickups2":"Middle: Standard single-coil Strat",
-                "pickups3":"Bridge: Standard single-coil Strat"
+                "pickups1":"Fender-designed alnico single-coil pickups"
             }]
         },
         {
@@ -455,19 +448,14 @@
             "price":150,
             "brand":"ibanez",
             "img":"./img/guitar20.png",
-            "img2":"./img/guitarPreviews/guitar4-1.png",
-            "img3":"./img/guitarPreviews/guitar4-2.png",
-            "img4":"./img/guitarPreviews/guitar4-3.png",
+            "img2":"./img/guitarPreviews/guitar20-1.png",
+            "img3":"./img/guitarPreviews/guitar20-2.png",
+            "img4":"./img/guitarPreviews/guitar20-3.png",
             "specifications":[{
-                "neck1":"Neck shape: C standard ",
-                "neck2":"Neck wood: Maple",
-                "neck3":"Scale length: 22.75 in.",
-                "fretboard1":"Material: Indian laurel",
+                "fretboard1":"22-1/5' scale",
                 "fretboard2":"Fret size: Medium ",
-                "fretboard3":"Number of frets: 21",
-                "pickups1":"Neck: Standard single-coil Strat",
-                "pickups2":"Middle: Standard single-coil Strat",
-                "pickups3":"Bridge: Standard single-coil Strat"
+                "fretboard3":"Number of frets: 24",
+                "pickups1":"Dual Powersound humbucking pickups"
             }]
         },
         {
@@ -479,19 +467,17 @@
             "price":200,
             "brand":"ibanez",
             "img":"./img/guitar21.png",
-            "img2":"./img/guitarPreviews/guitar4-1.png",
-            "img3":"./img/guitarPreviews/guitar4-2.png",
-            "img4":"./img/guitarPreviews/guitar4-3.png",
+            "img2":"./img/guitarPreviews/guitar21-1.png",
+            "img3":"./img/guitarPreviews/guitar21-2.png",
+            "img4":"./img/guitarPreviews/guitar21-3.png",
             "specifications":[{
-                "neck1":"Neck shape: C standard ",
-                "neck2":"Neck wood: Maple",
+                "neck1":"GRGA Maple neck ",
                 "neck3":"Scale length: 22.75 in.",
-                "fretboard1":"Material: Indian laurel",
-                "fretboard2":"Fret size: Medium ",
+                "fretboard1":"Treated New Zealand Pine fretboard w/ White dot inlay",
+                "fretboard2":"Fret size: Jumbo ",
                 "fretboard3":"Number of frets: 21",
-                "pickups1":"Neck: Standard single-coil Strat",
-                "pickups2":"Middle: Standard single-coil Strat",
-                "pickups3":"Bridge: Standard single-coil Strat"
+                "pickups1":"Infinity R (H) neck pickup",
+                "pickups2":"Infinity R (H) bridge pickup"
             }]
         },
         {
@@ -503,19 +489,18 @@
             "price":500,
             "brand":"gibson",
             "img":"./img/guitar22.png",
-            "img2":"./img/guitarPreviews/guitar4-1.png",
-            "img3":"./img/guitarPreviews/guitar4-2.png",
-            "img4":"./img/guitarPreviews/guitar4-3.png",
+            "img2":"./img/guitarPreviews/guitar22-1.png",
+            "img3":"./img/guitarPreviews/guitar22-2.png",
             "specifications":[{
-                "neck1":"Neck shape: C standard ",
-                "neck2":"Neck wood: Maple",
-                "neck3":"Scale length: 22.75 in.",
-                "fretboard1":"Material: Indian laurel",
-                "fretboard2":"Fret size: Medium ",
-                "fretboard3":"Number of frets: 21",
-                "pickups1":"Neck: Standard single-coil Strat",
-                "pickups2":"Middle: Standard single-coil Strat",
-                "pickups3":"Bridge: Standard single-coil Strat"
+                "neck1":"Neck shape: Rounded ",
+                "neck2":"Neck wood: Mahogany",
+                "neck3":"Scale length: 24.75 in",
+                "fretboard1":"Material: Rosewood",
+                "fretboard2":"Fret size: Medium Jumbo",
+                "fretboard3":"Number of frets: 22",
+                "pickups1":"Configuration: HH",
+                "pickups2":"Neck: 490R",
+                "pickups3":"Bridge: 490T"
             }]
         },
         {
@@ -527,19 +512,20 @@
             "price":949,
             "brand":"gibson",
             "img":"./img/guitar23.png",
-            "img2":"./img/guitarPreviews/guitar4-1.png",
-            "img3":"./img/guitarPreviews/guitar4-2.png",
-            "img4":"./img/guitarPreviews/guitar4-3.png",
+            "img2":"./img/guitarPreviews/guitar23-1.png",
+            "img3":"./img/guitarPreviews/guitar23-2.png",
+            "img4":"./img/guitarPreviews/guitar23-3.png",
             "specifications":[{
-                "neck1":"Neck shape: C standard ",
+                "neck1":"Neck shape: Rounded C",
                 "neck2":"Neck wood: Maple",
-                "neck3":"Scale length: 22.75 in.",
-                "fretboard1":"Material: Indian laurel",
-                "fretboard2":"Fret size: Medium ",
-                "fretboard3":"Number of frets: 21",
-                "pickups1":"Neck: Standard single-coil Strat",
-                "pickups2":"Middle: Standard single-coil Strat",
-                "pickups3":"Bridge: Standard single-coil Strat"
+                "neck3":"Scale length: 24.75'.",
+                "fretboard1":"Material: Ebony",
+                "fretboard2":"Inlays: Pearloid Block",
+                "fretboard3":"Number of frets: 22",
+                "pickups1":"Configuration: HH",
+                "pickups2":"Neck: Proprietary Humbucker",
+                "pickups3":"Bridge: Proprietary Humbucker",
+                "pickups4":"Control layout: Individual volume, Individual volume, Individual tone, Individual tone"
             }]
         },
         {
@@ -551,19 +537,19 @@
             "price":499,
             "brand":"fender",
             "img":"./img/guitar24.png",
-            "img2":"./img/guitarPreviews/guitar4-1.png",
-            "img3":"./img/guitarPreviews/guitar4-2.png",
-            "img4":"./img/guitarPreviews/guitar4-3.png",
+            "img2":"./img/guitarPreviews/guitar24-1.png",
+            "img3":"./img/guitarPreviews/guitar24-2.png",
+            "img4":"./img/guitarPreviews/guitar24-3.png",
             "specifications":[{
-                "neck1":"Neck shape: C standard ",
+                "neck1":"Neck shape: C  ",
                 "neck2":"Neck wood: Maple",
-                "neck3":"Scale length: 22.75 in.",
-                "fretboard1":"Material: Indian laurel",
-                "fretboard2":"Fret size: Medium ",
-                "fretboard3":"Number of frets: 21",
-                "pickups1":"Neck: Standard single-coil Strat",
-                "pickups2":"Middle: Standard single-coil Strat",
-                "pickups3":"Bridge: Standard single-coil Strat"
+                "neck3":"Truss rod: Standard",
+                "fretboard1":"Radius: 9.5'",
+                "fretboard2":"Fret size: Narrow-Tall ",
+                "fretboard3":"Fretboard: Maple",
+                "pickups1":"Configuration: HH",
+                "pickups2":"Neck:Proprietary Humbucker",
+                "pickups3":"Bridge: Proprietary Humbucker"
             }]
         },
         {
@@ -575,19 +561,19 @@
             "price":299,
             "brand":"ibanez",
             "img":"./img/guitar25.png",
-            "img2":"./img/guitarPreviews/guitar4-1.png",
-            "img3":"./img/guitarPreviews/guitar4-2.png",
-            "img4":"./img/guitarPreviews/guitar4-3.png",
+            "img2":"./img/guitarPreviews/guitar25-1.png",
+            "img3":"./img/guitarPreviews/guitar25-2.png",
+            "img4":"./img/guitarPreviews/guitar25-3.png",
             "specifications":[{
-                "neck1":"Neck shape: C standard ",
-                "neck2":"Neck wood: Maple",
-                "neck3":"Scale length: 22.75 in.",
-                "fretboard1":"Material: Indian laurel",
-                "fretboard2":"Fret size: Medium ",
-                "fretboard3":"Number of frets: 21",
-                "pickups1":"Neck: Standard single-coil Strat",
-                "pickups2":"Middle: Standard single-coil Strat",
-                "pickups3":"Bridge: Standard single-coil Strat"
+                "neck1":"Neck shape: Speed neck",
+                "neck2":"Neck wood: Mahogany",
+                "neck3":"Scale length: 25.5 in.",
+                "fretboard1":"Material: Bound Laurel",
+                "fretboard2":"Fret size: Medium Stainless",
+                "fretboard3":"Number of frets: 22",
+                "pickups1":"Configuration: HH",
+                "pickups2":"Neck: Classic Elite",
+                "pickups3":"Bridge: Classic Elite"
             }]
         },
         {
@@ -599,19 +585,14 @@
             "price":599,
             "brand":"fender",
             "img":"./img/guitar26.png",
-            "img2":"./img/guitarPreviews/guitar4-1.png",
-            "img3":"./img/guitarPreviews/guitar4-2.png",
-            "img4":"./img/guitarPreviews/guitar4-3.png",
             "specifications":[{
-                "neck1":"Neck shape: C standard ",
-                "neck2":"Neck wood: Maple",
-                "neck3":"Scale length: 22.75 in.",
-                "fretboard1":"Material: Indian laurel",
-                "fretboard2":"Fret size: Medium ",
-                "fretboard3":"Number of frets: 21",
-                "pickups1":"Neck: Standard single-coil Strat",
-                "pickups2":"Middle: Standard single-coil Strat",
-                "pickups3":"Bridge: Standard single-coil Strat"
+                "neck1":"Hard-Rock Maple with Maple or Rosewood fingerboard ",
+                "neck2":"Neck radius: 9'",
+                "neck3":"Neck profile: medium C",
+                "fretboard2":"Fret size: Medium jumbo, nickel ",
+                "fretboard3":"Number of frets: 22",
+                "pickups1":"Neck: Paul Gagon-designed AS4255C a",
+                "pickups3":"Bridge: Leo Fender-designed G&L MFD single coil b"
             }]
         },
         {
@@ -623,19 +604,20 @@
             "price":999,
             "brand":"ibanez",
             "img":"./img/guitar27.png",
-            "img2":"./img/guitarPreviews/guitar4-1.png",
-            "img3":"./img/guitarPreviews/guitar4-2.png",
-            "img4":"./img/guitarPreviews/guitar4-3.png",
+            "img2":"./img/guitarPreviews/guitar27-1.png",
+            "img3":"./img/guitarPreviews/guitar27-2.png",
+            "img4":"./img/guitarPreviews/guitar27-3.png",
             "specifications":[{
-                "neck1":"Neck shape: C standard ",
-                "neck2":"Neck wood: Maple",
-                "neck3":"Scale length: 22.75 in.",
-                "fretboard1":"Material: Indian laurel",
+                "neck1":"Truss rod: Standard ",
+                "neck2":"Neck wood: Mahogany/Maple/Mahogany",
+                "neck3":"Scale length: 24.75 in.",
+                "fretboard1":"Material: Ebony",
                 "fretboard2":"Fret size: Medium ",
-                "fretboard3":"Number of frets: 21",
-                "pickups1":"Neck: Standard single-coil Strat",
-                "pickups2":"Middle: Standard single-coil Strat",
-                "pickups3":"Bridge: Standard single-coil Strat"
+                "fretboard3":"Number of frets: 22",
+                "fretboard4":"Radius: 15.75 in.",
+                "pickups1":"Configuration: HH",
+                "pickups2":"Neck: Super 58 Custom",
+                "pickups3":"Bridge: Super 58 Custom"
             }]
         },
         {
@@ -647,19 +629,20 @@
             "price":699,
             "brand":"gibson",
             "img":"./img/guitar28.png",
-            "img2":"./img/guitarPreviews/guitar4-1.png",
-            "img3":"./img/guitarPreviews/guitar4-2.png",
-            "img4":"./img/guitarPreviews/guitar4-3.png",
+            "img2":"./img/guitarPreviews/guitar28-1.png",
+            "img3":"./img/guitarPreviews/guitar28-2.png",
+            "img4":"./img/guitarPreviews/guitar28-3.png",
             "specifications":[{
-                "neck1":"Neck shape: C standard ",
-                "neck2":"Neck wood: Maple",
-                "neck3":"Scale length: 22.75 in.",
-                "fretboard1":"Material: Indian laurel",
-                "fretboard2":"Fret size: Medium ",
-                "fretboard3":"Number of frets: 21",
-                "pickups1":"Neck: Standard single-coil Strat",
-                "pickups2":"Middle: Standard single-coil Strat",
-                "pickups3":"Bridge: Standard single-coil Strat"
+                "neck1":"Neck shape: SlimTaper D",
+                "neck2":"Neck wood: Mahogany",
+                "neck3":"Scale length: 24.75'",
+                "fretboard1":"Material: Pau ferro ",
+                "fretboard2":"Fret size: Medium Jumbo",
+                "fretboard3":"Number of frets: 22",
+                "fretboard4":"Radius: 12'",
+                "pickups1":"Configuration: SS",
+                "pickups2":"Neck: P-90R",
+                "pickups3":"Bridge: P-90T"
             }]
         },
         {
@@ -671,17 +654,12 @@
             "price":299,
             "brand":"ibanez",
             "img":"./img/guitar29.png",
-            "img2":"./img/guitarPreviews/guitar4-1.png",
-            "img3":"./img/guitarPreviews/guitar4-2.png",
-            "img4":"./img/guitarPreviews/guitar4-3.png",
             "specifications":[{
-                "neck1":"Neck shape: C standard ",
                 "neck2":"Neck wood: Maple",
-                "neck3":"Scale length: 22.75 in.",
-                "fretboard1":"Material: Indian laurel",
+                "fretboard1":"Material: Rich laurel",
                 "fretboard2":"Fret size: Medium ",
                 "fretboard3":"Number of frets: 21",
-                "pickups1":"Neck: Standard single-coil Strat",
+                "pickups1":"Infinity R pickups",
                 "pickups2":"Middle: Standard single-coil Strat",
                 "pickups3":"Bridge: Standard single-coil Strat"
             }]
@@ -695,19 +673,14 @@
             "price":399,
             "brand":"ibanez",
             "img":"./img/guitar30.png",
-            "img2":"./img/guitarPreviews/guitar4-1.png",
-            "img3":"./img/guitarPreviews/guitar4-2.png",
-            "img4":"./img/guitarPreviews/guitar4-3.png",
+            "img2":"./img/guitarPreviews/guitar30-1.png",
             "specifications":[{
-                "neck1":"Neck shape: C standard ",
-                "neck2":"Neck wood: Maple",
-                "neck3":"Scale length: 22.75 in.",
-                "fretboard1":"Material: Indian laurel",
+                "neck2":"Neck wood: Mahogany ",
+                "neck3":"Scale length: 24.75 in.",
+                "fretboard1":"Material: Bound laurel",
                 "fretboard2":"Fret size: Medium ",
-                "fretboard3":"Number of frets: 21",
-                "pickups1":"Neck: Standard single-coil Strat",
-                "pickups2":"Middle: Standard single-coil Strat",
-                "pickups3":"Bridge: Standard single-coil Strat"
+                "pickups1":"Neck: ACH1 humbucker",
+                "pickups3":"Bridge: ACH2 humbucker"
             }]
         },
         {
@@ -719,19 +692,19 @@
             "price":399,
             "brand":"fender",
             "img":"./img/guitar31.png",
-            "img2":"./img/guitarPreviews/guitar4-1.png",
-            "img3":"./img/guitarPreviews/guitar4-2.png",
-            "img4":"./img/guitarPreviews/guitar4-3.png",
+            "img2":"./img/guitarPreviews/guitar31-1.png",
+            "img3":"./img/guitarPreviews/guitar31-2.png",
+            "img4":"./img/guitarPreviews/guitar31-3.png",
             "specifications":[{
                 "neck1":"Neck shape: C standard ",
                 "neck2":"Neck wood: Maple",
-                "neck3":"Scale length: 22.75 in.",
-                "fretboard1":"Material: Indian laurel",
-                "fretboard2":"Fret size: Medium ",
-                "fretboard3":"Number of frets: 21",
-                "pickups1":"Neck: Standard single-coil Strat",
-                "pickups2":"Middle: Standard single-coil Strat",
-                "pickups3":"Bridge: Standard single-coil Strat"
+                "neck3":"Scale length: 25.75 in.",
+                "fretboard1":"Material: Maple",
+                "fretboard2":"Fret size: Narrow tall ",
+                "fretboard3":"Number of frets: 22",
+                "pickups1":"Configuration: HH",
+                "pickups2":"Neck: SQR Active humbucker",
+                "pickups3":"Bridge: SQR Active humbucker"
             }]
         },
         {
@@ -743,19 +716,19 @@
             "price":280,
             "brand":"fender",
             "img":"./img/guitar32.png",
-            "img2":"./img/guitarPreviews/guitar4-1.png",
-            "img3":"./img/guitarPreviews/guitar4-2.png",
-            "img4":"./img/guitarPreviews/guitar4-3.png",
+            "img2":"./img/guitarPreviews/guitar32-1.png",
+            "img3":"./img/guitarPreviews/guitar32-2.png",
+            "img4":"./img/guitarPreviews/guitar32-3.png",
             "specifications":[{
                 "neck1":"Neck shape: C standard ",
                 "neck2":"Neck wood: Maple",
-                "neck3":"Scale length: 22.75 in.",
-                "fretboard1":"Material: Indian laurel",
-                "fretboard2":"Fret size: Medium ",
-                "fretboard3":"Number of frets: 21",
-                "pickups1":"Neck: Standard single-coil Strat",
-                "pickups2":"Middle: Standard single-coil Strat",
-                "pickups3":"Bridge: Standard single-coil Strat"
+                "neck3":"Scale length: 25.5 in.",
+                "fretboard1":"Material: Maple",
+                "fretboard2":"Fret size: Narrow tall ",
+                "fretboard3":"Number of frets: 22",
+                "pickups1":"Configuration: HH",
+                "pickups2":"Neck: SQR Active humbucker",
+                "pickups3":"Bridge: SQR Active humbucker"
             }]
         },
         {
@@ -767,19 +740,19 @@
             "price":649,
             "brand":"ibanez",
             "img":"./img/guitar33.png",
-            "img2":"./img/guitarPreviews/guitar4-1.png",
-            "img3":"./img/guitarPreviews/guitar4-2.png",
-            "img4":"./img/guitarPreviews/guitar4-3.png",
+            "img2":"./img/guitarPreviews/guitar33-1.png",
+            "img3":"./img/guitarPreviews/guitar33-2.png",
+            "img4":"./img/guitarPreviews/guitar33-3.png",
             "specifications":[{
-                "neck1":"Neck shape: C standard ",
-                "neck2":"Neck wood: Maple",
-                "neck3":"Scale length: 22.75 in.",
-                "fretboard1":"Material: Indian laurel",
+                "neck2":"Neck wood: Mahogany/Maple",
+                "neck3":"Scale length: 24.75 in.",
+                "neck4":"Joint: Set-in",
+                "fretboard1":"Material: Ebony",
                 "fretboard2":"Fret size: Medium ",
-                "fretboard3":"Number of frets: 21",
-                "pickups1":"Neck: Standard single-coil Strat",
-                "pickups2":"Middle: Standard single-coil Strat",
-                "pickups3":"Bridge: Standard single-coil Strat"
+                "fretboard3":"Number of frets: 22",
+                "pickups1":"Configuration: HH",
+                "pickups2":"Neck: Super 58 Custom",
+                "pickups3":"Bridge: Super 58 Custom"
             }]
         },
         {
@@ -791,19 +764,18 @@
             "price":750,
             "brand":"gibson",
             "img":"./img/guitar34.png",
-            "img2":"./img/guitarPreviews/guitar4-1.png",
-            "img3":"./img/guitarPreviews/guitar4-2.png",
-            "img4":"./img/guitarPreviews/guitar4-3.png",
+            "img2":"./img/guitarPreviews/guitar34-1.png",
+            "img3":"./img/guitarPreviews/guitar34-2.png",
             "specifications":[{
-                "neck1":"Neck shape: C standard ",
-                "neck2":"Neck wood: Maple",
-                "neck3":"Scale length: 22.75 in.",
-                "fretboard1":"Material: Indian laurel",
+                "neck1":"Neck shape: SlimTaper ",
+                "neck2":"Neck wood: Maple 3-piece",
+                "neck3":"Scale length: 24.75'.",
+                "fretboard1":"Material: Rosewood",
                 "fretboard2":"Fret size: Medium ",
-                "fretboard3":"Number of frets: 21",
-                "pickups1":"Neck: Standard single-coil Strat",
-                "pickups2":"Middle: Standard single-coil Strat",
-                "pickups3":"Bridge: Standard single-coil Strat"
+                "fretboard3":"Number of frets: 20",
+                "pickups1":"Configuration: HH",
+                "pickups2":"Neck: ProBucker 2",
+                "pickups3":"Neck: ProBucker 3"
             }]
         },
         {
@@ -815,19 +787,19 @@
             "price":1200,
             "brand":"ibanez",
             "img":"./img/guitar35.png",
-            "img2":"./img/guitarPreviews/guitar4-1.png",
-            "img3":"./img/guitarPreviews/guitar4-2.png",
-            "img4":"./img/guitarPreviews/guitar4-3.png",
+            "img2":"./img/guitarPreviews/guitar35-1.png",
+            "img3":"./img/guitarPreviews/guitar35-2.png",
+            "img4":"./img/guitarPreviews/guitar35-3.png",
             "specifications":[{
-                "neck1":"Neck shape: C standard ",
-                "neck2":"Neck wood: Maple",
-                "neck3":"Scale length: 22.75 in.",
-                "fretboard1":"Material: Indian laurel",
+                "neck1":"Neck shape: C ",
+                "neck2":"Neck wood: 3-piece maple",
+                "neck3":"Scale length: 24.7' in.",
+                "fretboard1":"Material: Ebony",
                 "fretboard2":"Fret size: Medium ",
-                "fretboard3":"Number of frets: 21",
-                "pickups1":"Neck: Standard single-coil Strat",
-                "pickups2":"Middle: Standard single-coil Strat",
-                "pickups3":"Bridge: Standard single-coil Strat"
+                "fretboard3":"Number of frets: 24",
+                "pickups1":"Configuration: HH",
+                "pickups2":"Neck: Floating GB special",
+                "pickups3":"Bridge: Floating GB special"
             }]
         },
         {
@@ -839,19 +811,19 @@
             "price":1200,
             "brand":"gibson",
             "img":"./img/guitar36.png",
-            "img2":"./img/guitarPreviews/guitar4-1.png",
-            "img3":"./img/guitarPreviews/guitar4-2.png",
-            "img4":"./img/guitarPreviews/guitar4-3.png",
+            "img2":"./img/guitarPreviews/guitar36-1.png",
+            "img3":"./img/guitarPreviews/guitar36-2.png",
+            "img4":"./img/guitarPreviews/guitar36-3.png",
             "specifications":[{
-                "neck1":"Neck shape: C standard ",
+                "neck1":"Neck shape: Rounded ",
                 "neck2":"Neck wood: Maple",
-                "neck3":"Scale length: 22.75 in.",
-                "fretboard1":"Material: Indian laurel",
-                "fretboard2":"Fret size: Medium ",
-                "fretboard3":"Number of frets: 21",
-                "pickups1":"Neck: Standard single-coil Strat",
-                "pickups2":"Middle: Standard single-coil Strat",
-                "pickups3":"Bridge: Standard single-coil Strat"
+                "neck3":"Scale length: 24.75 in.",
+                "fretboard1":"Material: Rosewood",
+                "fretboard2":"Fret size: Medium Jumbo ",
+                "fretboard3":"Number of frets: 22",
+                "pickups1":"Configuration: HH",
+                "pickups2":"Neck:490R",
+                "pickups3":"Bridge: 490T"
             }]
         },
         {
@@ -863,19 +835,18 @@
             "price":650,
             "brand":"gibson",
             "img":"./img/guitar37.png",
-            "img2":"./img/guitarPreviews/guitar4-1.png",
-            "img3":"./img/guitarPreviews/guitar4-2.png",
-            "img4":"./img/guitarPreviews/guitar4-3.png",
+            "img2":"./img/guitarPreviews/guitar37-1.png",
+            "img3":"./img/guitarPreviews/guitar37-2.png",
             "specifications":[{
-                "neck1":"Neck shape: C standard ",
-                "neck2":"Neck wood: Maple",
-                "neck3":"Scale length: 22.75 in.",
+                "neck1":"Neck shape: Rounded C",
+                "neck2":"Neck wood: Mahogany",
+                "neck3":"Scale length:24.7'.",
                 "fretboard1":"Material: Indian laurel",
-                "fretboard2":"Fret size: Medium ",
-                "fretboard3":"Number of frets: 21",
-                "pickups1":"Neck: Standard single-coil Strat",
-                "pickups2":"Middle: Standard single-coil Strat",
-                "pickups3":"Bridge: Standard single-coil Strat"
+                "fretboard2":"Inlays: Small Block",
+                "fretboard3":"Number of frets: 22",
+                "pickups1":"Configuration: HH",
+                "pickups2":"Neck: Proprietary Humbucker",
+                "pickups3":"Bridge: Proprietary Humbucker"
             }]
         },
         {
@@ -887,19 +858,20 @@
             "price":849,
             "brand":"fender",
             "img":"./img/guitar38.png",
-            "img2":"./img/guitarPreviews/guitar4-1.png",
-            "img3":"./img/guitarPreviews/guitar4-2.png",
-            "img4":"./img/guitarPreviews/guitar4-3.png",
+            "img2":"./img/guitarPreviews/guitar38-1.png",
+            "img3":"./img/guitarPreviews/guitar38-2.png",
+            "img4":"./img/guitarPreviews/guitar38-3.png",
             "specifications":[{
-                "neck1":"Neck shape: C standard ",
+                "neck1":"Neck shape: C modern",
                 "neck2":"Neck wood: Maple",
-                "neck3":"Scale length: 22.75 in.",
-                "fretboard1":"Material: Indian laurel",
-                "fretboard2":"Fret size: Medium ",
-                "fretboard3":"Number of frets: 21",
-                "pickups1":"Neck: Standard single-coil Strat",
-                "pickups2":"Middle: Standard single-coil Strat",
-                "pickups3":"Bridge: Standard single-coil Strat"
+                "neck3":"Scale length: 25.75 in.",
+                "fretboard1":"Material: Maple",
+                "fretboard2":"Fret size: Medium Jumbo",
+                "fretboard3":"Number of frets: 22",
+                "pickups1":"Configuration: SSS",
+                "pickups2":"Neck: Player Series Stratocaster",
+                "pickups3":"Middle: Player Series Stratocaster",
+                "pickups4":"Bridge: Player Series Stratocaster"
             }]
         },
         {
@@ -911,19 +883,20 @@
             "price":1300,
             "brand":"fender",
             "img":"./img/guitar39.png",
-            "img2":"./img/guitarPreviews/guitar4-1.png",
-            "img3":"./img/guitarPreviews/guitar4-2.png",
-            "img4":"./img/guitarPreviews/guitar4-3.png",
+            "img2":"./img/guitarPreviews/guitar39-1.png",
+            "img3":"./img/guitarPreviews/guitar39-2.png",
+            "img4":"./img/guitarPreviews/guitar39-3.png",
             "specifications":[{
-                "neck1":"Neck shape: C standard ",
+                "neck1":"Neck shape: C modern ",
                 "neck2":"Neck wood: Maple",
-                "neck3":"Scale length: 22.75 in.",
-                "fretboard1":"Material: Indian laurel",
-                "fretboard2":"Fret size: Medium ",
-                "fretboard3":"Number of frets: 21",
-                "pickups1":"Neck: Standard single-coil Strat",
-                "pickups2":"Middle: Standard single-coil Strat",
-                "pickups3":"Bridge: Standard single-coil Strat"
+                "neck3":"Scale length: 25.5 in.",
+                "fretboard1":"Material: Maple",
+                "fretboard2":"Fret size: Jumbo ",
+                "fretboard3":"Number of frets: 22",
+                "pickups1":"Configuration: HSS",
+                "pickups2":"Neck: Yosemite single-coil",
+                "pickups3":"Middle: Yosemite single-coil",
+                "pickups4":"Bridge: DoubleTap humbucker"
             }]
         },
         {
@@ -935,19 +908,19 @@
             "price":1700,
             "brand":"fender",
             "img":"./img/guitar40.png",
-            "img2":"./img/guitarPreviews/guitar4-1.png",
-            "img3":"./img/guitarPreviews/guitar4-2.png",
-            "img4":"./img/guitarPreviews/guitar4-3.png",
+            "img2":"./img/guitarPreviews/guitar40-1.png",
+            "img3":"./img/guitarPreviews/guitar40-2.png",
+            "img4":"./img/guitarPreviews/guitar40-3.png",
             "specifications":[{
-                "neck1":"Neck shape: C standard ",
+                "neck1":"Neck Shape: Large 'C'",
                 "neck2":"Neck wood: Maple",
-                "neck3":"Scale length: 22.75 in.",
-                "fretboard1":"Material: Indian laurel",
-                "fretboard2":"Fret size: Medium ",
-                "fretboard3":"Number of frets: 21",
-                "pickups1":"Neck: Standard single-coil Strat",
-                "pickups2":"Middle: Standard single-coil Strat",
-                "pickups3":"Bridge: Standard single-coil Strat"
+                "neck3":"Scale Length: 25.5' (648 mm)",
+                "fretboard1":"Material: Maple",
+                "fretboard2":"Fret size: Jumbo ",
+                "fretboard3":"Number of frets: 22",
+                "pickups1":"Pickup Configuration: SS",
+                "pickups2":"Neck Pickup: Dimarzio DP173 Twang King",
+                "pickups3":"Bridge: Dimarzio DP384 Chopper T"
             }]
         },
         {
@@ -959,19 +932,20 @@
             "price":289,
             "brand":"fender",
             "img":"./img/guitar41.png",
-            "img2":"./img/guitarPreviews/guitar4-1.png",
-            "img3":"./img/guitarPreviews/guitar4-2.png",
-            "img4":"./img/guitarPreviews/guitar4-3.png",
+            "img2":"./img/guitarPreviews/guitar41-1.png",
+            "img3":"./img/guitarPreviews/guitar41-2.png",
+            "img4":"./img/guitarPreviews/guitar41-3.png",
             "specifications":[{
-                "neck1":"Neck shape: C standard ",
+                "neck1":"Neck shape: C modern ",
                 "neck2":"Neck wood: Maple",
-                "neck3":"Scale length: 22.75 in.",
+                "neck3":"Scale length: 25.5 in.",
                 "fretboard1":"Material: Indian laurel",
-                "fretboard2":"Fret size: Medium ",
+                "fretboard2":"Fret size: Medium Jumbo",
                 "fretboard3":"Number of frets: 21",
-                "pickups1":"Neck: Standard single-coil Strat",
-                "pickups2":"Middle: Standard single-coil Strat",
-                "pickups3":"Bridge: Standard single-coil Strat"
+                "pickups1":"Configuration: SSS",
+                "pickups2":"Neck: Standard single-coil ",
+                "pickups3":"Middle: Standard single-coil ",
+                "pickups4":"Bridge: Standard single-coil "
             }]
         },
         {
@@ -983,19 +957,19 @@
             "price":900,
             "brand":"fender",
             "img":"./img/guitar42.png",
-            "img2":"./img/guitarPreviews/guitar4-1.png",
-            "img3":"./img/guitarPreviews/guitar4-2.png",
-            "img4":"./img/guitarPreviews/guitar4-3.png",
+            "img2":"./img/guitarPreviews/guitar42-1.png",
+            "img3":"./img/guitarPreviews/guitar42-2.png",
             "specifications":[{
-                "neck1":"Neck shape: C standard ",
+                "neck1":"Neck shape: C modern ",
                 "neck2":"Neck wood: Maple",
-                "neck3":"Scale length: 22.75 in.",
-                "fretboard1":"Material: Indian laurel",
-                "fretboard2":"Fret size: Medium ",
-                "fretboard3":"Number of frets: 21",
-                "pickups1":"Neck: Standard single-coil Strat",
-                "pickups2":"Middle: Standard single-coil Strat",
-                "pickups3":"Bridge: Standard single-coil Strat"
+                "neck3":"Scale length: 25.5 in.",
+                "fretboard1":"Material: Maple",
+                "fretboard2":"Fret size: Medium Jumbo",
+                "fretboard3":"Number of frets: 22",
+                "pickups1":"Configuration: HSS",
+                "pickups2":"Neck: Player Series Stratocaster single coil",
+                "pickups3":"Middle: Player Series Stratocaster single coil",
+                "pickups4":"Bridge: Player Series Stratocaster humbucker"
             }]
         },
         {
@@ -1007,19 +981,18 @@
             "price":849,
             "brand":"gibson",
             "img":"./img/guitar43.png",
-            "img2":"./img/guitarPreviews/guitar4-1.png",
-            "img3":"./img/guitarPreviews/guitar4-2.png",
-            "img4":"./img/guitarPreviews/guitar4-3.png",
+            "img2":"./img/guitarPreviews/guitar43-1.png",
+            "img3":"./img/guitarPreviews/guitar43-2.png",
             "specifications":[{
-                "neck1":"Neck shape: C standard ",
-                "neck2":"Neck wood: Maple",
-                "neck3":"Scale length: 22.75 in.",
-                "fretboard1":"Material: Indian laurel",
+                "neck1":"Neck shape: Rounded C",
+                "neck2":"Neck wood: Mahogany",
+                "neck3":"Scale length: 24.75 in.",
+                "fretboard1":"Material: Other",
                 "fretboard2":"Fret size: Medium ",
-                "fretboard3":"Number of frets: 21",
-                "pickups1":"Neck: Standard single-coil Strat",
-                "pickups2":"Middle: Standard single-coil Strat",
-                "pickups3":"Bridge: Standard single-coil Strat"
+                "fretboard3":"Number of frets: 22",
+                "pickups1":"Configuration: HH",
+                "pickups2":"Neck: Proprietary Humbucker",
+                "pickups3":"Bridge: Proprietary Humbucker"
             }]
         },
         {
@@ -1031,19 +1004,18 @@
             "price":249,
             "brand":"fender",
             "img":"./img/guitar44.png",
-            "img2":"./img/guitarPreviews/guitar4-1.png",
-            "img3":"./img/guitarPreviews/guitar4-2.png",
-            "img4":"./img/guitarPreviews/guitar4-3.png",
+            "img2":"./img/guitarPreviews/guitar44-1.png",
+            "img3":"./img/guitarPreviews/guitar44-2.png",
+            "img4":"./img/guitarPreviews/guitar44-3.png",
             "specifications":[{
-                "neck1":"Neck shape: C standard ",
+                "neck1":"Neck shape: C ",
                 "neck2":"Neck wood: Maple",
                 "neck3":"Scale length: 22.75 in.",
-                "fretboard1":"Material: Indian laurel",
+                "fretboard1":"Material: Maple",
                 "fretboard2":"Fret size: Medium ",
                 "fretboard3":"Number of frets: 21",
-                "pickups1":"Neck: Standard single-coil Strat",
-                "pickups2":"Middle: Standard single-coil Strat",
-                "pickups3":"Bridge: Standard single-coil Strat"
+                "pickups1":"Single-coil Stratocaster neck and middle pickups, humbucking bridge pickup",
+                "pickups2":"Five-way pickup switch"
             }]
         },
         {
@@ -1055,19 +1027,19 @@
             "price":329,
             "brand":"fender",
             "img":"./img/guitar45.png",
-            "img2":"./img/guitarPreviews/guitar4-1.png",
-            "img3":"./img/guitarPreviews/guitar4-2.png",
-            "img4":"./img/guitarPreviews/guitar4-3.png",
+            "img2":"./img/guitarPreviews/guitar45-1.png",
+            "img3":"./img/guitarPreviews/guitar45-2.png",
+            "img4":"./img/guitarPreviews/guitar45-3.png",
             "specifications":[{
                 "neck1":"Neck shape: C standard ",
                 "neck2":"Neck wood: Maple",
-                "neck3":"Scale length: 22.75 in.",
-                "fretboard1":"Material: Indian laurel",
-                "fretboard2":"Fret size: Medium ",
-                "fretboard3":"Number of frets: 21",
-                "pickups1":"Neck: Standard single-coil Strat",
-                "pickups2":"Middle: Standard single-coil Strat",
-                "pickups3":"Bridge: Standard single-coil Strat"
+                "neck3":"Scale length: 25.5 in.",
+                "fretboard1":"Material: Maple",
+                "fretboard2":"Fret size: Narrow tall ",
+                "fretboard3":"Number of frets: 22",
+                "pickups1":"Configuration: HH ",
+                "pickups2":"Neck: Humbucker",
+                "pickups3":"Bridge: Humbucker"
             }]
         },
         {
@@ -1079,19 +1051,14 @@
             "price":399,
             "brand":"ibanez",
             "img":"./img/guitar46.png",
-            "img2":"./img/guitarPreviews/guitar4-1.png",
-            "img3":"./img/guitarPreviews/guitar4-2.png",
-            "img4":"./img/guitarPreviews/guitar4-3.png",
             "specifications":[{
-                "neck1":"Neck shape: C standard ",
+                "neck1":"NeckType: Artcore set-In",
                 "neck2":"Neck wood: Maple",
-                "neck3":"Scale length: 22.75 in.",
-                "fretboard1":"Material: Indian laurel",
-                "fretboard2":"Fret size: Medium ",
-                "fretboard3":"Number of frets: 21",
-                "pickups1":"Neck: Standard single-coil Strat",
-                "pickups2":"Middle: Standard single-coil Strat",
-                "pickups3":"Bridge: Standard single-coil Strat"
+                "neck3":"Scale length: 25.75 in.",
+                "fretboard1":"Material: Bound laurel",
+                "fretboard2":"Fret size: Large frets ",
+                "pickups1":"Neck: Exposed ACH1-S",
+                "pickups3":"Bridge: ACH2-S"
             }]
         },
         {
@@ -1103,19 +1070,18 @@
             "price":399,
             "brand":"ibanez",
             "img":"./img/guitar47.png",
-            "img2":"./img/guitarPreviews/guitar4-1.png",
-            "img3":"./img/guitarPreviews/guitar4-2.png",
-            "img4":"./img/guitarPreviews/guitar4-3.png",
+            "img2":"./img/guitarPreviews/guitar47-1.png",
+            "img3":"./img/guitarPreviews/guitar47-2.png",
+            "img4":"./img/guitarPreviews/guitar47-3.png",
             "specifications":[{
-                "neck1":"Neck shape: C standard ",
-                "neck2":"Neck wood: Maple",
-                "neck3":"Scale length: 22.75 in.",
-                "fretboard1":"Material: Indian laurel",
+                "neck2":"Neck wood: 3-piece nyatoh/maple ",
+                "neck3":"Joint: Set-in ",
+                "fretboard1":"Material: Ebony",
                 "fretboard2":"Fret size: Medium ",
-                "fretboard3":"Number of frets: 21",
-                "pickups1":"Neck: Standard single-coil Strat",
-                "pickups2":"Middle: Standard single-coil Strat",
-                "pickups3":"Bridge: Standard single-coil Strat"
+                "fretboard3":"Number of frets: 22",
+                "pickups1":"Configuration: HH",
+                "pickups2":"Magic Touch-mini humbucker",
+                "pickups3":"Magic Touch-mini humbucker"
             }]
         },
         {
@@ -1127,19 +1093,17 @@
             "price":699,
             "brand":"ibanez",
             "img":"./img/guitar48.png",
-            "img2":"./img/guitarPreviews/guitar4-1.png",
-            "img3":"./img/guitarPreviews/guitar4-2.png",
-            "img4":"./img/guitarPreviews/guitar4-3.png",
+            "img2":"./img/guitarPreviews/guitar48-1.png",
+            "img3":"./img/guitarPreviews/guitar48-2.png",
+            "img4":"./img/guitarPreviews/guitar48-3.png",
             "specifications":[{
                 "neck1":"Neck shape: C standard ",
-                "neck2":"Neck wood: Maple",
                 "neck3":"Scale length: 22.75 in.",
-                "fretboard1":"Material: Indian laurel",
+                "fretboard1":"Material: Bound walnut",
                 "fretboard2":"Fret size: Medium ",
-                "fretboard3":"Number of frets: 21",
-                "pickups1":"Neck: Standard single-coil Strat",
-                "pickups2":"Middle: Standard single-coil Strat",
-                "pickups3":"Bridge: Standard single-coil Strat"
+                "fretboard3":"Number of frets: 22",
+                "pickups1":"Neck:  Magic Touch-mini (H) ",
+                "pickups3":"Bridge:  Magic Touch-mini (H) "
             }]
         },
         {
@@ -1151,19 +1115,18 @@
             "price":649,
             "brand":"gibson",
             "img":"./img/guitar49.png",
-            "img2":"./img/guitarPreviews/guitar4-1.png",
-            "img3":"./img/guitarPreviews/guitar4-2.png",
-            "img4":"./img/guitarPreviews/guitar4-3.png",
+            "img2":"./img/guitarPreviews/guitar49-1.png",
+            "img3":"./img/guitarPreviews/guitar49-2.png",
             "specifications":[{
-                "neck1":"Neck shape: C standard ",
-                "neck2":"Neck wood: Maple",
-                "neck3":"Scale length: 22.75 in.",
+                "neck1":"Neck shape: SlimTaper C-profile",
+                "neck2":"Neck wood: Mahogany/walnut",
+                "neck3":"Joint: Neck-thru.",
                 "fretboard1":"Material: Indian laurel",
-                "fretboard2":"Fret size: Medium ",
-                "fretboard3":"Number of frets: 21",
-                "pickups1":"Neck: Standard single-coil Strat",
-                "pickups2":"Middle: Standard single-coil Strat",
-                "pickups3":"Bridge: Standard single-coil Strat"
+                "fretboard2":"Fret size: Medium Jumbo ",
+                "fretboard3":"Number of frets: 22",
+                "pickups1":"Configuration: HH",
+                "pickups2":"Neck: ProBucker FB720",
+                "pickups3":"Bridge: ProBucker FB720"
             }]
         },
         {
@@ -1175,19 +1138,18 @@
             "price":649,
             "brand":"other",
             "img":"./img/guitar50.png",
-            "img2":"./img/guitarPreviews/guitar4-1.png",
-            "img3":"./img/guitarPreviews/guitar4-2.png",
-            "img4":"./img/guitarPreviews/guitar4-3.png",
+            "img2":"./img/guitarPreviews/guitar50-1.png",
+            "img3":"./img/guitarPreviews/guitar50-2.png",
             "specifications":[{
-                "neck1":"Neck shape: C standard ",
+                "neck1":"Neck shape: Thin U",
                 "neck2":"Neck wood: Maple",
-                "neck3":"Scale length: 22.75 in.",
-                "fretboard1":"Material: Indian laurel",
-                "fretboard2":"Fret size: Medium ",
-                "fretboard3":"Number of frets: 21",
-                "pickups1":"Neck: Standard single-coil Strat",
-                "pickups2":"Middle: Standard single-coil Strat",
-                "pickups3":"Bridge: Standard single-coil Strat"
+                "neck3":"Scale length:24.75'",
+                "fretboard1":"Material: Rosewood",
+                "fretboard2":"Fret size: Medium-jumbo ",
+                "fretboard3":"Number of frets: 22",
+                "pickups1":"Configuration: HH",
+                "pickups2":"Neck: Proprietary Alnico Humbucker",
+                "pickups3":"Bridge: Proprietary Alnico Humbucker"
             }]
         },
         {
@@ -1199,19 +1161,19 @@
             "price":565,
             "brand":"other",
             "img":"./img/guitar51.png",
-            "img2":"./img/guitarPreviews/guitar4-1.png",
-            "img3":"./img/guitarPreviews/guitar4-2.png",
-            "img4":"./img/guitarPreviews/guitar4-3.png",
+            "img2":"./img/guitarPreviews/guitar51-1.png",
+            "img3":"./img/guitarPreviews/guitar51-2.png",
+            "img4":"./img/guitarPreviews/guitar51-3.png",
             "specifications":[{
-                "neck1":"Neck shape: C standard ",
+                "neck1":"Neck shape: Thin U",
                 "neck2":"Neck wood: Maple",
-                "neck3":"Scale length: 22.75 in.",
-                "fretboard1":"Material: Indian laurel",
-                "fretboard2":"Fret size: Medium ",
-                "fretboard3":"Number of frets: 21",
-                "pickups1":"Neck: Standard single-coil Strat",
-                "pickups2":"Middle: Standard single-coil Strat",
-                "pickups3":"Bridge: Standard single-coil Strat"
+                "neck3":"Scale length: 24.75 in.",
+                "fretboard1":"Material: Rosewood",
+                "fretboard2":"Fret size: Medium Jumbo",
+                "fretboard3":"Number of frets: 22",
+                "pickups1":"Configuration: HH",
+                "pickups2":"Neck: Proprietary Alnico Humbucker",
+                "pickups3":"Bridge: Proprietary Alnico Humbucker"
             }]
         }
     ]
