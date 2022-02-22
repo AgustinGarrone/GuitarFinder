@@ -15,7 +15,7 @@ function cargarGridResults () {
               `;
            guardarlocal(eleccion.name,JSON.stringify(eleccion))
         }
-        if (elecciones4.length>0) {
+        if (elecciones4.length>0) { //! TENGO QUE HACER QUE SI EL PRIMER RESULTADO ES UNO DE 70% SE CARGUE CON ESE RESLTADO
             cardMostrada=true
             document.querySelector(".results__active").innerHTML = ` <div class="card" transition-style="in:wipe:down">
             <div class="card__inner">
