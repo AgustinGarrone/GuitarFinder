@@ -164,74 +164,147 @@ function cargarCardClicks() {
     let pricecoincidence=elecciones2.filter(el => !elecciones3.includes(el)); 
     console.log("PRICECOINCIDENCE ES")
     console.log(pricecoincidence)
+    console.log(cardsCoincidence)
+    console.log("CARDCSOINCIARRI")
+    console.log("ACA ARRIBA TA CARDSCOINCIDENCE")
     for (let t = 0; t < cardsCoincidence.length; t++) {
-        cardsCoincidence[t].addEventListener('click', event => {
-            console.log("LA GUITARA APRETADA ES")
-            console.log(pricecoincidence[t])
-            document.querySelector(".results__active").innerHTML = ` <div class="card" transition-style="in:wipe:down">
-            <div class="card__inner">
-                <div class="card__face card__face--front">
-                    <img class=rotateCardActive src="./img/rotateicon.png">
-                    <span class=resultsCardPorcentaje><p>85%</p></span>
-                    <p class=resultsCardActiveName>${pricecoincidence[t].name}</p>
-                    <img class=resultsCardActiveImg src="${pricecoincidence[t].img}">
-                    <div class="resultsCardActive_imgs">
-                        <img class="fotoRelacionada" src="${pricecoincidence[t].img}">
-                        <img class="fotoRelacionada" src="${pricecoincidence[t].img2}">
-                        <img class="fotoRelacionada" src="${pricecoincidence[t].img3}">
-                        <img class="fotoRelacionada" src="${pricecoincidence[t].img4}">
-                    </div> 
-                </div>
-                <div class="card__face card__face--back">
-                    <div class="card__content">
-                        <div class="card__header">
-                           <img class=rotateCardActive src="./img/rotateicon.png">
-                            <img src="./img/puaguitar.png" alt="" class="pp" />
-                            <h2>SPECIFICATIONS</h2>
-                        </div>
-                        <div class="card__body">
-                            <div class="resultsCard__specs">
-                                <ul class=specifications__neck>
-                                <p class=specifications__text>NECK</p>
-                                <li class="specification__neck">${pricecoincidence[t].specifications[0].neck1}</li>
-                                <li class="specification__neck">${pricecoincidence[t].specifications[0].neck2}</li>
-                                <li class="specification__neck">${pricecoincidence[t].specifications[0].neck3}</li>
-                                <li class="specification__neck">${pricecoincidence[t].specifications[0].neck4}</li>
-                                <ul>
-                                <ul class=specifications__fret>
-                                <p class=specifications__text>FREATBOARD</p>
-                                <li class="specification__fretboard">${pricecoincidence[t].specifications[0].fretboard1}</li>
-                                <li class="specification__fretboard">${pricecoincidence[t].specifications[0].fretboard2}</li>
-                                <li class="specification__fretboard">${pricecoincidence[t].specifications[0].fretboard3}</li>
-                                <li class="specification__fretboard">${pricecoincidence[t].specifications[0].fretboard4}</li>
-                                <ul>
-                                <ul class=specifications__pickups>
-                                <p class=specifications__text>PICKUPS</p>
-                                <li class="specification__pickup">${pricecoincidence[t].specifications[0].pickups1}</li>
-                                <li class="specification__pickup">${pricecoincidence[t].specifications[0].pickups2}</li>
-                                <li class="specification__pickup">${pricecoincidence[t].specifications[0].pickups3}</li>
-                                <li class="specification__pickup">${pricecoincidence[t].specifications[0].pickups4}</li>
-                                <ul>
+        let nodoTexto= cardsCoincidence[t].textContent
+        console.log(nodoTexto)
+        if (nodoTexto.includes("85")) {  /*Si clickeo una card de 85 muestra porcentaje 85*/
+            cardsCoincidence[t].addEventListener('click', event => {
+                console.log("LA GUITARA APRETADA ES")
+                console.log(pricecoincidence[t])
+                document.querySelector(".results__active").innerHTML = ` <div class="card" transition-style="in:wipe:down">
+                <div class="card__inner">
+                    <div class="card__face card__face--front">
+                        <img class=rotateCardActive src="./img/rotateicon.png">
+                        <span class=resultsCardPorcentaje><p>85%</p></span>
+                        <p class=resultsCardActiveName>${pricecoincidence[t].name}</p>
+                        <img class=resultsCardActiveImg src="${pricecoincidence[t].img}">
+                        <div class="resultsCardActive_imgs">
+                            <img class="fotoRelacionada" src="${pricecoincidence[t].img}">
+                            <img class="fotoRelacionada" src="${pricecoincidence[t].img2}">
+                            <img class="fotoRelacionada" src="${pricecoincidence[t].img3}">
+                            <img class="fotoRelacionada" src="${pricecoincidence[t].img4}">
+                        </div> 
+                    </div>
+                    <div class="card__face card__face--back">
+                        <div class="card__content">
+                            <div class="card__header">
+                               <img class=rotateCardActive src="./img/rotateicon.png">
+                                <img src="./img/puaguitar.png" alt="" class="pp" />
+                                <h2>SPECIFICATIONS</h2>
+                            </div>
+                            <div class="card__body">
+                                <div class="resultsCard__specs">
+                                    <ul class=specifications__neck>
+                                    <p class=specifications__text>NECK</p>
+                                    <li class="specification__neck">${pricecoincidence[t].specifications[0].neck1}</li>
+                                    <li class="specification__neck">${pricecoincidence[t].specifications[0].neck2}</li>
+                                    <li class="specification__neck">${pricecoincidence[t].specifications[0].neck3}</li>
+                                    <li class="specification__neck">${pricecoincidence[t].specifications[0].neck4}</li>
+                                    <ul>
+                                    <ul class=specifications__fret>
+                                    <p class=specifications__text>FREATBOARD</p>
+                                    <li class="specification__fretboard">${pricecoincidence[t].specifications[0].fretboard1}</li>
+                                    <li class="specification__fretboard">${pricecoincidence[t].specifications[0].fretboard2}</li>
+                                    <li class="specification__fretboard">${pricecoincidence[t].specifications[0].fretboard3}</li>
+                                    <li class="specification__fretboard">${pricecoincidence[t].specifications[0].fretboard4}</li>
+                                    <ul>
+                                    <ul class=specifications__pickups>
+                                    <p class=specifications__text>PICKUPS</p>
+                                    <li class="specification__pickup">${pricecoincidence[t].specifications[0].pickups1}</li>
+                                    <li class="specification__pickup">${pricecoincidence[t].specifications[0].pickups2}</li>
+                                    <li class="specification__pickup">${pricecoincidence[t].specifications[0].pickups3}</li>
+                                    <li class="specification__pickup">${pricecoincidence[t].specifications[0].pickups4}</li>
+                                    <ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>`
-           
-            
-           
-        eliminarUndefineds()
-             /*Activa rotacion de card*/
-                 const carta=document.querySelectorAll(".rotateCardActive")  
-                 for (cart of carta){
-                     cart.addEventListener("click", function (e) {
-                         document.querySelector(".card__inner").classList.toggle('is-flipped');
-                     });
-                 }
-    })
-    
-} /*ACA TERMINA EL FOR DE CARD85*/
+            </div>`
+               
+                
+               
+            eliminarUndefineds()
+                 /*Activa rotacion de card*/
+                     const carta=document.querySelectorAll(".rotateCardActive")  
+                     for (cart of carta){
+                         cart.addEventListener("click", function (e) {
+                             document.querySelector(".card__inner").classList.toggle('is-flipped');
+                         });
+                     }
+        })
+         
+        }   else if (nodoTexto.includes("70")) {  /*Si clickeo una card de 70 muestra porcentaje 70*/
+                cardsCoincidence[t].addEventListener('click', event => {
+                    console.log("LA GUITARA APRETADA ES")
+                    console.log(pricecoincidence[t])
+                    document.querySelector(".results__active").innerHTML = ` <div class="card" transition-style="in:wipe:down">
+                        <div class="card__inner">
+                            <div class="card__face card__face--front">
+                                <img class=rotateCardActive src="./img/rotateicon.png">
+                                <span class=resultsCardPorcentaje><p>70%</p></span>
+                                <p class=resultsCardActiveName>${pricecoincidence[t].name}</p>
+                                <img class=resultsCardActiveImg src="${pricecoincidence[t].img}">
+                                <div class="resultsCardActive_imgs">
+                                    <img class="fotoRelacionada" src="${pricecoincidence[t].img}">
+                                    <img class="fotoRelacionada" src="${pricecoincidence[t].img2}">
+                                    <img class="fotoRelacionada" src="${pricecoincidence[t].img3}">
+                                    <img class="fotoRelacionada" src="${pricecoincidence[t].img4}">
+                                </div> 
+                            </div>
+                        <div class="card__face card__face--back">
+                            <div class="card__content">
+                                <div class="card__header">
+                                    <img class=rotateCardActive src="./img/rotateicon.png">
+                                    <img src="./img/puaguitar.png" alt="" class="pp" />
+                                    <h2>SPECIFICATIONS</h2>
+                                </div>
+                            <div class="card__body">
+                                <div class="resultsCard__specs">
+                                    <ul class=specifications__neck>
+                                    <p class=specifications__text>NECK</p>
+                                    <li class="specification__neck">${pricecoincidence[t].specifications[0].neck1}</li>
+                                    <li class="specification__neck">${pricecoincidence[t].specifications[0].neck2}</li>
+                                    <li class="specification__neck">${pricecoincidence[t].specifications[0].neck3}</li>
+                                    <li class="specification__neck">${pricecoincidence[t].specifications[0].neck4}</li>
+                                    <ul>
+                                    <ul class=specifications__fret>
+                                    <p class=specifications__text>FREATBOARD</p>
+                                    <li class="specification__fretboard">${pricecoincidence[t].specifications[0].fretboard1}</li>
+                                    <li class="specification__fretboard">${pricecoincidence[t].specifications[0].fretboard2}</li>
+                                    <li class="specification__fretboard">${pricecoincidence[t].specifications[0].fretboard3}</li>
+                                    <li class="specification__fretboard">${pricecoincidence[t].specifications[0].fretboard4}</li>
+                                    <ul>
+                                    <ul class=specifications__pickups>
+                                    <p class=specifications__text>PICKUPS</p>
+                                    <li class="specification__pickup">${pricecoincidence[t].specifications[0].pickups1}</li>
+                                    <li class="specification__pickup">${pricecoincidence[t].specifications[0].pickups2}</li>
+                                    <li class="specification__pickup">${pricecoincidence[t].specifications[0].pickups3}</li>
+                                    <li class="specification__pickup">${pricecoincidence[t].specifications[0].pickups4}</li>
+                                    <ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>`
+               
+                
+               
+            eliminarUndefineds()
+                 /*Activa rotacion de card*/
+                     const carta=document.querySelectorAll(".rotateCardActive")  
+                     for (cart of carta){
+                         cart.addEventListener("click", function (e) {
+                             document.querySelector(".card__inner").classList.toggle('is-flipped');
+                         });
+                     }
+        })
+        }
+} 
 }
 
 function eliminarUndefineds() {
