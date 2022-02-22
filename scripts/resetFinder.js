@@ -27,10 +27,22 @@ function resetear() {
     elecciones3=[]
     elecciones4=[]
     marcaelegida=""
-    if (resultadosMostrados===true) {
-        document.querySelector(".splide__arrows").remove()
-        document.querySelector(".splide__list").innerHTML="" 
-        document.querySelector(".splide__pagination").remove()
+    function verificarDisplay (elem) {
+        if (elem!==null){
+            elem.remove()
+        }
+    }
+    if (resultadosMostrados==true) {
+        verificarDisplay(document.querySelector(".splide__arrows"))
+        if (document.querySelector(".splide__list")!==null) {
+            document.querySelector(".splide__list").innerHTML="" 
+        }
+        verificarDisplay(document.querySelector(".splide__pagination"))
+        document.querySelector(".button__compare").remove()
+        document.querySelector(".results__active").innerHTML=""
+        document.querySelector(".results__grid").innerHTML=""
+        $(".guitarFinderButtonContainer").append(nextboton)
+        cambiarVista.remove()
     }
     $(".bodyDescription").hide()
     document.querySelector(".guitarFinderApp").style.display="flex"
@@ -40,11 +52,9 @@ function resetear() {
      for (let imagen of arrayimg) {
         if (imagen.classList.contains("activeimg")) {
             imagen.classList.remove("activeimg")
-        } 
-        imagen++
+        }
     } 
     resultadosMostrados=false
     mostrar() 
-
-
+    nextboton.click(mostrar)
 }

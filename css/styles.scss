@@ -546,7 +546,6 @@ body {
     border-radius: 15px;
     backdrop-filter: blur(5px);
     position: relative;
-    order: 5;
     cursor:pointer;
     &Img {
         height: 300px;
@@ -556,6 +555,15 @@ body {
         text-align: center;
     }
 }
+
+/* .splide85 {
+    justify-items: ;
+}
+.splide70 {
+    justify-items: end;
+}
+ */
+
 .resultsCard70 {
     height: 400px;
     width: 250px;
@@ -568,7 +576,6 @@ body {
     border-radius: 15px;
     backdrop-filter: blur(5px);
     position: relative;
-    order: 10;
     cursor:pointer;
     &Img {
         height: 300px;
@@ -729,7 +736,7 @@ body {
         margin-top: 10px;
         text-align: center;
     }
-    .resultsCard70Name {
+    .resultsCard100FlexName {
         color: white;
     }
     
@@ -750,7 +757,7 @@ body {
         margin-top: 10px;
         text-align: center;
     }
-    .resultsCard70Name {
+    .resultsCard85FlexName {
         color: white;
     }
     
@@ -771,8 +778,9 @@ body {
         margin-top: 10px;
         text-align: center;
     }
-    .resultsCard70Name {
+    .resultsCard70FlexName {
         color: white;
+        
     }
     
     &Img:hover {

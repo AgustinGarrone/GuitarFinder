@@ -91,9 +91,6 @@ function cargarResultadosDeComparacion(){
         console.log("PRICECOINCI ES")
         guitarrasMostradas=pricecoincidence.length+elecciones4.length
         for (i=0;i<pricecoincidence.length;i++) {
-/*             if (i==6) {
-                break
-            } */
             if (pricecoincidence[i].brand===marcaelegida) {
                document.querySelector(".splide__comparacion").innerHTML += `
                   <li class=splide__slide>    

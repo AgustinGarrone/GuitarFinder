@@ -721,9 +721,6 @@ input {
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   position: relative;
-  -webkit-box-ordinal-group: 6;
-      -ms-flex-order: 5;
-          order: 5;
   cursor: pointer;
 }
 
@@ -736,6 +733,13 @@ input {
   text-align: center;
 }
 
+/* .splide85 {
+    justify-items: ;
+}
+.splide70 {
+    justify-items: end;
+}
+ */
 .resultsCard70 {
   height: 400px;
   width: 250px;
@@ -759,9 +763,6 @@ input {
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   position: relative;
-  -webkit-box-ordinal-group: 11;
-      -ms-flex-order: 10;
-          order: 10;
   cursor: pointer;
 }
 
@@ -987,7 +988,7 @@ input {
   text-align: center;
 }
 
-.resultsCard100Flex:hover .resultsCard70Name {
+.resultsCard100Flex:hover .resultsCard100FlexName {
   color: white;
 }
 
@@ -1011,7 +1012,7 @@ input {
   text-align: center;
 }
 
-.resultsCard85Flex:hover .resultsCard70Name {
+.resultsCard85Flex:hover .resultsCard85FlexName {
   color: white;
 }
 
@@ -1035,7 +1036,7 @@ input {
   text-align: center;
 }
 
-.resultsCard70Flex:hover .resultsCard70Name {
+.resultsCard70Flex:hover .resultsCard70FlexName {
   color: white;
 }
 
