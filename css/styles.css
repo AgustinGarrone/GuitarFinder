@@ -96,6 +96,7 @@ input {
   color: white;
   text-align: center;
   padding-top: 20px;
+  font-size: 2.2rem;
 }
 
 .guitarFinderApp {
@@ -279,11 +280,6 @@ input {
   display: none;
 }
 
-#option3 .firstimage {
-  width: 350;
-  height: 300px;
-}
-
 #option3 img {
   height: 300px;
   width: 300px;
@@ -299,6 +295,12 @@ input {
 
 #option4 {
   display: none;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #option4 img {
@@ -316,6 +318,12 @@ input {
 
 #option5 {
   display: none;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #option5 img {
@@ -625,7 +633,7 @@ input {
 
 .card__header h2 {
   color: #FFF;
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 900;
   text-transform: uppercase;
   text-align: center;
@@ -1290,11 +1298,6 @@ input {
           filter: drop-shadow(10px 10px 10px yellow);
 }
 
-.preloader {
-  width: 100vw;
-  height: 100vh;
-}
-
 .cambiarVista {
   height: 100px;
   display: -webkit-box;
@@ -1376,16 +1379,18 @@ input {
   }
 }
 
-@media (max-width: 1450) {
-  body {
-    background-color: black;
-  }
+@media (max-width: 1450px) {
   .resultsCardActiveImg {
-    height: 40px;
+    height: 400px;
+    width: 400px;
   }
   .results__grid {
     width: 40%;
-    height: 10px;
+  }
+  .pp {
+    display: block;
+    width: 100px;
+    height: 100px;
   }
   .resultsCard100 {
     height: 300px;
@@ -1436,12 +1441,156 @@ input {
     width: 250px;
   }
   .resultsCardActive_imgs {
-    height: 200px;
-    width: 200px;
+    width: 100%;
+    height: 100px;
+    border-top: 1px solid white;
   }
-  .fotoRelacionada {
-    height: 150px;
-    width: 150px;
+  .resultsCardActive_imgs img {
+    padding-top: 10px;
+    height: 100px;
+    cursor: pointer;
   }
+}
+
+@media (max-width: 1366px) {
+  .guitarFinderApp {
+    width: 60vw;
+    height: 480px;
+  }
+  .pp {
+    display: block;
+    width: 80px;
+    height: 80px;
+  }
+  .card__body {
+    width: 100%;
+    padding: 30px;
+  }
+  .card__body li {
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+  }
+  #option1 {
+    display: none;
+  }
+  #option1items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #option1 img {
+    height: 300px;
+    width: 300px;
+    cursor: pointer;
+  }
+  #option1 img:hover {
+    height: 320px;
+    width: 320px;
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+  #option2 {
+    display: none;
+  }
+  #option2items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #option2 img {
+    height: 300px;
+    width: 300px;
+    cursor: pointer;
+  }
+  #option2 img:hover {
+    height: 320px;
+    width: 320px;
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+  #option3 {
+    display: none;
+  }
+  #option3items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #option3 img {
+    height: 280px;
+    width: 280px;
+    cursor: pointer;
+  }
+  #option3 img:hover {
+    height: 280px;
+    width: 280px;
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+  #option4 {
+    display: none;
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #option4items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #option4 img {
+    height: 220px;
+    width: 220px;
+    cursor: pointer;
+  }
+  #option4 img:hover {
+    height: 250px;
+    width: 250px;
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+  #option5 {
+    display: none;
+  }
+  #option5items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #option5 img {
+    height: 240px;
+    width: 240px;
+    cursor: pointer;
+  }
+  #option5 img:hover {
+    height: 280px;
+    width: 280px;
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+  /* .guitarFinderApp {
+        width: 70vw;
+        height: 700px;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+        background: rgba(255,255,255,0.1);
+        border-radius: 15px;
+        backdrop-filter: blur(5px);
+        .bodyinfo {
+            margin-top: 70px;
+            border-top: 1px solid white;
+            p {
+                color:white;
+                text-align: center;
+                width: 500px;
+            }
+        }
+    } */
 }
 /*# sourceMappingURL=styles.css.map */

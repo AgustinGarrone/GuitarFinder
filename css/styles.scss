@@ -74,6 +74,7 @@ body {
         color: white;
         text-align: center;
         padding-top: 20px;
+        font-size: 2.2rem;
     }
     &App {
        width: 500px;
@@ -216,10 +217,6 @@ body {
     }
     &3 {
         display: none;
-        .firstimage {
-            width: 350;
-            height: 300px;
-        }
         img {
             height: 300px;
             width: 300px;
@@ -233,6 +230,9 @@ body {
     }
     &4 {
         display: none;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
         img {
             height: 300px;
             width: 300px;
@@ -246,6 +246,9 @@ body {
     }
     &5 {
         display: none;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
         img {
             height: 300px;
             width: 300px;
@@ -479,7 +482,7 @@ body {
   
   .card__header h2 {
     color: #FFF;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 900;
     text-transform: uppercase;
     text-align: center;
@@ -980,12 +983,6 @@ body {
 
 
 
-.preloader {
-    width: 100vw;
-    height: 100vh;
-}
-
-
 
 .cambiarVista {
    height: 100px;
@@ -1003,7 +1000,7 @@ body {
 }
 
 
-@media (max-width:1750px) {
+@media (max-width:1750px){
     .results {
         overflow-y: hidden;
     }
@@ -1061,16 +1058,18 @@ body {
 
     }
 }
-@media (max-width:1450) {
-    body {
-       background-color: black; 
-    }
+@media (max-width:1450px) {
     .resultsCardActiveImg {
-       height: 40px;
+       height: 400px;
+       width: 400px;
     }
     .results__grid {
        width: 40%;
-       height: 10px;
+    }
+    .pp {
+        display: block;
+        width: 100px;
+        height: 100px;
     }
     .resultsCard100 {
         height: 300px;
@@ -1120,13 +1119,142 @@ body {
         height: 500px;
         width: 250px;
     }
+
     .resultsCardActive_imgs {
-        height: 200px;
-        width: 200px;
+        width: 100%;
+        height: 100px;
+        border-top: 1px solid white;
+        img {
+            padding-top: 10px;
+            height: 100px;
+            cursor: pointer;
+        }
     }
-    .fotoRelacionada {
-        height: 150px;
-        width: 150px;
+}
+
+@media (max-width:1366px) {
+    .guitarFinderApp {
+        width: 60vw;
+        height: 480px;
     }
+    .pp {
+        display: block;
+        width: 80px;
+        height: 80px;
+    }
+    .card__body {
+        width: 100%;
+        padding: 30px;
+        li {
+            color:white;
+            text-align: center;
+            font-size: 1rem;
+        }
+      }
+      #option {
+        &1 {
+            display: none;
+            &items {
+                display:flex;
+            }
+            img {
+                height: 300px;
+                width: 300px;
+                cursor:pointer;
+            }
+            img:hover {
+                height: 320px;
+                width: 320px;
+                transition: .2s;
+            }
+        }
+        &2 {
+            display: none;
+            &items {
+                display:flex;
+            }
+            img {
+                height: 300px;
+                width: 300px;
+                cursor:pointer;
+            }
+            img:hover {
+                height: 320px;
+                width: 320px;
+                transition: .2s;
+            }
+        }
+        &3 {
+            display: none;
+            &items {
+                display:flex;
+            }
+            img {
+                height: 280px;
+                width: 280px;
+                cursor:pointer;
+            }
+            img:hover {
+                height: 280px;
+                width: 280px;
+                transition: .2s;
+            }
+        }
+        &4 {
+            display: none;
+            width: 100%;
+            justify-content: space-around;
+            align-items: center;
+            &items {
+                display:flex;
+            }
+            img {
+                height: 220px;
+                width: 220px;
+                cursor:pointer;
+            }
+            img:hover {
+                height: 250px;
+                width: 250px;
+                transition: .2s;
+            }
+        }
+        &5 {
+            display: none;
+            &items {
+                display:flex;
+            }
+            img {
+                height: 240px;
+                width: 240px;
+                cursor:pointer;
+            }
+            img:hover {
+                height: 280px;
+                width: 280px;
+                transition: .2s;
+            }
+        }
+      }
+    /* .guitarFinderApp {
+        width: 70vw;
+        height: 700px;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+        background: rgba(255,255,255,0.1);
+        border-radius: 15px;
+        backdrop-filter: blur(5px);
+        .bodyinfo {
+            margin-top: 70px;
+            border-top: 1px solid white;
+            p {
+                color:white;
+                text-align: center;
+                width: 500px;
+            }
+        }
+    } */
 }
 
