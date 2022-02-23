@@ -8,16 +8,11 @@ $.getJSON(JSONGuitars, function (respuesta,estado) {
          for (guitar of respuesta.guitars) {
              if (guitar.time==="basic" || guitar.time==="basicadvanced"){
                  timeBasic.push(guitar)
-                 console.log("agregada"+guitar+ "al array basic")
              }
              if (guitar.time==="advanced" || guitar.time==="basicadvanced") {
                  timeAdvanced.push(guitar)
-                 console.log("agregada"+guitar+ "al array adv")
              }
          }
-         console.log(timeBasic)
-         console.log(timeAdvanced)
      }
 })
-console.log(timeBasic)
-console.log(timeAdvanced)
+

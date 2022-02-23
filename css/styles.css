@@ -14,7 +14,6 @@
   width: 20px;
   border: 3px solid rgba(0, 0, 0, 0.479);
   height: 20px;
-  background-image: url(./src/img/pantallaNavMovil.png);
   background-position: top;
 }
 
@@ -135,6 +134,7 @@ input {
 
 .guitarFinderApp .bodyinfo {
   margin-top: 70px;
+  border-top: 1px solid white;
 }
 
 .guitarFinderApp .bodyinfo p {
@@ -342,7 +342,7 @@ input {
 }
 
 .bodyDescription {
-  border-top: 1px solid white;
+  margin-top: 20px;
 }
 
 .splide {
@@ -390,10 +390,6 @@ input {
 .resultsCardActiveName {
   text-align: center;
   color: white;
-}
-
-.resultsCardActive .resultsCardPrice {
-  margin-top: 43px;
 }
 
 @-webkit-keyframes wipe-in-down {
@@ -466,9 +462,6 @@ input {
 }
 
 .rotateCardActive {
-  position: absolute;
-  top: 5px;
-  left: 5px;
   cursor: pointer;
 }
 
@@ -556,7 +549,7 @@ input {
 }
 
 .resultsCardActiveName {
-  margin-top: 60px;
+  margin-top: 10px;
 }
 
 .specifications__text {
@@ -639,6 +632,7 @@ input {
 }
 
 .card__body {
+  width: 100%;
   padding: 30px;
 }
 
@@ -692,10 +686,6 @@ input {
 
 .resultsCard100name {
   text-align: center;
-}
-
-.resultsCard100 .resultsCardPrice {
-  margin-top: 43px;
 }
 
 .resultsCard85 {
@@ -886,7 +876,9 @@ input {
 }
 
 .resultsCard100Flex .resultsCardPrice {
-  margin-top: 43px;
+  background-color: black;
+  color: white;
+  margin-top: 10px;
 }
 
 .resultsCard85Flex {
@@ -928,7 +920,9 @@ input {
 }
 
 .resultsCard85Flex .resultsCardPrice {
-  margin-top: 43px;
+  background-color: black;
+  color: white;
+  margin-top: 10px;
 }
 
 .resultsCard70Flex {
@@ -970,7 +964,9 @@ input {
 }
 
 .resultsCard70Flex .resultsCardPrice {
-  margin-top: 43px;
+  background-color: black;
+  color: white;
+  margin-top: 10px;
 }
 
 .resultsCard100Flex:hover {
@@ -1187,6 +1183,17 @@ input {
   padding-top: 8px;
 }
 
+.card__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  width: 100%;
+  height: 40px;
+}
+
 /* .resultsCardPorcentaje:after {
     width: 100px;
     height: 100px;
@@ -1309,5 +1316,132 @@ input {
 .cambiarVista img {
   height: 50px;
   width: 50px;
+}
+
+@media (max-width: 1750px) {
+  .results {
+    overflow-y: hidden;
+  }
+  .results__grid {
+    width: 45%;
+    overflow-x: hidden;
+  }
+  .resultsCard100 {
+    cursor: pointer;
+    /* .resultsCardPrice {
+            margin-top: 43px;
+        } */
+  }
+  .resultsCard100Img {
+    height: 200px;
+    width: 200px;
+  }
+  .resultsCard85 {
+    cursor: pointer;
+    /* .resultsCardPrice {
+             margin-top: 43px;
+         } */
+  }
+  .resultsCard85Img {
+    height: 200px;
+    width: 200px;
+  }
+  .resultsCard70 {
+    cursor: pointer;
+    /* .resultsCardPrice {
+             margin-top: 43px;
+         } */
+  }
+  .resultsCard70Img {
+    height: 200px;
+    width: 200px;
+  }
+  .resultsCard100Flex {
+    height: 500px;
+    width: 280px;
+  }
+  .resultsCard85Flex {
+    height: 500px;
+    width: 280px;
+  }
+  .resultsCard70Flex {
+    height: 500px;
+    width: 280px;
+  }
+  .rotateCardActive {
+    cursor: pointer;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 1450) {
+  body {
+    background-color: black;
+  }
+  .resultsCardActiveImg {
+    height: 40px;
+  }
+  .results__grid {
+    width: 40%;
+    height: 10px;
+  }
+  .resultsCard100 {
+    height: 300px;
+    width: 200px;
+    cursor: pointer;
+    /* .resultsCardPrice {
+            margin-top: 43px;
+        } */
+  }
+  .resultsCard100Img {
+    height: 200px;
+    width: 200px;
+  }
+  .resultsCard85 {
+    height: 300px;
+    width: 200px;
+    cursor: pointer;
+    /* .resultsCardPrice {
+             margin-top: 43px;
+         } */
+  }
+  .resultsCard85Img {
+    height: 200px;
+    width: 200px;
+  }
+  .resultsCard70 {
+    height: 300px;
+    width: 200px;
+    cursor: pointer;
+    /* .resultsCardPrice {
+             margin-top: 43px;
+         } */
+  }
+  .resultsCard70Img {
+    height: 200px;
+    width: 200px;
+  }
+  .resultsCard100Flex {
+    height: 500px;
+    width: 250px;
+  }
+  .resultsCard85Flex {
+    height: 500px;
+    width: 250px;
+  }
+  .resultsCard70Flex {
+    height: 500px;
+    width: 250px;
+  }
+  .resultsCardActive_imgs {
+    height: 200px;
+    width: 200px;
+  }
+  .fotoRelacionada {
+    height: 150px;
+    width: 150px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

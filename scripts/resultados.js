@@ -31,23 +31,19 @@ function mostrar() {
     switch (index) {
         case 1: chequeado1("a", 1);
             h2option.innerHTML = "<h2>Awesome! Is this guitar for an adult or child?</h2>"
-            console.log("ejectuando opcion1")
             nextboton.prop("disabled", true)
             break
         case 2: chequeado2("a", 2);
             h2option.innerHTML = "<h2>Which body style are you most interested in?</h2>"
-            console.log("ejectuando opcion2")
             nextboton.prop("disabled", true)
             break
         case 3: chequeado3("a", 3);
             h2option.innerHTML = "<h2>What were you thinking in terms of budget?</h2>"
             divbodyoption.innerHTML = ""
-            console.log("ejecutada tercera opcion")
             nextboton.prop("disabled", true)
             break
         case 4: chequeado4("a", 4);
             h2option.innerHTML = "<h2>Do you have a brand preference?</h2>"
-            console.log("ejecutada cuarta opcion")
             nextboton.prop("disabled", true)
             break
         case 5: chequeado5("a", 5);
@@ -61,13 +57,11 @@ function mostrar() {
         option = document.getElementById("option" + index)
         if (option !== null) {
             option.style.display = "flex"
-            console.log("aasaa")
         }
     } else if (option.style.display = "none") {
         option.style.display = "flex"
         index++;
     }
-    console.log("el index es " + index)
 
 }
 
@@ -75,7 +69,8 @@ function terminado() {
     resultadosMostrados=true
     nextboton.remove()
     botones.append(`<button class="button__compare">Compare</button>`)
-    $(".button__compare").click(compararGuitarras)
+    document.querySelector(".button__compare").addEventListener("click",()=> alert("no llegué a terminar bien esta funcionalidad. Lo voy a terminar despues con tiempo"))
+    /* $(".button__compare").click(compararGuitarras) */  //! AGREGAR LUEGO DE ENTREGAR.
     document.querySelector(".guitarFinderApp").style.display = "none"
     cambiarVista.innerHTML = ` <img src="./img/flexicon.png" >
                             <img class="cambiarAFlex" src="./img/on-slider.png">
@@ -98,8 +93,10 @@ function cargarCardClicks() {
             document.querySelector(".results__active").innerHTML = ` <div class="card" transition-style="in:wipe:down">
             <div class="card__inner">
                 <div class="card__face card__face--front">
-                    <img class=rotateCardActive src="./img/rotateicon.png">
-                    <span class=resultsCardPorcentaje><p>100%</p></span>
+                    <div class=card__icons>
+                        <img class=rotateCardActive src="./img/rotateicon.png">
+                        <span class=resultsCardPorcentaje><p>100%</p></span>
+                    </div>
                     <p class=resultsCardActiveName>${elecciones4[t].name}</p>
                     <img class=resultsCardActiveImg src="${elecciones4[t].img}">
                     <div class="resultsCardActive_imgs">
@@ -112,7 +109,9 @@ function cargarCardClicks() {
                 <div class="card__face card__face--back">
                     <div class="card__content">
                         <div class="card__header">
-                           <img class=rotateCardActive src="./img/rotateicon.png">
+                            <div class=card__icons>
+                                <img class=rotateCardActive src="./img/rotateicon.png">
+                            </div>
                             <img src="./img/puaguitar.png" alt="" class="pp" />
                             <h2>SPECIFICATIONS</h2>
                         </div>
@@ -162,160 +161,12 @@ function cargarCardClicks() {
         })
     }
 
-    /* let cardsCoincidence = document.querySelectorAll(".resultsCardCoincidence")
-    let pricecoincidence=elecciones2.filter(el => !elecciones3.includes(el)); 
-    console.log("PRICECOINCIDENCE ES")
-    console.log(pricecoincidence)
-    console.log(cardsCoincidence)
-    console.log("CARDCSOINCIARRI")
-    console.log("ACA ARRIBA TA CARDSCOINCIDENCE")
-    for (let t = 0; t < cardsCoincidence.length; t++) {
-        let nodoTexto= cardsCoincidence[t].textContent
-        console.log(nodoTexto)
-        if (nodoTexto.includes("85")) {  
-            cardsCoincidence[t].addEventListener('click', event => {
-                console.log("LA GUITARA APRETADA ES")
-                console.log(pricecoincidence[t])
-                document.querySelector(".results__active").innerHTML = ` <div class="card" transition-style="in:wipe:down">
-                <div class="card__inner">
-                    <div class="card__face card__face--front">
-                        <img class=rotateCardActive src="./img/rotateicon.png">
-                        <span class=resultsCardPorcentaje><p>85%</p></span>
-                        <p class=resultsCardActiveName>${pricecoincidence[t].name}</p>
-                        <img class=resultsCardActiveImg src="${pricecoincidence[t].img}">
-                        <div class="resultsCardActive_imgs">
-                            <img class="fotoRelacionada" src="${pricecoincidence[t].img}">
-                            <img class="fotoRelacionada" src="${pricecoincidence[t].img2}">
-                            <img class="fotoRelacionada" src="${pricecoincidence[t].img3}">
-                            <img class="fotoRelacionada" src="${pricecoincidence[t].img4}">
-                        </div> 
-                    </div>
-                    <div class="card__face card__face--back">
-                        <div class="card__content">
-                            <div class="card__header">
-                               <img class=rotateCardActive src="./img/rotateicon.png">
-                                <img src="./img/puaguitar.png" alt="" class="pp" />
-                                <h2>SPECIFICATIONS</h2>
-                            </div>
-                            <div class="card__body">
-                                <div class="resultsCard__specs">
-                                    <ul class=specifications__neck>
-                                    <p class=specifications__text>NECK</p>
-                                    <li class="specification__neck">${pricecoincidence[t].specifications[0].neck1}</li>
-                                    <li class="specification__neck">${pricecoincidence[t].specifications[0].neck2}</li>
-                                    <li class="specification__neck">${pricecoincidence[t].specifications[0].neck3}</li>
-                                    <li class="specification__neck">${pricecoincidence[t].specifications[0].neck4}</li>
-                                    <ul>
-                                    <ul class=specifications__fret>
-                                    <p class=specifications__text>FREATBOARD</p>
-                                    <li class="specification__fretboard">${pricecoincidence[t].specifications[0].fretboard1}</li>
-                                    <li class="specification__fretboard">${pricecoincidence[t].specifications[0].fretboard2}</li>
-                                    <li class="specification__fretboard">${pricecoincidence[t].specifications[0].fretboard3}</li>
-                                    <li class="specification__fretboard">${pricecoincidence[t].specifications[0].fretboard4}</li>
-                                    <ul>
-                                    <ul class=specifications__pickups>
-                                    <p class=specifications__text>PICKUPS</p>
-                                    <li class="specification__pickup">${pricecoincidence[t].specifications[0].pickups1}</li>
-                                    <li class="specification__pickup">${pricecoincidence[t].specifications[0].pickups2}</li>
-                                    <li class="specification__pickup">${pricecoincidence[t].specifications[0].pickups3}</li>
-                                    <li class="specification__pickup">${pricecoincidence[t].specifications[0].pickups4}</li>
-                                    <ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>`
-               
-                
-               
-            eliminarUndefineds()
-               
-                     const carta=document.querySelectorAll(".rotateCardActive")  
-                     for (cart of carta){
-                         cart.addEventListener("click", function (e) {
-                             document.querySelector(".card__inner").classList.toggle('is-flipped');
-                         });
-                     }
-        })
-         
-        }   else if (nodoTexto.includes("70")) { 
-                cardsCoincidence[t].addEventListener('click', event => {
-                    console.log("LA GUITARA APRETADA ES")
-                    console.log(pricecoincidence[t])
-                    document.querySelector(".results__active").innerHTML = ` <div class="card" transition-style="in:wipe:down">
-                        <div class="card__inner">
-                            <div class="card__face card__face--front">
-                                <img class=rotateCardActive src="./img/rotateicon.png">
-                                <span class=resultsCardPorcentaje><p>70%</p></span>
-                                <p class=resultsCardActiveName>${pricecoincidence[t].name}</p>
-                                <img class=resultsCardActiveImg src="${pricecoincidence[t].img}">
-                                <div class="resultsCardActive_imgs">
-                                    <img class="fotoRelacionada" src="${pricecoincidence[t].img}">
-                                    <img class="fotoRelacionada" src="${pricecoincidence[t].img2}">
-                                    <img class="fotoRelacionada" src="${pricecoincidence[t].img3}">
-                                    <img class="fotoRelacionada" src="${pricecoincidence[t].img4}">
-                                </div> 
-                            </div>
-                        <div class="card__face card__face--back">
-                            <div class="card__content">
-                                <div class="card__header">
-                                    <img class=rotateCardActive src="./img/rotateicon.png">
-                                    <img src="./img/puaguitar.png" alt="" class="pp" />
-                                    <h2>SPECIFICATIONS</h2>
-                                </div>
-                            <div class="card__body">
-                                <div class="resultsCard__specs">
-                                    <ul class=specifications__neck>
-                                    <p class=specifications__text>NECK</p>
-                                    <li class="specification__neck">${pricecoincidence[t].specifications[0].neck1}</li>
-                                    <li class="specification__neck">${pricecoincidence[t].specifications[0].neck2}</li>
-                                    <li class="specification__neck">${pricecoincidence[t].specifications[0].neck3}</li>
-                                    <li class="specification__neck">${pricecoincidence[t].specifications[0].neck4}</li>
-                                    <ul>
-                                    <ul class=specifications__fret>
-                                    <p class=specifications__text>FREATBOARD</p>
-                                    <li class="specification__fretboard">${pricecoincidence[t].specifications[0].fretboard1}</li>
-                                    <li class="specification__fretboard">${pricecoincidence[t].specifications[0].fretboard2}</li>
-                                    <li class="specification__fretboard">${pricecoincidence[t].specifications[0].fretboard3}</li>
-                                    <li class="specification__fretboard">${pricecoincidence[t].specifications[0].fretboard4}</li>
-                                    <ul>
-                                    <ul class=specifications__pickups>
-                                    <p class=specifications__text>PICKUPS</p>
-                                    <li class="specification__pickup">${pricecoincidence[t].specifications[0].pickups1}</li>
-                                    <li class="specification__pickup">${pricecoincidence[t].specifications[0].pickups2}</li>
-                                    <li class="specification__pickup">${pricecoincidence[t].specifications[0].pickups3}</li>
-                                    <li class="specification__pickup">${pricecoincidence[t].specifications[0].pickups4}</li>
-                                    <ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>`
-               
-                
-               
-            eliminarUndefineds()
-                 
-                     const carta=document.querySelectorAll(".rotateCardActive")  
-                     for (cart of carta){
-                         cart.addEventListener("click", function (e) {
-                             document.querySelector(".card__inner").classList.toggle('is-flipped');
-                         });
-                     }
-        })
-        } 
-} */
 }
 
 
 function cargarCardCoincidenciaClick () {
     let cartas85=document.querySelectorAll(".splide85")
     let cartas70=document.querySelectorAll(".splide70")
-    console.log(cartas85)
-    console.log(cartas70)
-    console.log("LAS CARTAS TAN ARRIB")
     let pricecoincidence=elecciones2.filter(el => !elecciones3.includes(el));
     for (c85 of cartas85) {
         let guitarraNombre=c85.children[0].children[1].textContent
@@ -325,8 +176,10 @@ function cargarCardCoincidenciaClick () {
                     document.querySelector(".results__active").innerHTML = ` <div class="card" transition-style="in:wipe:down">
                 <div class="card__inner">
                     <div class="card__face card__face--front">
-                        <img class=rotateCardActive src="./img/rotateicon.png">
-                        <span class=resultsCardPorcentaje><p>85%</p></span>
+                        <div class="card__icons">
+                            <img class=rotateCardActive src="./img/rotateicon.png">
+                            <span class=resultsCardPorcentaje><p>85%</p></span>
+                        </div>
                         <p class=resultsCardActiveName>${pricecoincidence[t].name}</p>
                         <img class=resultsCardActiveImg src="${pricecoincidence[t].img}">
                         <div class="resultsCardActive_imgs">
@@ -339,7 +192,9 @@ function cargarCardCoincidenciaClick () {
                     <div class="card__face card__face--back">
                         <div class="card__content">
                             <div class="card__header">
-                               <img class=rotateCardActive src="./img/rotateicon.png">
+                                <div class=card__icons>
+                                    <img class=rotateCardActive src="./img/rotateicon.png">
+                                </div>
                                 <img src="./img/puaguitar.png" alt="" class="pp" />
                                 <h2>SPECIFICATIONS</h2>
                             </div>
@@ -397,8 +252,10 @@ function cargarCardCoincidenciaClick () {
                     document.querySelector(".results__active").innerHTML = ` <div class="card" transition-style="in:wipe:down">
                 <div class="card__inner">
                     <div class="card__face card__face--front">
-                        <img class=rotateCardActive src="./img/rotateicon.png">
-                        <span class=resultsCardPorcentaje><p>70%</p></span>
+                        <div class="card__icons">
+                            <img class=rotateCardActive src="./img/rotateicon.png">
+                            <span class=resultsCardPorcentaje><p>70%</p></span>
+                    </div>
                         <p class=resultsCardActiveName>${pricecoincidence[t].name}</p>
                         <img class=resultsCardActiveImg src="${pricecoincidence[t].img}">
                         <div class="resultsCardActive_imgs">
@@ -411,7 +268,9 @@ function cargarCardCoincidenciaClick () {
                     <div class="card__face card__face--back">
                         <div class="card__content">
                             <div class="card__header">
-                               <img class=rotateCardActive src="./img/rotateicon.png">
+                                <div class=card__icons>
+                                    <img class=rotateCardActive src="./img/rotateicon.png">
+                                </div>
                                 <img src="./img/puaguitar.png" alt="" class="pp" />
                                 <h2>SPECIFICATIONS</h2>
                             </div>
@@ -466,7 +325,6 @@ function cargarCardCoincidenciaClick () {
 function eliminarUndefineds() {
       /*elimina fotos undefined*/
       let fotocargada=document.querySelectorAll(".fotoRelacionada") 
-      console.log(fotocargada)
       for (foto of fotocargada) {
           let atributo=foto.getAttribute("src")
           if (atributo=="undefined") {

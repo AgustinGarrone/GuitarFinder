@@ -22,8 +22,10 @@ function cargarGridResults () {
             document.querySelector(".results__active").innerHTML = ` <div class="card" transition-style="in:wipe:down">
             <div class="card__inner">
                 <div class="card__face card__face--front">
-                    <img class=rotateCardActive src="./img/rotateicon.png">
-                    <span class=resultsCardPorcentaje><p>100%</p></span>
+                    <div class="card__icons">
+                        <img class=rotateCardActive src="./img/rotateicon.png">
+                        <span class=resultsCardPorcentaje><p>100%</p></span>
+                    </div>
                     <p class=resultsCardActiveName>${elecciones4[0].name}</p>
                     <img class=resultsCardActiveImg src="${elecciones4[0].img}">
                     <div class="resultsCardActive_imgs">
@@ -82,9 +84,6 @@ function cargarGridResults () {
     if (elecciones2.length>=0) {
         let pricecoincidence=elecciones2.filter(el => !elecciones3.includes(el));
         let porcentajeDeCard=$('.resultsCardPorcentaje').text();
-        console.log(porcentajeDeCard)
-        console.log(pricecoincidence)
-        console.log("ARRIBA PRICECOINCIDENCE")
         guitarrasMostradas=pricecoincidence.length+elecciones4.length //! esto creo q no lo uso
         for (i=0;i<pricecoincidence.length;i++) {
             if (pricecoincidence[i].brand===marcaelegida) {
@@ -121,12 +120,13 @@ function cargarGridResults () {
         cargarCardCoincidenciaClick()
         if (cardMostrada==false) {
             let cardsCargadas=document.querySelector(".results__grid")
-            console.log(cardsCargadas)
             document.querySelector(".results__active").innerHTML = ` <div class="card" transition-style="in:wipe:down">
             <div class="card__inner">
                 <div class="card__face card__face--front">
-                    <img class=rotateCardActive src="./img/rotateicon.png">
-                    <span class=resultsCardPorcentaje><p>85%</p></span>
+                    <div class="card__icons">
+                        <img class=rotateCardActive src="./img/rotateicon.png">
+                        <span class=resultsCardPorcentaje><p>85%</p></span>
+                    </div>
                     <p class=resultsCardActiveName>${pricecoincidence[0].name}</p>
                     <img class=resultsCardActiveImg src="${pricecoincidence[0].img}">
                     <div class="resultsCardActive_imgs">
@@ -187,7 +187,6 @@ let splidecargado=false
 
 function cargarFlexResults() {
     resultadosMostradosFlex=true
-    console.log(resultadosMostradosFlex)
     resultadosMostradosGrid = false
     let instertarAntes=document.querySelector(".guitarFinderStartButton")
     document.querySelector(".guitarFinder").insertBefore(splideHTML,instertarAntes)
@@ -200,6 +199,7 @@ function cargarFlexResults() {
                <span class=resultsCardPorcentaje><p>100%</p></span>
                <p class=resultsCard100FlexName>${eleccion.name}</p>
                <img class=resultsCard100FlexImg src="${eleccion.img}">
+               <p class=resultsCardPrice>$${eleccion.price}</p>
               </div>
            </li>
               `;
@@ -208,7 +208,6 @@ function cargarFlexResults() {
    }
     if (elecciones2.length>=0) {
         let pricecoincidence=elecciones2.filter(el => !elecciones3.includes(el));
-        console.log("PRICECOINCI ES")
         guitarrasMostradas=pricecoincidence.length+elecciones4.length
         for (i=0;i<pricecoincidence.length;i++) {
 /*             if (i==6) {
@@ -221,6 +220,7 @@ function cargarFlexResults() {
                      <span class=resultsCardPorcentaje><p>85%</p></span>
                      <p class=resultsCard85FlexName>${pricecoincidence[i].name}</p>
                      <img class=resultsCard85FlexImg src="${pricecoincidence[i].img}">
+                     <p class=resultsCardPrice>$${pricecoincidence[i].price}</p>
                      <div class=resultsCardFail>
                          <p>Price</p><img class=resultsCardFailImg src="./img/cruzroja.png">
                      </div>
@@ -234,6 +234,7 @@ function cargarFlexResults() {
                       <span class=resultsCardPorcentaje><p>70%</p></span>
                       <p class=resultsCard70FlexName>${pricecoincidence[i].name}</p>
                       <img class=resultsCard70FlexImg src="${pricecoincidence[i].img}">
+                      <p class=resultsCardPrice>$${pricecoincidence[i].price}</p>
                       <div class=resultsCardFail>
                           <p>Price and brand</p><img class=resultsCardFailImg src="./img/cruzroja.png">
                       </div>
