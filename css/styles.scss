@@ -1154,6 +1154,8 @@ body {
       #option {
         &1 {
             display: none;
+            justify-content: center;
+            align-items: center;
             &items {
                 display:flex;
             }
@@ -1186,6 +1188,9 @@ body {
         }
         &3 {
             display: none;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
             &items {
                 display:flex;
             }
@@ -1235,6 +1240,13 @@ body {
                 transition: .2s;
             }
         }
+      }
+      .results {
+          height: 80%;
+      }
+      .resultsCardActiveImg {
+          height: 300px;
+          width: 300px;
       }
     /* .guitarFinderApp {
         width: 70vw;
