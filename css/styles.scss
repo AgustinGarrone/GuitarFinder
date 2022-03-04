@@ -422,6 +422,7 @@ body {
 
   .resultsCardActiveName {
       margin-top: 10px;
+      margin-bottom: 40px;
   }
   .specifications__text {
       color:white;
@@ -1161,6 +1162,7 @@ body {
         display: block;
         width: 80px;
         height: 80px;
+        margin: 0 auto;
     }
     .card__body {
         width: 100%;
@@ -1288,5 +1290,27 @@ body {
             }
         }
     } */
+    .cambiarVista {
+        top: 0px;
+    }
+    .resultsCardActive_imgs {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .rotateCardActive {
+        height: 50px;
+        width: 50px;
+    }
+    .card__header {
+        height: 200px;
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+    }
+    .specifications__text {
+        font-size: 1.3rem;
+    }
 }
 
