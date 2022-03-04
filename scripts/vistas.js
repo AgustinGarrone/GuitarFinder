@@ -9,8 +9,10 @@ function cargarGridResults () {
             document.querySelector(".results__grid").innerHTML+= ` 
             <li class="splide__slide splide100">   
                <div class=resultsCard100>
-               <span class=resultsCardPorcentaje><p>100%</p></span>
-               <p class=resultsCard100Name>${eleccion.name}</p>
+               <div class="porcentBox">
+                    <p class=resultsCard100Name>${eleccion.name}</p>
+                    <span class=resultsCardPorcentaje><p>100%</p></span>
+                </div>
                <img class=resultsCard100Img src="${eleccion.img}">
               </div>
            </li>
@@ -88,10 +90,12 @@ function cargarGridResults () {
         for (i=0;i<pricecoincidence.length;i++) {
             if (pricecoincidence[i].brand===marcaelegida) {
                document.querySelector(".results__grid").innerHTML += `
-                  <li class="splide__slide splide85">    
+                  <li class="splide__slide splide85">   
                    <div class="resultsCard85 resultsCardCoincidence" >
-                     <span class=resultsCardPorcentaje><p>85%</p></span>
-                     <p class=resultsCard85Name>${pricecoincidence[i].name}</p>
+                     <div class="porcentBox">
+                        <p class=resultsCard85Name>${pricecoincidence[i].name}</p>
+                        <span class=resultsCardPorcentaje><p>85%</p></span>
+                     </div> 
                      <img class=resultsCard85Img src="${pricecoincidence[i].img}">
                      <div class=resultsCardFail>
                          <p>Price</p><img class=resultsCardFailImg src="./img/cruzroja.png">
@@ -106,8 +110,10 @@ function cargarGridResults () {
                 document.querySelector(".results__grid").innerHTML += `
                 <li class="splide__slide splide70">       
                 <div class="resultsCard70 resultsCardCoincidence"> 
-                  <span class=resultsCardPorcentaje><p>70%</p></span>
-                  <p class=resultsCard70Name>${pricecoincidence[i].name}</p>
+                  <div class="porcentBox">
+                    <p class=resultsCard70Name>${pricecoincidence[i].name}</p>
+                    <span class=resultsCardPorcentaje><p>70%</p></span>
+                  </div> 
                   <img class=resultsCard70Img src="${pricecoincidence[i].img}">
                   <div class=resultsCardFail>
                       <p>Price and brand</p><img class=resultsCardFailImg src="./img/cruzroja.png">
@@ -196,8 +202,10 @@ function cargarFlexResults() {
             document.querySelector(".splide__list").innerHTML+= ` 
             <li class="splide__slide splide100">   
                <div class=resultsCard100Flex>
-               <span class=resultsCardPorcentaje><p>100%</p></span>
-               <p class=resultsCard100FlexName>${eleccion.name}</p>
+               <div class="porcentBox">
+                    <p class=resultsCard100FlexName>${eleccion.name}</p>
+                    <span class=resultsCardPorcentaje><p>100%</p></span>
+                </div> 
                <img class=resultsCard100FlexImg src="${eleccion.img}">
                <p class=resultsCardPrice>$${eleccion.price}</p>
               </div>
@@ -217,8 +225,10 @@ function cargarFlexResults() {
                document.querySelector(".splide__list").innerHTML += `
                   <li class="splide__slide splide85">    
                    <div class=resultsCard85Flex >
-                     <span class=resultsCardPorcentaje><p>85%</p></span>
-                     <p class=resultsCard85FlexName>${pricecoincidence[i].name}</p>
+                      <div class="porcentBox">
+                            <p class=resultsCard85FlexName>${pricecoincidence[i].name}</p>
+                            <span class=resultsCardPorcentaje><p>85%</p></span>
+                       </div> 
                      <img class=resultsCard85FlexImg src="${pricecoincidence[i].img}">
                      <p class=resultsCardPrice>$${pricecoincidence[i].price}</p>
                      <div class=resultsCardFail>
@@ -231,8 +241,10 @@ function cargarFlexResults() {
                     document.querySelector(".splide__list").innerHTML += `
                     <li class="splide__slide splide70">       
                     <div class=resultsCard70Flex> 
-                      <span class=resultsCardPorcentaje><p>70%</p></span>
-                      <p class=resultsCard70FlexName>${pricecoincidence[i].name}</p>
+                       <div class="porcentBox">
+                           <p class=resultsCard70FlexName>${pricecoincidence[i].name}</p>
+                           <span class=resultsCardPorcentaje><p>70%</p></span>
+                        </div> 
                       <img class=resultsCard70FlexImg src="${pricecoincidence[i].img}">
                       <p class=resultsCardPrice>$${pricecoincidence[i].price}</p>
                       <div class=resultsCardFail>

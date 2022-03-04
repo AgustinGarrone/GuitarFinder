@@ -94,13 +94,13 @@ function cargarResultadosDeComparacion(){
                     <div class="card__face card__face--front">
                         <img class=rotateCardActive src="./img/rotateicon.png">
                         <span class=resultsCardPorcentaje><p>85%</p></span>
-                        <p class=resultsCardActiveName>${pricecoincidence[t].name}</p>
-                        <img class=resultsCardActiveImg src="${pricecoincidence[t].img}">
+                        <p class=resultsCardActiveName>${pricecoincidence[i].name}</p>
+                        <img class=resultsCardActiveImg src="${pricecoincidence[i].img}">
                         <div class="resultsCardActive_imgs">
-                            <img class="fotoRelacionada" src="${pricecoincidence[t].img}">
-                            <img class="fotoRelacionada" src="${pricecoincidence[t].img2}">
-                            <img class="fotoRelacionada" src="${pricecoincidence[t].img3}">
-                            <img class="fotoRelacionada" src="${pricecoincidence[t].img4}">
+                            <img class="fotoRelacionada" src="${pricecoincidence[i].img}">
+                            <img class="fotoRelacionada" src="${pricecoincidence[i].img2}">
+                            <img class="fotoRelacionada" src="${pricecoincidence[i].img3}">
+                            <img class="fotoRelacionada" src="${pricecoincidence[i].img4}">
                         </div> 
                     </div>
                     <div class="card__face card__face--back">
@@ -114,24 +114,24 @@ function cargarResultadosDeComparacion(){
                                 <div class="resultsCard__specs">
                                     <ul class=specifications__neck>
                                     <p class=specifications__text>NECK</p>
-                                    <li class="specification__neck">${pricecoincidence[t].specifications[0].neck1}</li>
-                                    <li class="specification__neck">${pricecoincidence[t].specifications[0].neck2}</li>
-                                    <li class="specification__neck">${pricecoincidence[t].specifications[0].neck3}</li>
-                                    <li class="specification__neck">${pricecoincidence[t].specifications[0].neck4}</li>
+                                    <li class="specification__neck">${pricecoincidence[i].specifications[0].neck1}</li>
+                                    <li class="specification__neck">${pricecoincidence[i].specifications[0].neck2}</li>
+                                    <li class="specification__neck">${pricecoincidence[i].specifications[0].neck3}</li>
+                                    <li class="specification__neck">${pricecoincidence[i].specifications[0].neck4}</li>
                                     <ul>
                                     <ul class=specifications__fret>
                                     <p class=specifications__text>FREATBOARD</p>
-                                    <li class="specification__fretboard">${pricecoincidence[t].specifications[0].fretboard1}</li>
-                                    <li class="specification__fretboard">${pricecoincidence[t].specifications[0].fretboard2}</li>
-                                    <li class="specification__fretboard">${pricecoincidence[t].specifications[0].fretboard3}</li>
-                                    <li class="specification__fretboard">${pricecoincidence[t].specifications[0].fretboard4}</li>
+                                    <li class="specification__fretboard">${pricecoincidence[i].specifications[0].fretboard1}</li>
+                                    <li class="specification__fretboard">${pricecoincidence[i].specifications[0].fretboard2}</li>
+                                    <li class="specification__fretboard">${pricecoincidence[i].specifications[0].fretboard3}</li>
+                                    <li class="specification__fretboard">${pricecoincidence[i].specifications[0].fretboard4}</li>
                                     <ul>
                                     <ul class=specifications__pickups>
                                     <p class=specifications__text>PICKUPS</p>
-                                    <li class="specification__pickup">${pricecoincidence[t].specifications[0].pickups1}</li>
-                                    <li class="specification__pickup">${pricecoincidence[t].specifications[0].pickups2}</li>
-                                    <li class="specification__pickup">${pricecoincidence[t].specifications[0].pickups3}</li>
-                                    <li class="specification__pickup">${pricecoincidence[t].specifications[0].pickups4}</li>
+                                    <li class="specification__pickup">${pricecoincidence[i].specifications[0].pickups1}</li>
+                                    <li class="specification__pickup">${pricecoincidence[i].specifications[0].pickups2}</li>
+                                    <li class="specification__pickup">${pricecoincidence[i].specifications[0].pickups3}</li>
+                                    <li class="specification__pickup">${pricecoincidence[i].specifications[0].pickups4}</li>
                                     <ul>
                                 </div>
                             </div>
@@ -156,13 +156,13 @@ function cargarResultadosDeComparacion(){
                     <div class="card__face card__face--front">
                         <img class=rotateCardActive src="./img/rotateicon.png">
                         <span class=resultsCardPorcentaje><p>85%</p></span>
-                        <p class=resultsCardActiveName>${pricecoincidence[t].name}</p>
-                        <img class=resultsCardActiveImg src="${pricecoincidence[t].img}">
+                        <p class=resultsCardActiveName>${pricecoincidence[i].name}</p>
+                        <img class=resultsCardActiveImg src="${pricecoincidence[i].img}">
                         <div class="resultsCardActive_imgs">
-                            <img class="fotoRelacionada" src="${pricecoincidence[t].img}">
-                            <img class="fotoRelacionada" src="${pricecoincidence[t].img2}">
-                            <img class="fotoRelacionada" src="${pricecoincidence[t].img3}">
-                            <img class="fotoRelacionada" src="${pricecoincidence[t].img4}">
+                            <img class="fotoRelacionada" src="${pricecoincidence[i].img}">
+                            <img class="fotoRelacionada" src="${pricecoincidence[i].img2}">
+                            <img class="fotoRelacionada" src="${pricecoincidence[i].img3}">
+                            <img class="fotoRelacionada" src="${pricecoincidence[i].img4}">
                         </div> 
                     </div>
                     <div class="card__face card__face--back">
@@ -176,24 +176,24 @@ function cargarResultadosDeComparacion(){
                                 <div class="resultsCard__specs">
                                     <ul class=specifications__neck>
                                     <p class=specifications__text>NECK</p>
-                                    <li class="specification__neck">${pricecoincidence[t].specifications[0].neck1}</li>
-                                    <li class="specification__neck">${pricecoincidence[t].specifications[0].neck2}</li>
-                                    <li class="specification__neck">${pricecoincidence[t].specifications[0].neck3}</li>
-                                    <li class="specification__neck">${pricecoincidence[t].specifications[0].neck4}</li>
+                                    <li class="specification__neck">${pricecoincidence[i].specifications[0].neck1}</li>
+                                    <li class="specification__neck">${pricecoincidence[i].specifications[0].neck2}</li>
+                                    <li class="specification__neck">${pricecoincidence[i].specifications[0].neck3}</li>
+                                    <li class="specification__neck">${pricecoincidence[i].specifications[0].neck4}</li>
                                     <ul>
                                     <ul class=specifications__fret>
                                     <p class=specifications__text>FREATBOARD</p>
-                                    <li class="specification__fretboard">${pricecoincidence[t].specifications[0].fretboard1}</li>
-                                    <li class="specification__fretboard">${pricecoincidence[t].specifications[0].fretboard2}</li>
-                                    <li class="specification__fretboard">${pricecoincidence[t].specifications[0].fretboard3}</li>
-                                    <li class="specification__fretboard">${pricecoincidence[t].specifications[0].fretboard4}</li>
+                                    <li class="specification__fretboard">${pricecoincidence[i].specifications[0].fretboard1}</li>
+                                    <li class="specification__fretboard">${pricecoincidence[i].specifications[0].fretboard2}</li>
+                                    <li class="specification__fretboard">${pricecoincidence[i].specifications[0].fretboard3}</li>
+                                    <li class="specification__fretboard">${pricecoincidence[i].specifications[0].fretboard4}</li>
                                     <ul>
                                     <ul class=specifications__pickups>
                                     <p class=specifications__text>PICKUPS</p>
-                                    <li class="specification__pickup">${pricecoincidence[t].specifications[0].pickups1}</li>
-                                    <li class="specification__pickup">${pricecoincidence[t].specifications[0].pickups2}</li>
-                                    <li class="specification__pickup">${pricecoincidence[t].specifications[0].pickups3}</li>
-                                    <li class="specification__pickup">${pricecoincidence[t].specifications[0].pickups4}</li>
+                                    <li class="specification__pickup">${pricecoincidence[i].specifications[0].pickups1}</li>
+                                    <li class="specification__pickup">${pricecoincidence[i].specifications[0].pickups2}</li>
+                                    <li class="specification__pickup">${pricecoincidence[i].specifications[0].pickups3}</li>
+                                    <li class="specification__pickup">${pricecoincidence[i].specifications[0].pickups4}</li>
                                     <ul>
                                 </div>
                             </div>

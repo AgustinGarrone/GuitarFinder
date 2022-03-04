@@ -68,8 +68,8 @@ function mostrar() {
 function terminado() {
     resultadosMostrados=true
     nextboton.remove()
-    botones.append(`<button class="button__compare">Compare</button>`)
-    document.querySelector(".button__compare").addEventListener("click",()=> alert("no llegué a terminar bien esta funcionalidad. Lo voy a terminar despues con tiempo"))
+    /*botones.append(`<button class="button__compare">Compare</button>`)
+    document.querySelector(".button__compare").addEventListener("click",()=> alert("no llegué a terminar bien esta funcionalidad. Lo voy a terminar despues con tiempo"))*/
     /* $(".button__compare").click(compararGuitarras) */  //! AGREGAR LUEGO DE ENTREGAR.
     document.querySelector(".guitarFinderApp").style.display = "none"
     cambiarVista.innerHTML = ` <img src="./img/flexicon.png" >
@@ -168,8 +168,8 @@ function cargarCardCoincidenciaClick () {
     let cartas85=document.querySelectorAll(".splide85")
     let cartas70=document.querySelectorAll(".splide70")
     let pricecoincidence=elecciones2.filter(el => !elecciones3.includes(el));
-    for (c85 of cartas85) {
-        let guitarraNombre=c85.children[0].children[1].textContent
+     for (c85 of cartas85) {
+        let guitarraNombre=c85.children[0].children[0].children[0].textContent 
         for (let t=0;pricecoincidence.length;t++) {
             if (pricecoincidence[t].name==guitarraNombre) {
                 c85.addEventListener("click",function() {
@@ -242,10 +242,10 @@ function cargarCardCoincidenciaClick () {
             break
             }
         }
-    }
+    } 
 
     for (c70 of cartas70) {
-        let guitarraNombre=c70.children[0].children[1].textContent
+        let guitarraNombre=c70.children[0].children[0].children[0].textContent
         for (let t=0;pricecoincidence.length;t++) {
             if (pricecoincidence[t].name==guitarraNombre) {
                 c70.addEventListener("click",function() {
@@ -318,7 +318,7 @@ function cargarCardCoincidenciaClick () {
             break
             }
         }
-    }
+    } 
 }
 
 

@@ -30,7 +30,7 @@ function resetear() {
             document.querySelector(".splide__list").innerHTML="" 
         }
         verificarDisplay(document.querySelector(".splide__pagination"))
-        document.querySelector(".button__compare").remove()
+        /*document.querySelector(".button__compare").remove()*/ //! CAMBIAR LUEGO AL AGREGAR LA FUNCION DE COMPARE
         document.querySelector(".results__active").innerHTML=""
         document.querySelector(".results__grid").innerHTML=""
         $(".guitarFinderButtonContainer").append(nextboton)

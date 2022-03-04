@@ -2,7 +2,7 @@
     "guitars":[
         {
             "id":1,
-            "name":"SQUIER AFFINITY MINI STRATOCASTER V2 ELECTRIC GUITAR BLACK",
+            "name":"Squier Affinity mini stratocaster V2 black",
             "time":"basic",
             "age":"kid",
             "body":"solidbody",
@@ -26,7 +26,7 @@
         },
         {
             "id":2,
-            "name":"Squier Affinity Mini Stratocaster V2 Electric Guitar Shell Pink",
+            "name":"Squier Affinity Mini Stratocaster V2 Shell Pink",
             "time":"basic",
             "age":"kid",
             "body":"solidbody",
@@ -51,7 +51,7 @@
         },
         {
             "id":3,
-            "name":"Squier Mini Jazzmaster HH Maple Fingerboard Electric Guitar Daphne Blue",
+            "name":"Squier Mini Jazzmaster HH Maple Fingerboard Daphne Blue",
             "time":"basic",
             "age":"kid",
             "body":"solidbody",
@@ -71,7 +71,7 @@
         },
         {
             "id":4,
-            "name":"Ibanez GRGM21M Electric Guitar Orange Burst",
+            "name":"Ibanez GRGM21M Orange Burst",
             "time":"basic",
             "age":"kidadult",
             "body":"solidbody",
@@ -96,7 +96,7 @@
         },
         {
             "id":5,
-            "name":"Ibanez GRGM21M Electric Guitar Metallic Purple",
+            "name":"Ibanez GRGM21M Metallic Purple",
             "time":"basic",
             "age":"kidadult",
             "body":"solidbody",
@@ -118,7 +118,7 @@
         },
         {
             "id":6,
-            "name":"Ibanez Paul Stanley Signature miKro Electric Guitar Black",
+            "name":"Ibanez Paul Stanley Signature miKro Black",
             "time":"basic",
             "age":"kid",
             "body":"solidbody",
@@ -141,7 +141,7 @@
         },
         {
             "id":7,
-            "name":"Ibanez PGMM11 Paul Gilbert Signature 6str miKro Electric Guitar Jewel Blue",
+            "name":"Ibanez PGMM11 Paul Gilbert Signature 6str miKro Jewel Blue",
             "time":"basic",
             "age":"kid",
             "body":"solidbody",
@@ -162,7 +162,7 @@
         },
         {
             "id":8,
-            "name":"Ibanez GRGM21M Electric Guitar Flat Black",
+            "name":"Ibanez GRGM21M Flat Black",
             "time":"basic",
             "age":"kidadult",
             "body":"solidbody",
@@ -188,7 +188,7 @@
         },
         {
             "id":9,
-            "name":"Squier Affinity Series Starcaster Maple Fingerboard Electric Guitar Black",
+            "name":"Squier Affinity Series Starcaster Maple Fingerboard Black",
             "time":"basicadvanced",
             "age":"adult",
             "body":"semihollow",
@@ -215,7 +215,7 @@
         },
         {
             "id":10,
-            "name":"Ibanez Artcore AS53 Semi-Hollow Electric Guitar Flat Transparent Black" ,
+            "name":"Ibanez Artcore AS53 Semi-Hollow Flat Transparent Black" ,
             "time":"basicadvanced",
             "age":"adult",
             "body":"semihollow",
@@ -233,7 +233,7 @@
         },
         {
             "id":11,
-            "name":"Fender Kurt Cobain Jaguar NOS Electric Guitar 3-Color Sunburst",
+            "name":"Fender Kurt Cobain Jaguar NOS 3-Color Sunburst",
             "time":"basicadvanced",
             "age":"adult",
             "body":"solidbody",
@@ -252,7 +252,7 @@
         },
         {
             "id":12,
-            "name":"Epiphone Les Paul Studio Electric Guitar Wine Red",
+            "name":"Epiphone Les Paul Studio Wine Red",
             "time":"basicadvanced",
             "age":"adult",
             "body":"hollowbody",
@@ -276,7 +276,7 @@
         },
         {
             "id":13,
-            "name":"Gibson Les Paul Standard '50s P-90 Electric Guitar Gold Top",
+            "name":"Gibson Les Paul Standard '50s P-90 Gold Top",
             "time":"advanced",
             "age":"adult",
             "body":"hollowbody",
@@ -301,7 +301,7 @@
         },
         {
             "id":14,
-            "name":"Ibanez AF95FM Artcore Expressionist Series Electric Guitar Antique Yellow Sunburst",
+            "name":"Ibanez AF95FM Artcore Expressionist Series Antique Yellow Sunburst",
             "time":"basicadvanced",
             "age":"adult",
             "body":"hollowbody",
@@ -326,7 +326,7 @@
         },
         {
             "id":15,
-            "name":"Gibson SG Standard '61 Maestro Vibrola Electric Guitar Vintage Cherry" ,
+            "name":"Gibson SG Standard '61 Maestro Vibrola Vintage Cherry" ,
             "time":"advanced",
             "age":"adult",
             "body":"semihollow",
@@ -351,7 +351,7 @@
         },
         {
             "id":16,
-            "name":"Gibson Les Paul Standard '60s Limited-Edition Electric Guitar Tri-Burst" ,
+            "name":"Gibson Les Paul Standard '60s Limited-Edition Tri-Burst" ,
             "time":"advanced",
             "age":"adult",
             "body":"hollowbody",
@@ -374,7 +374,7 @@
         },
         {
             "id":17,
-            "name":"Fender American Professional II Stratocaster Maple Fingerboard Electric Guitar Dark Night"  ,
+            "name":"Fender American Professional II Stratocaster Maple Fingerboard Dark Night"  ,
             "time":"advanced",
             "age":"adult",
             "body":"solidbody",
@@ -400,7 +400,7 @@
         },
         {
             "id":18,
-            "name":"Ibanez JEMJR Steve Vai Signature JEM Series Electric Guitar White"  ,
+            "name":"Ibanez JEMJR Steve Vai Signature JEM Series White"  ,
             "time":"advanced",
             "age":"kidadult",
             "body":"solidbody",
@@ -442,7 +442,7 @@
         },
         {
             "id":20,
-            "name":"Ibanez GRGM21 Mikro Electric Guitar White" ,
+            "name":"Ibanez GRGM21 Mikro White" ,
             "time":"basicadvanced",
             "age":"kidadult",
             "body":"solidbody",
@@ -462,7 +462,7 @@
         },
         {
             "id":21,
-            "name":"Ibanez GRGA120 GIO RGA Series Electric Guitar White" ,
+            "name":"Ibanez GRGA120 GIO RGA Series White" ,
             "time":"basicadvanced",
             "age":"kidadult",
             "body":"solidbody",
@@ -484,7 +484,7 @@
         },
         {
             "id":22,
-            "name":"Epiphone SG Standard Left-Handed Electric Guitar Alpine White" ,
+            "name":"Epiphone SG Standard Left-Handed Alpine White" ,
             "time":"advanced",
             "age":"kidadult",
             "body":"semihollow",
@@ -507,7 +507,7 @@
         },
         {
             "id":23,
-            "name":"Epiphone B.B. King Lucille Semi-Hollow Electric Guitar Ebony" ,
+            "name":"Epiphone B.B. King Lucille Semi-Hollow Ebony" ,
             "time":"advanced",
             "age":"adult",
             "body":"semihollow",
@@ -532,7 +532,7 @@
         },
         {
             "id":24,
-            "name":"Squier Classic Vibe '70s Telecaster Thinline Limited-Edition Electric Guitar Olympic White",
+            "name":"Squier Classic Vibe '70s Telecaster Thinline Limited-Edition Olympic White",
             "time":"advanced",
             "age":"adult",
             "body":"semihollow",
@@ -556,7 +556,7 @@
         },
         {
             "id":25,
-            "name":"Ibanez Artcore AS73G Semi-Hollow Electric Guitar Metallic Purple Flat",
+            "name":"Ibanez Artcore AS73G Semi-Hollow Metallic Purple Flat",
             "time":"basicadvanced",
             "age":"kidadult",
             "body":"semihollow",
@@ -580,7 +580,7 @@
         },
         {
             "id":26,
-            "name":"G&L Tribute ASAT Classic Bluesboy Semi-Hollow Electric Guitar Blonde Rosewood Fretboard",
+            "name":"G&L Tribute ASAT Classic Bluesboy Semi-Hollow  Blonde Rosewood Fretboard",
             "time":"basicadvanced",
             "age":"kidadult",
             "body":"semihollow",
@@ -599,7 +599,7 @@
         },
         {
             "id":27,
-            "name":"Ibanez JSM20 John Scofield Signature Electric Guitar Black Low Gloss",
+            "name":"Ibanez JSM20 John Scofield Signature  Black Low Gloss",
             "time":"advanced",
             "age":"adult",
             "body":"semihollow",
@@ -624,7 +624,7 @@
         },
         {
             "id":28,
-            "name":"Epiphone Casino Hollowbody Electric Guitar Vintage Sunburst",
+            "name":"Epiphone Casino Hollowbody Vintage Sunburst",
             "time":"basicadvanced",
             "age":"kidadult",
             "body":"semihollow",
@@ -649,7 +649,7 @@
         },
         {
             "id":29,
-            "name":"Ibanez Artcore AM53 Semi-Hollow Electric Guitar Flat Sunset Red",
+            "name":"Ibanez Artcore AM53 Semi-Hollow Flat Sunset Red",
             "time":"basicadvanced",
             "age":"kidadult",
             "body":"hollowbody",
@@ -668,7 +668,7 @@
         },
         {
             "id":30,
-            "name":"Ibanez Artcore AF75 Hollowbody Electric Guitar Vintage Sunburst",
+            "name":"Ibanez Artcore AF75 Hollowbody Vintage Sunburst",
             "time":"basicadvanced",
             "age":"kidadult",
             "body":"hollowbody",
@@ -735,7 +735,7 @@
         },
         {
             "id":33,
-            "name":"Ibanez AM93QM Artcore Expressionist Series Electric Guitar Jet Blue Burst",
+            "name":"Ibanez AM93QM Artcore Expressionist Series Jet Blue Burst",
             "time":"basicadvanced",
             "age":"adult",
             "body":"hollowbody",
@@ -759,7 +759,7 @@
         },
         {
             "id":34,
-            "name":"Epiphone Joe Pass Emperor-II Pro Hollowbody Electric Guitar Vintage Sunburst",
+            "name":"Epiphone Joe Pass Emperor-II Pro Hollowbody Vintage Sunburst",
             "time":"basicadvanced",
             "age":"kidadult",
             "body":"hollowbody",
@@ -806,7 +806,7 @@
         },
         {
             "id":36,
-            "name":"Gibson Les Paul Tribute Electric Guitar Satin Honey Burst",
+            "name":"Gibson Les Paul Tribute Satin Honey Burst",
             "time":"advanced",
             "age":"kidadult",
             "body":"solidbody",
@@ -830,7 +830,7 @@
         },
         {
             "id":37,
-            "name":"Epiphone ES-335 Figured Semi-Hollow Electric Guitar Blueberry Burst",
+            "name":"Epiphone ES-335 Figured Semi-Hollow Blueberry Burst",
             "time":"advanced",
             "age":"kidadult",
             "body":"semihollow",
@@ -853,7 +853,7 @@
         },
         {
             "id":38,
-            "name":"Fender Player Stratocaster Maple Fingerboard Electric Guitar 3-Color Sunburst",
+            "name":"Fender Player Stratocaster Maple Fingerboard 3-Color",
             "time":"basicadvanced",
             "age":"kidadult",
             "body":"solidbody",
@@ -903,7 +903,7 @@
         },
         {
             "id":40,
-            "name":"Fender Telecaster Richie Kotzen Solid Body Electric Guitar Brown Sunburst", 
+            "name":"Fender Telecaster Richie Kotzen Solid Body Brown Sunburst", 
             "time":"advanced",
             "age":"kidadult",
             "body":"solidbody",
@@ -927,7 +927,7 @@
         },
         {
             "id":41,
-            "name":"Squier Stratocaster Electric Guitar Pack With Squier Frontman 10G Amp Black",
+            "name":"Squier Stratocaster Pack With Squier Frontman 10G Amp",
             "time":"basic",
             "age":"kidadult",
             "body":"solidbody",
@@ -976,7 +976,7 @@
         },
         {
             "id":43,
-            "name":"Epiphone 1959 Les Paul Standard Outfit Electric Guitar Aged Dark Burst",
+            "name":"Epiphone 1959 Les Paul Standard Outfit Aged Dark Burst",
             "time":"basicadvanced",
             "age":"kidadult",
             "body":"hollowbody",
@@ -1022,7 +1022,7 @@
         },
         {
             "id":45,
-            "name":"Squier Affinity Series Starcaster Maple Fingerboard Electric Guitar Olympic White",
+            "name":"Squier Affinity Series Starcaster Maple Fingerboard Olympic White",
             "time":"basicadvanced",
             "age":"kidadult",
             "body":"semihollow",
@@ -1046,7 +1046,7 @@
         },
         {
             "id":46,
-            "name":"Ibanez AM73B Electric Guitar Flat Tobacco",
+            "name":"Ibanez AM73B Flat Tobacco",
             "time":"basicadvanced",
             "age":"adult",
             "body":"semihollow",
@@ -1065,7 +1065,7 @@
         },
         {
             "id":47,
-            "name":"Ibanez AG85 AG Hollow Body Electric Guitar Flat Black",
+            "name":"Ibanez AG85 AG Hollow Body Flat Black",
             "time":"basicadvanced",
             "age":"kidadult",
             "body":"hollowbody",
@@ -1088,7 +1088,7 @@
         },
         {
             "id":48,
-            "name":"Ibanez GB10EM George Benson Hollowbody Electric Guitar Jet Blue Burst",
+            "name":"Ibanez GB10EM George Benson Hollowbody Jet Blue Burst",
             "time":"basicadvanced",
             "age":"kidadult",
             "body":"hollowbody",
@@ -1110,7 +1110,7 @@
         },
         {
             "id":49,
-            "name":"Epiphone Firebird Electric Guitar Vintage Sunburst",
+            "name":"Epiphone Firebird Vintage Sunburst",
             "time":"basicadvanced",
             "age":"kidadult",
             "body":"solidbody",
@@ -1133,7 +1133,7 @@
         },
         {
             "id":50,
-            "name":"Guild Starfire I SC with Guild Vibrato Tailpiece Semi-Hollow Electric Guitar Sea Foam Green",
+            "name":"Guild Starfire I SC with Guild Vibrato Tailpiece Semi-Hollow Sea Foam Green",
             "time":"basicadvanced",
             "age":"kidadult",
             "body":"semihollow",
@@ -1156,7 +1156,7 @@
         },
         {
             "id":51,
-            "name":"Guild Starfire I DC with Guild Vibrato Tailpiece Semi-Hollow Electric Guitar Pelham Blue",
+            "name":"Guild Starfire I DC with Guild Vibrato Tailpiece Semi-Hollow Pelham Blue",
             "time":"basicadvanced",
             "age":"kidadult",
             "body":"semihollow",

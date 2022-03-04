@@ -595,14 +595,14 @@ input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .card__header {
   position: relative;
   padding: 30px 30px 40px;
+  width: 100%;
 }
 
 .card__header:after {
@@ -659,8 +659,8 @@ input {
 
 /*CIERRO ROTA*/
 .resultsCard100 {
-  height: 400px;
-  width: 250px;
+  height: 440px;
+  width: 270px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -671,19 +671,18 @@ input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
           box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
   background: rgba(255, 255, 255, 0.1);
   border-radius: 15px;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
-  position: relative;
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
+  margin-bottom: 15px;
   cursor: pointer;
 }
 
@@ -694,11 +693,13 @@ input {
 
 .resultsCard100name {
   text-align: center;
+  font-size: 1rem;
+  color: white;
 }
 
 .resultsCard85 {
-  height: 400px;
-  width: 250px;
+  height: 440px;
+  width: 270px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -709,17 +710,16 @@ input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
           box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
   background: rgba(255, 255, 255, 0.1);
   border-radius: 15px;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
-  position: relative;
   cursor: pointer;
+  margin-bottom: 15px;
 }
 
 .resultsCard85Img {
@@ -729,6 +729,8 @@ input {
 
 .resultsCard85name {
   text-align: center;
+  font-size: 1rem;
+  color: white;
 }
 
 /* .splide85 {
@@ -739,8 +741,8 @@ input {
 }
  */
 .resultsCard70 {
-  height: 400px;
-  width: 250px;
+  height: 440px;
+  width: 270px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -751,17 +753,16 @@ input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
           box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
   background: rgba(255, 255, 255, 0.1);
   border-radius: 15px;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
-  position: relative;
   cursor: pointer;
+  margin-bottom: 15px;
 }
 
 .resultsCard70Img {
@@ -771,6 +772,8 @@ input {
 
 .resultsCard70name {
   text-align: center;
+  font-size: 1rem;
+  color: white;
 }
 
 .resultsCard100:hover {
@@ -1175,29 +1178,58 @@ input {
   margin-top: 43px;
 }
 
+.porcentBox {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-self: flex-start;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.porcentBox p {
+  text-align: center;
+  width: 220;
+  font-size: 1rem;
+  color: white;
+}
+
 .resultsCardPorcentaje {
   width: 40px;
   height: 40px;
   border-radius: 50px;
   background-color: yellow;
-  position: absolute;
-  top: 15px;
-  right: 15px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  justify-self: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .resultsCardPorcentaje p {
   color: black;
   text-align: center;
-  padding-top: 8px;
 }
 
 .card__icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
   height: 40px;
 }
@@ -1585,9 +1617,9 @@ input {
     -webkit-transition: .2s;
     transition: .2s;
   }
-  .results {
-    height: 80%;
-  }
+  /*  .results {
+          height: 80%;
+      } */
   .resultsCardActiveImg {
     height: 300px;
     width: 300px;
